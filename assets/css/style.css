@@ -1323,7 +1323,7 @@ select {
   padding: 20px;
 }
 .card1{
-  height: 450px;
+  height: 520px;
 }
 .card2{
   height: 520px;
@@ -7183,7 +7183,7 @@ Back to Top CSS
   border-radius: 10px;
   color: #fff;
   box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
-  padding-top: 1.4rem;
+  /* padding-top: 1.4rem; */
 }
 .nav-link {
   height: 100%;

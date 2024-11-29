@@ -44,27 +44,27 @@
                     <button class="nav-link active courses-btn" id="education-tab" data-bs-toggle="pill"
                         data-bs-target="#Education" type="button" role="tab" aria-controls="education-tab"
                         aria-selected="true">
-                        <p class="width_btn">School Of Education</p>
+                        <p class="width_btn my-0">School Of Education</p>
                     </button>
                     <button class="nav-link courses-btn" id="schooloflaw-tab" data-bs-toggle="pill"
                         data-bs-target="#schooloflaw" type="button" role="tab" aria-controls="v-pills-profile"
                         aria-selected="false">
-                        <p class="width_btn">School Of Law</p>
+                        <p class="width_btn my-0">School Of Law</p>
                     </button>
                     <button class="nav-link courses-btn" id="schoolofpharmacy-tab" data-bs-toggle="pill"
                         data-bs-target="#schoolofpharmacy" type="button" role="tab" aria-controls="v-pills-messages"
                         aria-selected="false">
-                        <p class="width_btn">School Of Pharmacy </p>
+                        <p class="width_btn my-0">School Of Pharmacy </p>
                     </button>
                     <button class="nav-link courses-btn" id="schoolofagriculture-tab" data-bs-toggle="pill"
                         data-bs-target="#schoolofagriculture" type="button" role="tab" aria-controls="v-pills-settings"
                         aria-selected="false">
-                        <p class="width_btn">School Of Agriculture</p< /button>
+                        <p class="width_btn my-0">School Of Agriculture</p< /button>
 
                             <button class="nav-link courses-btn" id="schoolofengineering-tab" data-bs-toggle="pill"
                                 data-bs-target="#schoolofengineering" type="button" role="tab"
                                 aria-controls="v-pills-settings" aria-selected="false">
-                                <p class="width_btn">School Of Engineering</p< /button>
+                                <p class="width_btn my-0">School Of Engineering</p< /button>
 
 
                 </div>
@@ -313,7 +313,7 @@
                             <div class="col-lg-4 col-sm-6">
                                 <div class="Department-cards mb-4 mt-4 rounded-3 shadow">
                                     <div class="image position-relative">
-                                        <a href="blog-details.php">
+                                        <a href="specializationinbtech.php">
                                             <img src="./assets/img/Bachelor of Technology.png" alt="image">
                                         </a>
                                         
