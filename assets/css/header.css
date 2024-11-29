@@ -412,9 +412,9 @@
   width: 100%;
   opacity: 1;
 }
-.navbar-area .navbar .navbar-nav > .nav-item > .nav-link.dropdown-toggle {
+/* .navbar-area .navbar .navbar-nav > .nav-item > .nav-link.dropdown-toggle {
   padding-right: 15px;
-}
+} */
 .navbar-area .navbar .navbar-nav > .nav-item > .nav-link.dropdown-toggle:after {
   display: none;
 }

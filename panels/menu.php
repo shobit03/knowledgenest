@@ -27,10 +27,10 @@
                             <a href="about.php" class="nav-link"> AboutUs </a>
                         </li>
                         
-                        <li class="nav-item">
-                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">
-                              K12 program
-                            </a>
+                        <li class="nav-item d-flex align-items-center gap-2">
+                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">K12 program   </a>
+                            <p class="mt-3"><i class="fa-solid fa-angle-down text-black"></i></p>
+                            
                             <ul class="dropdown-menu-items list-unstyle">
                                 <li class="nav-item">
                                     <a href="shop.html" class="nav-link">
@@ -50,10 +50,11 @@
 
 
 
-                        <li class="nav-item">
+                        <li class="nav-item d-flex align-items-center gap-2">
                             <a href="javascript:void(0)" class="dropdown-toggle nav-link">
                               Program
                             </a>
+                            <p class="mt-3"><i class="fa-solid fa-angle-down text-black"></i></p>
                             <ul class="dropdown-menu-items list-unstyle">
                                 <li class="nav-item">
                                     <a href="ug.php" class="nav-link">
@@ -87,10 +88,11 @@
                         </li>
 
 
-                        <li class="nav-item">
+                        <li class="nav-item d-flex align-items-center gap-2">
                             <a href="javascript:void(0)" class="dropdown-toggle nav-link">
                               Research
                             </a>
+                            <p class="mt-3"><i class="fa-solid fa-angle-down text-black"></i></p>
                             <ul class="dropdown-menu-items list-unstyle">
                                 <li class="nav-item">
                                     <a href="shop.html" class="nav-link">
