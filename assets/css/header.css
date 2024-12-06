@@ -2,6 +2,7 @@
   z-index: 10;
   position: absolute;
   width: 100%;
+  background-color: #2b2929;
 }
 .navbar-area.style-one.sticky {
   position: fixed !important;
@@ -12,6 +13,7 @@
 .navbar-area.style-2.sticky {
   top: 0;
   border-bottom: unset;
+  background-color: #2b2929;
 }
 .navbar-area.style-2.sticky .navbar .navbar-brand {
   margin-right: 40px;
@@ -133,9 +135,9 @@
 .navbar-area .navbar-top .navbar-right .social-profile li a:hover {
   background-color: var(--primaryColor);
 }
-.navbar-area .navbar {
+/* .navbar-area .navbar {
   padding: 20px 0;
-}
+} */
 .navbar-area .navbar .navbar-brand {
   padding: 0;
   display: none;
@@ -173,7 +175,7 @@
 }
 .navbar-area .navbar .navbar-nav .nav-item .nav-link {
   position: relative;
-  color: var(--mainColor);
+  color: #fff;
   font-size: 16px;
   padding-left: 0;
   padding-top: 15px;
@@ -220,7 +222,7 @@
   border-radius: 0;
   position: absolute;
   visibility: hidden;
-  transition: all 0.2s ease-in-out;
+  /* transition: all 0.2s ease-in-out; */
 }
 .navbar-area .navbar .navbar-nav .nav-item:hover .dropdown-menu-items {
   opacity: 1;
@@ -1036,3 +1038,13 @@
 @media only screen and (min-width: 1820px) {
 } /*# sourceMappingURL=header.css.map */
 
+
+.nav-link-items{
+  position: relative;
+    color: #2b2828;
+    font-size: 16px;
+    padding-left: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: 600;
+}
