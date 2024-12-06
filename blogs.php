@@ -4,6 +4,16 @@
 <?php include('./panels/header-bottom.php') ?>
 <?php include('./panels/menu.php') ?>
 
+<?php require('admin/includes/db-config.php'); ?>
+
+<?php
+// Fetch the blogs
+$blogData = [];
+$blogs = $conn->query("SELECT * FROM blogs WHERE Status = 1 ORDER BY ID DESC  ");
+while ($blog = $blogs->fetch_assoc()) {
+    $blogData[] = $blog;
+}
+?>
 
 <!--  Page Title Area Start-->
 <section class="page-title-area position-relative">
@@ -36,127 +46,41 @@
     <div class="container">
         <div class="main-max-width">
             <div class="row justify-content-center">
-                <div class="col-lg-4 col-sm-6">
-                    <div class="single-blog-box">
-                        <div class="image position-relative">
-                            <a href="blog-details.php">
-                                <img src="assets/img/all-img/blog-1.png" alt="image">
-                            </a>
-                            <div class="cr-tag">
-                                <a href="author.html">Design</a>
+                <?php if (!empty($blogData)): ?>
+                    <?php foreach ($blogData as $blog): ?>
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="single-blog-box">
+                                <div class="image position-relative">
+                                    <a href="blog-details?url=<?= $blog['Slug'] ?>">
+                                        <img src="/admin/<?= $blog['Photo'] ?>" alt="image">
+                                    </a>
+
+                                </div>
+                                <div class="content">
+                                    <ul class="cr-items d-flex list-unstyle">
+                                        <li>
+                                            <i class="ri-calendar-2-line"></i>
+                                            <span><?= date("d F Y", strtotime($blog['Updated_At'])) ?></span>
+                                        </li>
+                                    </ul>
+                                    <h3 class="mb-15 fs-20">
+                                        <a href="blog-details?url=<?= $blog['Slug'] ?>"><?php echo $blog['Name']; ?></a>
+
+                                    </h3>
+                                    <p>
+                                        <?php echo substr($blog['Description'], 0, 100); ?>...</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="content">
-                            <ul class="cr-items d-flex list-unstyle">
-                                <li><i class="ri-calendar-2-line"></i><span>31 December 2023</span></li>
-                            </ul>
-                            <h3 class="mb-15 fs-20"><a href="blog-details.php">Business modeless and pricing strategies are essential....</a></h3>
-                            <p>Short Description.....This immersive course is crafted to provide participants....</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="single-blog-box">
-                        <div class="image position-relative">
-                            <a href="blog-details.php">
-                                <img src="assets/img/all-img/blog-1.png" alt="image">
-                            </a>
-                            <div class="cr-tag">
-                                <a href="author.html">Design</a>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <ul class="cr-items d-flex list-unstyle">
-                                <li><i class="ri-calendar-2-line"></i><span>31 December 2023</span></li>
-                            </ul>
-                            <h3 class="mb-15 fs-20"><a href="blog-details.php">Business modeless and pricing strategies are essential....</a></h3>
-                            <p>Short Description.....This immersive course is crafted to provide participants....</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="single-blog-box">
-                        <div class="image position-relative">
-                            <a href="blog-details.php">
-                                <img src="assets/img/all-img/blog-1.png" alt="image">
-                            </a>
-                            <div class="cr-tag">
-                                <a href="author.html">Design</a>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <ul class="cr-items d-flex list-unstyle">
-                                <li><i class="ri-calendar-2-line"></i><span>31 December 2023</span></li>
-                            </ul>
-                            <h3 class="mb-15 fs-20"><a href="blog-details.php">Business modeless and pricing strategies are essential....</a></h3>
-                            <p>Short Description.....This immersive course is crafted to provide participants....</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="single-blog-box">
-                        <div class="image position-relative">
-                            <a href="blog-details.php">
-                                <img src="assets/img/all-img/blog-1.png" alt="image">
-                            </a>
-                            <div class="cr-tag">
-                                <a href="author.html">Design</a>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <ul class="cr-items d-flex list-unstyle">
-                                <li><i class="ri-calendar-2-line"></i><span>31 December 2023</span></li>
-                            </ul>
-                            <h3 class="mb-15 fs-20"><a href="blog-details.php">Business modeless and pricing strategies are essential....</a></h3>
-                            <p>Short Description.....This immersive course is crafted to provide participants....</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="single-blog-box">
-                        <div class="image position-relative">
-                            <a href="blog-details.php">
-                                <img src="assets/img/all-img/blog-1.png" alt="image">
-                            </a>
-                            <div class="cr-tag">
-                                <a href="author.html">Design</a>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <ul class="cr-items d-flex list-unstyle">
-                                <li><i class="ri-calendar-2-line"></i><span>31 December 2023</span></li>
-                            </ul>
-                            <h3 class="mb-15 fs-20"><a href="blog-details.php">Business modeless and pricing strategies are essential....</a></h3>
-                            <p>Short Description.....This immersive course is crafted to provide participants....</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="single-blog-box">
-                        <div class="image position-relative">
-                            <a href="blog-details.php">
-                                <img src="assets/img/all-img/blog-1.png" alt="image">
-                            </a>
-                            <div class="cr-tag">
-                                <a href="author.html">Design</a>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <ul class="cr-items d-flex list-unstyle">
-                                <li><i class="ri-calendar-2-line"></i><span>31 December 2023</span></li>
-                            </ul>
-                            <h3 class="mb-15 fs-20"><a href="blog-details.php">Business modeless and pricing strategies are essential....</a></h3>
-                            <p>Short Description.....This immersive course is crafted to provide participants....</p>
-                        </div>
-                    </div>
-                </div>
+                    <?php endforeach; ?>
+                <?php else: ?>
+                    <p>No blogs found.</p>
+                <?php endif; ?>
             </div>
         </div>
     </div>
-
 </div>
-<!-- Blog Section Start -->
-
+<!-- Blog Section End -->
 
 <?php include('./panels/footer-top.php') ?>
 <?php include('./panels/footer-bottom.php') ?>

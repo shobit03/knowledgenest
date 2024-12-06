@@ -43,18 +43,7 @@
                             <span>November 20.2023</span>
                         </div>
                         <div class="meta-info d-flex align-items-center">
-                            <!-- <div class="author-info d-flex align-items-center">
-                                <img src="assets/img/all-img/blog-user-1.png" alt="image">
-                                <p class="mb-0">David Maxwell</p>
-                            </div>
-                            <div class="item-info d-flex align-items-center">
-                                <span><i class="ri-chat-1-line"></i></span>
-                                <p class="mb-0">54 Message</p>
-                            </div>
-                            <div class="item-info d-flex align-items-center">
-                                <span><i class="ri-calendar-2-line"></i></span>
-                                <p class="mb-0">31 December 2023</p>
-                            </div> -->
+                           
                         </div>
 
                         <div class="content">
