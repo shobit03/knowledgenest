@@ -79,7 +79,7 @@
 
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 sticky-card" >
                     <aside class="course-sidebar-widgets">
                        
                         <div class="widget widget-recent-blog">

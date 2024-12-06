@@ -7232,3 +7232,14 @@ Back to Top CSS
   flex-direction: column;
   justify-content: center;
 }
+
+.course-sidebar-widgets{
+  position: sticky;
+  top: 200px;
+}
+
+
+/* .sticky-card{
+  position: sticky;
+  top: 200px;
+} */
