@@ -32,7 +32,7 @@
                             <p class="mt-3"><i class="fa-solid fa-angle-down text-black"></i></p>
                             
                             <ul class="dropdown-menu-items list-unstyle">
-                                <li class="nav-item">
+                                <li class="nav-item item-hover">
                                     <a href="shop.html" class="nav-link">
                                       10th Standard
                                     </a>

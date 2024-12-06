@@ -64,7 +64,7 @@
                                 <li><a href="course-details.html">UI&UX Designer</a></li>
                                 <li><a href="courses-grid.html">Management</a></li>
                                 <li><a href="courses-list.html">Digital Marketing</a></li>
-                                <li><a href="blog.html">Blog News</a></li>
+                                <li><a href="blogs.php">Blogs</a></li>
                                 <li><a href="blog-list.html">Finance & Accounting</a></li>
                             </ul>
                         </div>
