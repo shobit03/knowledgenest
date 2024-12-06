@@ -2,9 +2,9 @@
 <div class="navbar-area style-one style-2 shadow" id="navbar">
     <div class="container">
         <div class="main-max-width">
-            <nav class="navbar insocour-nav navbar-expand-lg">
+            <nav class="navbar insocour-nav navbar-expand-lg pt-0 pb-0">
                 <a class="navbar-brand" href="index.php">
-                    <img class="logo-light" src="assets/img/logo/logo.svg" alt="logo">
+                    <img class="logo-light" src="assets/img/logo/Knowledge_Nest-removebg-preview.png"  alt="logo">
                 </a>
                 <div class="other-options d-flex flex-wrap justify-content-end align-items-center d-lg-none">
                     <div class="option-item d-flex">
@@ -29,16 +29,16 @@
                         
                         <li class="nav-item d-flex align-items-center gap-2">
                             <a href="javascript:void(0)" class="dropdown-toggle nav-link">K12 program   </a>
-                            <p class="mt-3"><i class="fa-solid fa-angle-down text-black"></i></p>
+                            <p class="mt-3"><i class="fa-solid fa-angle-down text-white"></i></p>
                             
                             <ul class="dropdown-menu-items list-unstyle">
                                 <li class="nav-item item-hover">
-                                    <a href="shop.html" class="nav-link">
+                                    <a href="shop.html" class="nav-link-items">
                                       10th Standard
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="shop-filtter.html" class="nav-link">
+                                    <a href="shop-filtter.html" class="nav-link-items">
                                        12th Standard
                                     </a>
                                 </li>
@@ -54,25 +54,25 @@
                             <a href="javascript:void(0)" class="dropdown-toggle nav-link">
                               Program
                             </a>
-                            <p class="mt-3"><i class="fa-solid fa-angle-down text-black"></i></p>
+                            <p class="mt-3"><i class="fa-solid fa-angle-down text-white"></i></p>
                             <ul class="dropdown-menu-items list-unstyle">
                                 <li class="nav-item">
-                                    <a href="ug.php" class="nav-link">
+                                    <a href="ug.php" class="nav-link-items">
                                        UG
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="pg.php" class="nav-link">
+                                    <a href="pg.php" class="nav-link-items">
                                         PG
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="diploma.php" class="nav-link">
+                                    <a href="diploma.php" class="nav-link-items">
                                         Diploma
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="skillprogram.php" class="nav-link">
+                                    <a href="skillprogram.php" class="nav-link-items">
                                         Skill Program
                                     </a>
                                 </li>
@@ -92,15 +92,15 @@
                             <a href="javascript:void(0)" class="dropdown-toggle nav-link">
                               Research
                             </a>
-                            <p class="mt-3"><i class="fa-solid fa-angle-down text-black"></i></p>
+                            <p class="mt-3"><i class="fa-solid fa-angle-down text-white"></i></p>
                             <ul class="dropdown-menu-items list-unstyle">
                                 <li class="nav-item">
-                                    <a href="shop.html" class="nav-link">
+                                    <a href="shop.html" class="nav-link-items">
                                        M Phil
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="shop-filtter.html" class="nav-link">
+                                    <a href="shop-filtter.html" class="nav-link-items">
                                        PHD
                                     </a>
                                 </li>
@@ -109,78 +109,6 @@
                             </ul>
                         </li>
                         
-                        <!-- <li class="nav-item">
-                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">
-                                Pages
-                            </a>
-                            <ul class="dropdown-menu list-unstyle">
-                                <li class="nav-item">
-                                    <a href="about.html" class="nav-link">
-                                        About Us
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="sign-in.html" class="nav-link">
-                                        Sign in
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="sign-up.html" class="nav-link">
-                                        Sign Up
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="javascript:void(0)" class="dropdown-toggle nav-link">
-                                        Instructor
-                                    </a>
-                                    <ul class="dropdown-menu list-unstyle">
-                                        <li class="nav-item">
-                                            <a href="instructor.html" class="nav-link">
-                                                Instructor
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="instructor2.html" class="nav-link">
-                                                Instructor Tow
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="instructor-sidebar.html" class="nav-link">
-                                                Instructor Sidebar
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="instructor-details.html" class="nav-link">
-                                                Instructor Details
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="faq.html" class="nav-link">
-                                        FAQ
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="javascript:void(0)" class="dropdown-toggle nav-link">
-                                        Error
-                                    </a>
-                                    <ul class="dropdown-menu list-unstyle">
-                                        <li class="nav-item">
-                                            <a href="error-404.html" class="nav-link">
-                                                Error One
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="error-sidebar-404.html" class="nav-link">
-                                                Error Two
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                            </ul>
-                        </li> -->
                         <li class="nav-item">
                             <a href="contact.php" class="nav-link">
                                 Contact Us

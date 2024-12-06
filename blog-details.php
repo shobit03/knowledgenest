@@ -73,104 +73,15 @@
                             <p class="mb-30">In the realm of consulting, effective time management is the linchpin for success. As consultants, we navigate diverse projects and client demands, requiring a delicate balance to ensure both productivity and personal well-being. Embracing strategic time maintenance is not just a professional necessity; it's a commitment to delivering optimal value to our clients.</p>
                         </div>
 
-                        <div class="article-footer d-flex justify-content-between align-items-center">
-                            <div class="article-tags">
-                                <span>Tags:</span>
-                                <a href="tag.html">Business</a>
-                                <a href="tag.html">Education</a>
-                                <a href="tag.html">Design</a>
-                            </div>
+                      
 
-                            <div class="article-share d-flex align-items-center">
-                                <span>Share On:</span>
-                                <ul class="social list-unstyle">
-                                    <li><a href="https://www.facebook.com/" target="_blank"><i class="ri-facebook-fill"></i></a></li>
-                                    <li><a href="https://www.instagram.com/" target="_blank"><i class="ri-instagram-line"></i></a></li>
-                                    <li><a href="https://twitter.com/" target="_blank"><i class="ri-twitter-x-line"></i></a></li>
-                                    <li><a href="https://linkedin.com/" target="_blank"><i class="ri-linkedin-fill"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="edu-post-navigation d-flex justify-content-between align-items-center">
-                            <div class="prev-link-wrapper d-flex justify-content-between align-items-center">
-                                <div class="info-prev-link-wrapper">
-                                    <a href="blog-details.php" class="d-flex align-items-center">
-                                        <span class="image-prev">
-                                            <img src="assets/img/all-img/prev-img.png" alt="image">
-                                        </span>
-                                        <span class="prev-link-info-wrapper">
-                                            <span class="post-nav-title fs-15"><i class="ri-arrow-left-s-line"></i> Prev Post</span>
-                                            <span class="prev-title fs-16">How Technology Can Help You Stay Healthy</span>
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="next-link-wrapper d-flex justify-content-between align-items-center">
-                                <div class="info-next-link-wrapper">
-                                    <a href="blog-details.php" class="d-flex align-items-center">
-                                        <span class="prev-link-info-wrapper">
-                                            <span class="post-nav-title fs-15">Next Post <i class="ri-arrow-right-s-line"></i></span>
-                                            <span class="prev-title fs-16">How Technology Can Help You Stay Healthy</span>
-                                        </span>
-                                        <span class="image-prev">
-                                            <img src="assets/img/all-img/next-img.png" alt="image">
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                        
 
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <aside class="course-sidebar-widgets">
-                        <div class="widget widget-catgory widget-search">
-                            <form class="search-form">
-                                <label>
-                                    <input type="search" class="search-field" placeholder="Search...">
-                                </label>
-                                <button class="widget-search-btn" type="submit"><i class="ri-search-line"></i></button>
-                            </form>
-
-                            <div class="accordion" id="widget-collps">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button widget-title" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
-                                            Categories
-                                        </button>
-                                    </h2>
-                                    <div id="collapseOne" class="widget-collapse collapse show" data-bs-parent="#widget-collps">
-                                        <div class="widget-collps-body">
-                                            <ul>
-                                                <li><a href="categories.html">
-                                                        <p>Business Consulting</p> <span>(15)</span>
-                                                    </a></li>
-                                                <li><a href="categories.html">
-                                                        <p>Tax Consulting</p> <span>(20)</span>
-                                                    </a></li>
-                                                <li><a href="categories.html">
-                                                        <p>Art & Design</p> <span>(10)</span>
-                                                    </a></li>
-                                                <li><a href="categories.html">
-                                                        <p>Tax Consulting</p> <span>(20)</span>
-                                                    </a></li>
-                                                <li><a href="categories.html">
-                                                        <p>Technology</p> <span>(17)</span>
-                                                    </a></li>
-                                                <li><a href="categories.html">
-                                                        <p>Development</p> <span>(08)</span>
-                                                    </a></li>
-                                                <li><a href="categories.html">
-                                                        <p>Impact of Education</p> <span>(03)</span>
-                                                    </a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                       
                         <div class="widget widget-recent-blog">
                             <h3 class="widget-title">Related Blogs</h3>
                             <article class="item">
@@ -202,24 +113,8 @@
                                 </div>
                             </article>
                         </div>
-                        <div class="widget widget-tag-cloud">
-                            <h3 class="widget-title">Popular Tags</h3>
-                            <div class="tagcloud">
-                                <a href="tag.html">Business</a>
-                                <a href="tag.html">Course</a>
-                                <a href="tag.html">Consulting</a>
-                                <a href="tag.html">Online</a>
-                                <a href="tag.html">Remote</a>
-                                <a href="tag.html">Solution</a>
-                            </div>
-                        </div>
-                        <div class="widget-add">
-                            <div class="content">
-                                <a class="text-decoration-none" href="index.php"><img src="assets/img/logo/logo.svg" alt="image"></a>
-                                <p class="fs-20">Need Help? We Are Here To Help You</p>
-                                <a href="contact.html" class="btn style-one"> Contact Us</a>
-                            </div>
-                        </div>
+                       
+                       
                     </aside>
                 </div>
             </div>
