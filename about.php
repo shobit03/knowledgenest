@@ -5,7 +5,7 @@
 <?php include('./panels/menu.php') ?>
 
 <!--  Page Title Area Start-->
-<section class="page-title-area position-relative">
+<section class="page-title-area position-relative ">
     <div class="container">
         <div class="main-max-width">
             <div class="page-title-content">
@@ -38,9 +38,9 @@
                 <div class="col-lg-6">
                     <div class="content">
                         <h4 class="sub-title mb-25"># About Us</h4>
-                        <h2 class="mb-3 fs-35">Why Will You Choose Us?</h2>
-                        <p class="mb-30 text-justify">Our Knowledge Nest is delicately working to transform learning methods and improve education to equip all the students. We want all the students can acquire relevant knowledge, a confident attitude and skills to stand out from the crowd and thrive in their careers, studies and lives.</p>
-                        <p class="mb-30 text-justify">We strive to be the ultimate resource for all the university or college leaders, faculty, Educators, and Students who are browsing for the best education spot. Reliable data and information play a crucial role in designing & delivering programs for students. Our Knowledge Nest by knowing the current needs builds a comprehensive resource that delivers all the courses in an easy-to-understand mode.</p>
+                        <h2 class="mb-3 fs-35">Why to choose Arabian Institute of Management studies?</h2>
+                        <p class="mb-30 text-justify">Welcome to our online education website! We provide a large selection of courses and UG and PG programmes on our website to meet the demands of students worldwide. We offer comprehensive support to anybody seeking to enhance their knowledge and abilities, whether educators, professionals, or students</p>
+                       
                     </div>
                     <div class="about-meta d-flex align-items-center mt-40">
                         <div class="about-btn mr-20">

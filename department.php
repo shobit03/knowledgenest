@@ -9,13 +9,21 @@
     <div class="container">
         <div class="main-max-width">
             <div class="page-title-content">
-                <h2>UG Programs</h2>
+                <h2>Department</h2>
                 <ul class="page-breadcrumb align-items-center list-unstyle">
                     <li class="breadcrumb-item"><a href="index.php">Home</a></li>
                     <li class="breadcrumb-item"></li>
-                    <li class="primery-link">UG Programs</li>
+                    <li class="primery-link">Department</li>
                 </ul>
-
+                <div class="shape-1 moveHorizontal">
+                    <img src="assets/img/icon/shape-2.svg" alt="image">
+                </div>
+                <div class="shape-2">
+                    <img src="assets/img/icon/section-icon-1.svg" alt="image">
+                </div>
+                <div class="shape-3 bounce">
+                    <img src="assets/img/icon/section-icon-2.svg" alt="image">
+                </div>
             </div>
         </div>
     </div>

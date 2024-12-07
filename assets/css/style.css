@@ -471,7 +471,7 @@ select {
 }
 .btn.style-one.style-2 {
   border-radius: 5px;
-  background-color: var(--secondaryColor);
+  background-color: rgb(249, 11, 11);
 }
 .btn.style-one.style-2::before {
   background-color: var(--primaryColor);
@@ -907,7 +907,7 @@ select {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url(../img/banner/banner-bg-2.jpg);
+  background-image: url(../img/banner/abstract-background-with-minimalist-design_1048-13338.avif);
 }
 .banner-content .title {
   margin-bottom: 50px;
@@ -1259,7 +1259,7 @@ select {
   display: flex;
   align-items: flex-end;
   transition: 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
-  background-color: var(--primaryColor);
+  background-color: #BBC4C2;
   box-shadow: 0px 6px 30px 0px #573bff4d;
 }
 .about-wrapper .card .icon {
@@ -1281,7 +1281,7 @@ select {
 .about-wrapper .card h4 {
   font-size: 20px;
   margin-bottom: 25px;
-  color: var(--whiteColor);
+  color: black;
   position: relative;
   padding-left: 20px;
 }
@@ -1311,7 +1311,7 @@ select {
   border-radius: 15px;
 }
 .about-wrapper .description p {
-  color: var(--whiteColor);
+  color: black;
   margin-bottom: 25px;
 }
 .about-wrapper input {
@@ -3967,9 +3967,11 @@ tr {
   Page Title
 =====================*/
 .page-title-area {
-  background-image: url(../img/banner/section-bg.png);
+  background-image: url(../img/banner/elegant-white-background-with-shiny-lines_1017-17580.avif);
   background-repeat: no-repeat;
   background-size: cover;
+  /* background-color: #D1D0D0; */
+ 
   padding: 150px 0px 50px 0px;
 }
 .page-title-content h2 {
@@ -3997,7 +3999,7 @@ tr {
 }
 .page-title-area .shape-1 {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 35%;
 }
 .page-title-area .shape-2 {
@@ -4007,7 +4009,7 @@ tr {
 }
 .page-title-area .shape-3 {
   position: absolute;
-  top: 40%;
+  top: 50%;
   right: 20%;
 }
 
@@ -7224,7 +7226,8 @@ Back to Top CSS
 
 
 .logo-light {
-  height: 130px;
+  height: 112px;
+  margin-top: 1rem;
 }
 .nav-link-items {
   height: 100%;

@@ -15,7 +15,15 @@
                     <li class="breadcrumb-item"></li>
                     <li class="primery-link">PG Programs</li>
                 </ul>
-
+                <div class="shape-1 moveHorizontal">
+                    <img src="assets/img/icon/shape-2.svg" alt="image">
+                </div>
+                <div class="shape-2">
+                    <img src="assets/img/icon/section-icon-1.svg" alt="image">
+                </div>
+                <div class="shape-3 bounce">
+                    <img src="assets/img/icon/section-icon-2.svg" alt="image">
+                </div>
             </div>
         </div>
     </div>

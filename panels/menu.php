@@ -1,10 +1,10 @@
 <!-- Navbar Area Start -->
-<div class="navbar-area style-one style-2 shadow" id="navbar">
+<div class="navbar-area style-one style-2" id="navbar">
     <div class="container">
         <div class="main-max-width">
             <nav class="navbar insocour-nav navbar-expand-lg pt-0 pb-0">
                 <a class="navbar-brand" href="index.php">
-                    <img class="logo-light" src="assets/img/logo/Knowledge_Nest-removebg-preview.png"  alt="logo">
+                    <img class="logo-light" src="assets/img/logo/aimsuinv-logo-removebg-preview.png"  alt="logo">
                 </a>
                 <div class="other-options d-flex flex-wrap justify-content-end align-items-center d-lg-none">
                     <div class="option-item d-flex">
@@ -29,7 +29,7 @@
                         
                         <li class="nav-item d-flex align-items-center gap-2">
                             <a href="javascript:void(0)" class="dropdown-toggle nav-link">K12 program   </a>
-                            <p class="mt-3"><i class="fa-solid fa-angle-down text-white"></i></p>
+                            <p class="mt-3"><i class="fa-solid fa-angle-down text-black"></i></p>
                             
                             <ul class="dropdown-menu-items list-unstyle">
                                 <li class="nav-item item-hover">
@@ -54,7 +54,7 @@
                             <a href="javascript:void(0)" class="dropdown-toggle nav-link">
                               Program
                             </a>
-                            <p class="mt-3"><i class="fa-solid fa-angle-down text-white"></i></p>
+                            <p class="mt-3"><i class="fa-solid fa-angle-down text-black"></i></p>
                             <ul class="dropdown-menu-items list-unstyle">
                                 <li class="nav-item">
                                     <a href="ug.php" class="nav-link-items">
@@ -92,7 +92,7 @@
                             <a href="javascript:void(0)" class="dropdown-toggle nav-link">
                               Research
                             </a>
-                            <p class="mt-3"><i class="fa-solid fa-angle-down text-white"></i></p>
+                            <p class="mt-3"><i class="fa-solid fa-angle-down text-black"></i></p>
                             <ul class="dropdown-menu-items list-unstyle">
                                 <li class="nav-item">
                                     <a href="shop.html" class="nav-link-items">
