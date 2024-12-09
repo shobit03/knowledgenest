@@ -16,9 +16,9 @@ if (isset($_POST['id']) && isset($_POST['name'])) {
     $updated_file = mysqli_real_escape_string($conn, $_POST['updated_file']);
 
 
-    $department_ID = isset($_POST['Department_ID']) ? intval($_POST['Department_ID']) : null;
-    $program_ID = isset($_POST['Program_ID']) ? intval($_POST['Program_ID']) : null;
-    $course_ID = isset($_POST['Course_ID']) ? mysqli_real_escape_string($conn, $_POST['Course_ID']) : '';
+    $department_ID = isset($_POST['Menu_ID']) ? intval($_POST['Menu_ID']) : null;
+    $program_ID = isset($_POST['Category_ID']) ? intval($_POST['Category_ID']) : null;
+    $course_ID = isset($_POST['Sub_Category_ID']) ? mysqli_real_escape_string($conn, $_POST['Sub_Category_ID']) : '';
 
     if (isset($_FILES["photo"]["name"]) && $_FILES["photo"]["name"] != '') {
         $photo = uploadImage($conn, "photo", "specialization");
@@ -38,7 +38,7 @@ if (isset($_POST['id']) && isset($_POST['name'])) {
     //     exit();
     // }
 
-    $check = $conn->query("SELECT ID FROM specializations WHERE Name = '$name' AND Department_ID = '$department_ID' AND Program_ID = '$program_ID' AND Course_ID = '$course_ID' AND ID != '$id'");
+    $check = $conn->query("SELECT ID FROM specializations WHERE Name = '$name' AND Menu_ID = '$department_ID' AND Category_ID = '$program_ID' AND Sub_Category_ID = '$course_ID' AND ID != '$id'");
     if ($check && $check->num_rows > 0) {
         echo json_encode(['status' => 400, 'message' => $name . ' already exists for the selected department!']);
         exit();
@@ -47,9 +47,9 @@ if (isset($_POST['id']) && isset($_POST['name'])) {
     $update = $conn->query("UPDATE specializations SET 
                             Name = '$name', 
                             Slug = '$slug', 
-                            Department_ID = '$department_ID', 
-                            Program_ID = '$program_ID',
-                            Course_ID = '$course_ID',
+                            Menu_ID = '$department_ID', 
+                            Category_ID = '$program_ID',
+                            Sub_Category_ID = '$course_ID',
                             Short_Name = '$short_Name', 
                             Content = '$content', 
                             Position = '$position',

@@ -12,28 +12,29 @@ require '../../includes/helper.php';
     <form class="needs-validation" role="form" id="form-add-specializations" action="/admin/app/specializations/store" method="POST" enctype="multipart/form-data">
       <div class="row">
 
+        
         <div class="mb-3 col-md-6">
-          <label class="form-label">Department<span class="text-danger">*</span></label>
-          <?php $departmentArr = getDepartmentFunc($conn); ?>
-          <select name="Department_ID" id="Department_ID" class="form-control sumoselect" required>
-            <option value="">Select Department</option>
-            <?php foreach ($departmentArr as $department) { ?>
-              <option value="<?= $department['ID'] ?>"><?= $department['Name'] ?></option>
+          <label class="form-label">Menu<span class="text-danger">*</span></label>
+          <?php $menuArr = getMenuFunc($conn); ?>
+          <select name="Menu_ID" id="Menu_ID" class="form-control sumoselect" required>
+            <option value="">Select Menu</option>
+            <?php foreach ($menuArr as $menu) { ?>
+              <option value="<?= $menu['ID'] ?>"><?= $menu['Name'] ?></option>
             <?php } ?>
           </select>
         </div>
 
         <div class="mb-3 col-md-6">
-          <label class="form-label">Program<span class="text-danger">*</span></label>
-          <select name="Program_ID" id="Program_ID" class="form-control sumoselect" required>
-            <option value="">Select Department First</option>
+          <label class="form-label">Category<span class="text-danger">*</span></label>
+          <select name="Category_ID" id="Category_ID" class="form-control sumoselect" required>
+            <option value="">Select Menu First</option>
           </select>
         </div>
 
         <div class="mb-3 col-md-6">
-          <label class="form-label">Course<span class="text-danger">*</span></label>
-          <select name="Course_ID" id="Course_ID" class="form-control sumoselect" required>
-            <option value="">Select Program First</option>
+          <label class="form-label">Sub Category<span class="text-danger">*</span></label>
+          <select name="Sub_Category_ID" id="Sub_Category_ID" class="form-control sumoselect" required>
+            <option value="">Select Category First</option>
           </select>
         </div>
 
@@ -93,39 +94,55 @@ require '../../includes/helper.php';
 
 <script>
   $(document).ready(function() {
-    $('#Department_ID').change(function() {
-      var departmentID = $(this).val();
-      if (departmentID) {
+  
+    $('#Menu_ID').change(function() {
+      var menuID = $(this).val();
+      if (menuID) {
         $.ajax({
           type: 'POST',
-          url: '/admin/app/specializations/get_program',
-          data: 'department_id=' + departmentID,
+          url: '/admin/app/sub_category/get_menu',
+          data: 'menu_id=' + menuID,
           success: function(html) {
-            $('#Program_ID').html(html);
-            $('#Course_ID').html('<option value="">Select Program First</option>');
+            $('#Category_ID').html(html);
           }
         });
       } else {
-        $('#Program_ID').html('<option value="">Select Department First</option>');
-        $('#Course_ID').html('<option value="">Select Program First</option>');
+        $('#Category_ID').html('<option value="">Select Menu First</option>');
       }
     });
 
-    $('#Program_ID').change(function() {
-      var programID = $(this).val();
-      if (programID) {
+
+    $('#Category_ID').change(function() {
+      var categoryID = $(this).val();
+      if (categoryID) {
         $.ajax({
           type: 'POST',
           url: '/admin/app/specializations/get_course',
-          data: 'program_id=' + programID,
+          data: 'category_id=' + categoryID,
           success: function(html) {
-            $('#Course_ID').html(html);
+            $('#Sub_Category_ID').html(html);
           }
         });
       } else {
-        $('#Course_ID').html('<option value="">Select Program First</option>');
+        $('#Sub_Category_ID').html('<option value="">Select Category First</option>');
       }
     });
+
+    // $('#Program_ID').change(function() {
+    //   var programID = $(this).val();
+    //   if (programID) {
+    //     $.ajax({
+    //       type: 'POST',
+    //       url: '/admin/app/specializations/get_course',
+    //       data: 'program_id=' + programID,
+    //       success: function(html) {
+    //         $('#Course_ID').html(html);
+    //       }
+    //     });
+    //   } else {
+    //     $('#Course_ID').html('<option value="">Select Program First</option>');
+    //   }
+    // });
 
     $('.ckeditor').each(function() {
       CKEDITOR.replace($(this).attr('id'));

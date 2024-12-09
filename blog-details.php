@@ -74,7 +74,7 @@ while ($recentBlog = $recentBlogsQuery->fetch_assoc()) {
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 sticky-card" >
                     <aside class="course-sidebar-widgets">
                         <!-- Recent Blogs -->
                         <div class="widget widget-recent-blog">

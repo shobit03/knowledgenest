@@ -28,9 +28,9 @@ include($_SERVER['DOCUMENT_ROOT'] . '/admin/includes/menu.php');
                                             <tr>
                                                 <th>ID</th>
                                                 <th>Name</th>
-                                                <th>CourseName</th>
-                                                <th>ProgramName</th>
-                                                <th>DepartmentName</th>
+                                                <th>Sub CategoryName</th>
+                                                <th>CategoryName</th>
+                                                <th>MenuName</th>
                                                 <th>Status </th>
                                                 <th>Action</th>
                                             </tr>

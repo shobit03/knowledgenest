@@ -14,9 +14,9 @@ if (isset($_POST['name'])) {
   $description = mysqli_real_escape_string($conn, $_POST['description']);
 
 
-  $department_ID = isset($_POST['Department_ID']) ? mysqli_real_escape_string($conn, $_POST['Department_ID']) : '';
-  $program_ID = isset($_POST['Program_ID']) ? mysqli_real_escape_string($conn, $_POST['Program_ID']) : '';
-  $course_ID = isset($_POST['Course_ID']) ? mysqli_real_escape_string($conn, $_POST['Course_ID']) : '';
+  $department_ID = isset($_POST['Menu_ID']) ? mysqli_real_escape_string($conn, $_POST['Menu_ID']) : '';
+  $program_ID = isset($_POST['Category_ID']) ? mysqli_real_escape_string($conn, $_POST['Category_ID']) : '';
+  $course_ID = isset($_POST['Sub_Category_ID']) ? mysqli_real_escape_string($conn, $_POST['Sub_Category_ID']) : '';
 
 
   if ($_FILES["photo"]["name"]) {
@@ -36,7 +36,7 @@ if (isset($_POST['name'])) {
   //   exit();
   // }
 
-  $check = $conn->query("SELECT ID FROM specializations WHERE Name = '$name' AND Department_ID = '$department_ID' AND Program_ID = '$program_ID' AND Course_ID = '$course_ID'");
+  $check = $conn->query("SELECT ID FROM specializations WHERE Name = '$name' AND Menu_ID  = '$department_ID' AND Category_ID  = '$program_ID' AND Sub_Category_ID  = '$course_ID'");
   if ($check && $check->num_rows > 0) {
     echo json_encode(['status' => 400, 'message' => $name . ' already exists for the selected department!']);
     exit();
@@ -45,7 +45,7 @@ if (isset($_POST['name'])) {
   // $add_query = "INSERT INTO specializations (Name, Slug, Department_ID, Program_ID, Course_ID, Short_Name, Content, Position) 
   //               VALUES ('$name', '$slug', '$department_ID', '$program_ID', '$course_ID', '$short_Name', '$content', '$position')";
 
-  $add_query = "INSERT INTO specializations (Name, Slug, Department_ID, Program_ID, Course_ID, Short_Name, Content, Position, Photo, Eligibility, Durations,Description ) 
+  $add_query = "INSERT INTO specializations (Name, Slug, Menu_ID, Category_ID, Sub_Category_ID, Short_Name, Content, Position, Photo, Eligibility, Durations,Description ) 
   VALUES ('$name', '$slug', '$department_ID', '$program_ID', '$course_ID', '$short_Name', '$content', '$position', '$filename', '$eligibility', '$duration','$description')";
 
 

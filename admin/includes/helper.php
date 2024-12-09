@@ -8,7 +8,7 @@ ini_set('display_errors', 1);
 function getcategoryFunc($conn)
 {
     $categoryArr = array();
-    $categoryQuery = $conn->query("SELECT ID, Name FROM categories WHERE Status=1 ORDER BY ID ASC");
+    $categoryQuery = $conn->query("SELECT ID, Name FROM category WHERE Status=1 ORDER BY ID ASC");
     while ($row = $categoryQuery->fetch_assoc()) {
         $categoryArr[] = $row;
     }
@@ -48,12 +48,23 @@ function getStreamFunc($conn)
 function getDepartmentFunc($conn)
 {
     $deparmentArr = array();
-    $departmentQuery = $conn->query("SELECT ID, Name FROM departments WHERE Status=1 ORDER BY ID DESC");
+    $departmentQuery = $conn->query("SELECT ID, Name FROM menus WHERE Status=1 ORDER BY ID DESC");
     while ($row = $departmentQuery->fetch_assoc()) {
         $deparmentArr[] = $row;
     }
     return $deparmentArr;
 }
+
+function getMenuFunc($conn)
+{
+    $menuArr = array();
+    $menuQuery = $conn->query("SELECT ID, Name FROM menus WHERE Status=1 ORDER BY ID DESC");
+    while ($row = $menuQuery->fetch_assoc()) {
+        $menuArr[] = $row;
+    }
+    return $menuArr;
+}
+
 
 function getProgramFunc($conn)
 {

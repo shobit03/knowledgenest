@@ -41,31 +41,33 @@
                         <p>Whether you have questions about our services, want to explore potential collaboration opportunities,</p>
 
                         <div class="contact-form">
-                            <form action="#">
+                            <!-- <form action="#"> -->
+                            <form id="contact-form" class="contact-form" action="" method="post">
+
                                 <div class="row">
                                     <div class="col-6">
                                         <div class="form-group mb-15">
-                                            <label class="label-style">Fast Name</label>
-                                            <input type="text" placeholder="Fast Name" class="bg-white input-style border-style w-100 h-60">
+                                            <label class="label-style">Name</label>
+                                            <input type="text" name="con_name" placeholder="Name" class="bg-white input-style border-style w-100 h-60">
                                         </div>
                                     </div>
                                     <div class="col-6">
                                         <div class="form-group mb-15">
-                                            <label class="label-style">Last Name</label>
-                                            <input type="text" placeholder="Last Name" class="bg-white input-style border-style w-100 h-60">
+                                            <label class="label-style">Phone *</label>
+                                            <input type="text" name="phone" placeholder="Phone" class="bg-white input-style border-style w-100 h-60">
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="form-group mb-15">
                                     <label class="label-style">Your email</label>
-                                    <input type="email" placeholder="Your email" class="bg-white input-style border-style w-100 h-60">
+                                    <input type="email" name="con_email" placeholder="Your email" class="bg-white input-style border-style w-100 h-60">
                                 </div>
                                 <div class="form-group mb-15">
                                     <label class="label-style">Message</label>
-                                    <textarea name="msg" id="msg" cols="30" rows="5" class="bg-white input-style border-style w-100" placeholder="Your comments here"></textarea>
+                                    <textarea name="con_message" id="msg" cols="30" rows="5" class="bg-white input-style border-style w-100" placeholder="Your comments here"></textarea>
                                 </div>
-                                <button class="btn style-one box-shadow-1">Send Message</button>
+                                <button type="submit" class="btn style-one box-shadow-1">Send Message</button>
                             </form>
                         </div>
                     </div>
@@ -132,4 +134,51 @@
 
 
 <?php include('./panels/footer-top.php') ?>
+
+<!-- Toastr CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet">
+
+<!-- Toastr JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('#contact-form').on('submit', function(e) {
+            e.preventDefault();
+            var formData = new FormData(this);
+            $.ajax({
+                url: './admin/app/leads/store',
+                type: 'POST',
+                data: formData,
+                cache: false,
+                contentType: false,
+                processData: false,
+                success: function(data) {
+                    var response = JSON.parse(data);
+                    if (response.status === 200) {
+                        toastr.success(response.message);
+                        $('#contact-form')[0].reset();
+                    } else {
+                        toastr.error(response.message);
+                    }
+                },
+                error: function(xhr, status, error) {
+                    toastr.error('An error occurred while submitting the form.');
+                }
+            });
+        });
+    });
+
+    function isNotNumberKey(evt) {
+        var charCode = (evt.which) ? evt.which : evt.keyCode;
+        return (charCode > 31 && (charCode < 48 || charCode > 57));
+    }
+
+    function isNumberKey(evt) {
+        var charCode = (evt.which) ? evt.which : evt.keyCode;
+        return !(charCode > 31 && (charCode < 48 || charCode > 57));
+    }
+</script>
+
 <?php include('./panels/footer-bottom.php') ?>

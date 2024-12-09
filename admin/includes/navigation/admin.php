@@ -13,10 +13,13 @@
 
 
 
+
+
+
 			<li><a href="/admin/wings" class="" aria-expanded="false">
 					<div class="menu-icon">
 						<!-- Category Icon -->
-						<i class="fas fa-tags" style="font-size: 24px; width: 30px; height: 30px;"></i>
+						<i class="fas fa-wing" style="font-size: 24px; width: 30px; height: 30px;"></i>
 					</div>
 					<span class="nav-text">Wings</span>
 				</a>
@@ -25,9 +28,34 @@
 			<li><a href="/admin/menu" class="" aria-expanded="false">
 					<div class="menu-icon">
 						<!-- Category Icon -->
-						<i class="fas fa-tags" style="font-size: 24px; width: 30px; height: 30px;"></i>
+						<i class="fas fa-list" style="font-size: 24px; width: 30px; height: 30px;"></i>
 					</div>
 					<span class="nav-text">Menu</span>
+				</a>
+			</li>
+
+			<li><a href="/admin/category" class="" aria-expanded="false">
+					<div class="menu-icon">
+						<!-- Category Icon -->
+						<i class="fas fa-th-large" style="font-size: 24px; width: 30px; height: 30px;"></i>
+					</div>
+					<span class="nav-text">category</span>
+				</a>
+			</li>
+			<li><a href="/admin/sub_category" class="" aria-expanded="false">
+					<div class="menu-icon">
+						<!-- Category Icon -->
+						<i class="fas fa-cogs" style="font-size: 24px; width: 30px; height: 30px;"></i>
+					</div>
+					<span class="nav-text">Sub Category</span>
+				</a>
+			</li>
+			<li><a href="/admin/specializations" class="" aria-expanded="false">
+					<div class="menu-icon">
+						<!-- Category Icon -->
+						<i class="fas fa-cogs" style="font-size: 24px; width: 30px; height: 30px;"></i>
+					</div>
+					<span class="nav-text">Specialization</span>
 				</a>
 			</li>
 
@@ -125,14 +153,14 @@
 
 
 			<!-- Leads Icon -->
-			<!-- <li>
+			<li>
 				<a href="/admin/leads" class="" aria-expanded="false">
 					<div class="menu-icon">
 						<i class="fas fa-users" style="font-size: 24px; width: 30px; height: 30px;"></i>
 					</div>
 					<span class="nav-text">Website Leads</span>
 				</a>
-			</li> -->
+			</li>
 
 
 			<!-- Website FAQ Icon -->
@@ -143,10 +171,6 @@
 					<span class="nav-text">Website's FAQ</span>
 				</a>
 			</li>
-
-
-
-
 
 		</ul>
 	</div>
