@@ -38,56 +38,66 @@
                 <div class="col-lg-6">
                     <div class="content">
                         <h4 class="sub-title mb-25"># About Us</h4>
-                        <h2 class="mb-3 fs-35">Why to choose Arabian Institute of Management studies?</h2>
-                        <p class="mb-30 text-justify">Welcome to our online education website! We provide a large selection of courses and UG and PG programmes on our website to meet the demands of students worldwide. We offer comprehensive support to anybody seeking to enhance their knowledge and abilities, whether educators, professionals, or students</p>
-                       
+                        <p class="text-justify">Welcome to (AIMS)Arabian Institute of Management studies. A dedicated
+                            online educational platform for students of every background. Our online platform offers a
+                            variety of courses and programmes to help you reach your goals, whether you want to expand
+                            your knowledge, discover a new passion, or progress in your profession.</p>
+                        <br>
+                        <p>We enable students all over the world access to excellent online education. Our mission is to
+                            allow people to pursue their educational objectives at their speed and from any location by
+                            making education easily accessible and convenient.</p>
+                        <br>
+                        <p>We provide a large selection of courses to accommodate a range of interests and ability
+                            levels. We offer programmes to help you advance your education, build your resume, or learn
+                            more. Our courses provide essential knowledge and skills according to industry requirements.
+                        </p>
+                        <br>
+                        <p>Our educators are experts in their domains, offering you insightful advice and practical
+                            examples. They can be accessible through online discussion boards and provide personalised
+                            assistance and support throughout your educational course.</p>
+                        <br>
+                        <p>We offer various online undergraduate (UG) programmes. These programmes support students who
+                            cannot attend regular on-campus programmes and enable flexible learning. Aspiring students
+                            can expect an exceptional education from the online education website using innovative
+                            teaching methods and technology.</p>
+
                     </div>
-                    <div class="about-meta d-flex align-items-center mt-40">
-                        <div class="about-btn mr-20">
-                            <a href="about.html" class="btn style-one box-shadow-1">About More<img src="assets/img/icon/long-arrow.svg" alt="Image"></a>
-                        </div>
-                        <div class="info">
-                            <div class="d-flex align-items-center">
-                                <h5 class="count">16</h5>
-                                <h5>+</h5>
-                            </div>
-                            <h5>Years Of Experiences</h5>
-                        </div>
+                    <div class="shadow p-4 mt-3">
+                        <p class="text-justify">Aspiring students have an easy and flexible alternative with the UG
+                            programmes we provide. Students can customise their education according to their unique
+                            interests and professional aspirations by selecting from various programmes. The platform's
+                            special features, like flexible learning, knowledgeable instructors, and collaborative
+                            learning, are designed to provide students with a thorough education that will help them
+                            succeed in their chosen industries.</p>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="about-wrapper">
+                    <div class="shadow p-4 about-us-cards rounded-3">
+                        <h4 class="text-center text-white">Online Education</h4>
+                        <p class="text-white">Online education has transformed the way we learn and created new
+                            educational opportunities. The ease, affordability, adaptability, interactive capabilities,
+                            and worldwide connections of online learning have entirely changed how we educate
+                            ourselves.Online education has become increasingly important in education as technology
+                            advances.</p>
+                    </div>
+                    <div class="shadow p-4 about-us-cards rounded-3 mt-3">
+                        <h4 class="text-center text-white">Undergraduate Program</h4>
+                        <p class="text-white">The UG program at leading universities is valued significantly higher than
+                            that of other designated universities.
 
-                        <div class="card about-card active card1" id="my-element1">
-                            <h4 class="heading">Learn From The Experts</h4>
-                            <div class="description">
-                                <div class="icon"><img src="assets/img/icon/about-icon.svg" alt="icon"></div>
-                                <h4>Learn From Experts</h4>
-                                <p class="text-justify">Our Experts know the significance of education. However, we are also aware of the fact that delivering the best learning experience is one of the most challenging and complex tasks. Due to this reason, our team of professionals and educators incorporate best guiding practices. Nurture your future with our best penal of experts.</p>
-                                
-                            </div>
-                        </div>
+                            You can enrol in undergraduate programs in any chosen field of study, including psychology,
+                            literature, architecture, the arts, and the humanities.
 
-                        <div class="card about-card card2" id="my-element2">
-                            <h4 class="heading">Our Mission 
-                            </h4>
-                            <div class="description">
-                                <div class="icon"><img src="assets/img/icon/about-icon.svg" alt="icon"></div>
-                                <h4>Our Mission</h4>
-                                <p class="text-justify">Knowledge Nest fosters an inclusive, dynamic learning environment to empower students as skilled, compassionate, and successful teachers. We integrate social justice, research, and theory, emphasizing advocacy, curriculum integration, reflective practice, academic excellence, and equity. Our programs cultivate attitudes that guide effective teaching and leadership through coursework and experience.</p>
-                                
-                            </div>
-                        </div>
-                        <div class="card about-card card3" id="my-element3">
-                            <h4 class="heading">Explore our Beliefs</h4>
-                            <div class="description">
-                                <div class="icon"><img src="assets/img/icon/about-icon.svg" alt="icon"></div>
-                                <h4>Our Philosophy
-                                </h4>
-                                <p class="text-justify">We recognize that education requires a diverse approach and offer specialized resources to meet various educational needs and enhance student experiences. By creating products that complement different teaching methods and ideologies across courses and grades, we honor our users' diversity. We remain committed to providing academically sound content and encourage all feedback.</p>
-                                
-                            </div>
-                        </div>
+                            We offer Academic courses or programs intended for individuals who have finished high school
+                            and aspire to pursue further education, referred to as undergraduate programs</p>
+                    </div>
+                    <div class="shadow p-4 about-us-cards rounded-3 mt-3">
+                        <h4 class="text-center text-white">Undergraduate Program</h4>
+                        <p class="text-white">After graduating from high school or the equivalent, are you worried? Our undergraduate programmes are available online, providing information and various professional options. We have strong partnerships with renowned universities, community colleges, and technical schools worldwide.</p>
+                    </div>
+                    <div class="shadow p-4 about-us-cards rounded-3 mt-3">
+                        <h4 class="text-center text-white">Post Graduate Program</h4>
+                        <p class="text-white">After earning an impressive bachelor's degree, what comes next? The university that works with us has developed online postgraduate programmes for post-secondary students. A postgraduate degree in the field and possessing knowledge and skills will help you obtain employment.</p>
                     </div>
                 </div>
             </div>
@@ -95,262 +105,36 @@
     </div>
 </div>
 <!-- About Section End -->
-
-<!-- Testimonial Section Start -->
-<div class="testimonial-section custom-nav pb-100">
+<div class="partner-area pb-3 mt-1">
     <div class="container">
         <div class="main-max-width">
-            <div class="row">
-                <div class="col-lg-5">
-                    <div class="content">
-                        <h4 class="sub-title mb-25"># Client’s Testimonials</h4>
-                        <h2 class="mb-30 fs-35">Let's what our student says</h2>
-                        <p class="mb-50 text-justify">Our students and learners are our center point. Whatever we do, we consider our students first. Here, they share an impression of our excellent and dedicated practices. This will show how our supportive environment tends to achieve desired academic milestones</p>
-                    </div>
+            <div class="partner-title text-center">
+                <h4>Our University tie-ups</h4>
+            </div>
+            <div class="partner-slider text-center owl-carousel owl-nav">
+                <div class="single-partner-card">
+                    <img loading="lazy" src="assets/img/partner/1.png" alt="partner-logo">
                 </div>
-                <div class="col-lg-7">
-                    <div class="testimonial-cards owl-carousel owl-theme">
-                        <div class="testimonial-box">
-                            <div class="info mb-25 d-flex align-items-center justify-content-between">
-                                <div class="image d-flex align-items-center">
-                                    <img src="assets/img/all-img/student-rev.png" alt="image">
-                                    <div class="content">
-                                        <h5 class="fs-16">Jonson Maxwell</h5>
-                                        <p class="mb-0">Customer</p>
-                                    </div>
-                                </div>
-                                <div class="icon">
-                                    <img src="assets/img/icon/quate-icon.svg" alt="icon">
-                                </div>
-                            </div>
-                            <div class="box-content">
-                                <p>The impact of consulting services was evident in the measurable results we achieved. Our organization is now better positioned for success, and our team is equipped with the
-                                    knowledge and tools needed to navigate future challenges.</p>
-                            </div>
-                            <div class="ratings">
-                                <ul class="d-flex list-unstyle p-0">
-                                    <li><i class="ri-star-fill"></i></li>
-                                    <li><i class="ri-star-fill"></i></li>
-                                    <li><i class="ri-star-fill"></i></li>
-                                    <li><i class="ri-star-fill"></i></li>
-                                    <li><i class="ri-star-fill"></i></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="testimonial-box">
-                            <div class="info mb-25 d-flex align-items-center justify-content-between">
-                                <div class="image d-flex align-items-center">
-                                    <img src="assets/img/all-img/student-rev.png" alt="image">
-                                    <div class="content">
-                                        <h5 class="fs-16">Jonson Maxwell</h5>
-                                        <p class="mb-0">Customer</p>
-                                    </div>
-                                </div>
-                                <div class="icon">
-                                    <img src="assets/img/icon/quate-icon.svg" alt="icon">
-                                </div>
-                            </div>
-                            <div class="box-content">
-                                <p>The impact of consulting services was evident in the measurable results we achieved. Our organization is now better positioned for success, and our team is equipped with the
-                                    knowledge and tools needed to navigate future challenges.</p>
-                            </div>
-                            <div class="ratings">
-                                <ul class="d-flex list-unstyle p-0">
-                                    <li><i class="ri-star-fill"></i></li>
-                                    <li><i class="ri-star-fill"></i></li>
-                                    <li><i class="ri-star-fill"></i></li>
-                                    <li><i class="ri-star-fill"></i></li>
-                                    <li><i class="ri-star-fill"></i></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="testimonial-box">
-                            <div class="info mb-25 d-flex align-items-center justify-content-between">
-                                <div class="image d-flex align-items-center">
-                                    <img src="assets/img/all-img/student-rev.png" alt="image">
-                                    <div class="content">
-                                        <h5 class="fs-16">Jonson Maxwell</h5>
-                                        <p class="mb-0">Customer</p>
-                                    </div>
-                                </div>
-                                <div class="icon">
-                                    <img src="assets/img/icon/quate-icon.svg" alt="icon">
-                                </div>
-                            </div>
-                            <div class="box-content">
-                                <p>The impact of consulting services was evident in the measurable results we achieved. Our organization is now better positioned for success, and our team is equipped with the
-                                    knowledge and tools needed to navigate future challenges.</p>
-                            </div>
-                            <div class="ratings">
-                                <ul class="d-flex list-unstyle p-0">
-                                    <li><i class="ri-star-fill"></i></li>
-                                    <li><i class="ri-star-fill"></i></li>
-                                    <li><i class="ri-star-fill"></i></li>
-                                    <li><i class="ri-star-fill"></i></li>
-                                    <li><i class="ri-star-fill"></i></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="benefits-prev"><img src="assets/img/icon/long-arrow.svg" alt="Image"></div>
-                    <div class="benefits-next"><img src="assets/img/icon/long-arrow.svg" alt="Image"></div>
+                <div class="single-partner-card">
+                    <img loading="lazy" src="assets/img/partner/8.png" alt="partner-logo">
                 </div>
+                <div class="single-partner-card">
+                    <img loading="lazy" src="assets/img/partner/3.png" alt="partner-logo">
+                </div>
+                <div class="single-partner-card">
+                    <img loading="lazy" src="assets/img/partner/4.png" alt="partner-logo">
+                </div>
+                <div class="single-partner-card">
+                    <img loading="lazy" src="assets/img/partner/5.png" alt="partner-logo">
+                </div>
+                <div class="single-partner-card">
+                    <img loading="lazy" src="assets/img/partner/6.png" alt="partner-logo">
+                </div>
+               
             </div>
         </div>
     </div>
 </div>
-<!-- Testimonial Section End -->
-
-<!-- Video Section Start -->
-<div class="video-section">
-    <div class="container">
-        <div class="main-max-width">
-            <div class="play">
-                <a class="btn style-one popup-youtube" href="https://youtu.be/LlCwHnp3kL4?si=jZCEB5Ge_effUhpr"><i class="ri-play-fill"></i> Watch Our Video</a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Video Section End -->
-
-<!-- Score Area Start -->
-<div class="score-area">
-    <div class="container">
-        <div class="main-max-width">
-            <div class="row">
-                <div class="col-lg-3 col-sm-6">
-                    <div class="counter-box">
-                        <div class="icon icon-yl-clr">
-                            <img src="assets/img/icon/counter-icon-1.svg" alt="image">
-                        </div>
-                        <div class="content">
-                            <div class="count">15.525</div>
-                            <p>Happy Student</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="counter-box">
-                        <div class="icon icon-rd-clr">
-                            <img src="assets/img/icon/counter-icon-1.svg" alt="image">
-                        </div>
-                        <div class="content">
-                            <div class="count">586</div>
-                            <p>Good Comment</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="counter-box">
-                        <div class="icon icon-gr-clr">
-                            <img src="assets/img/icon/counter-icon-1.svg" alt="image">
-                        </div>
-                        <div class="content">
-                            <div class="count">35.200</div>
-                            <p>Services Download</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="counter-box">
-                        <div class="icon icon-pr-clr">
-                            <img src="assets/img/icon/counter-icon-1.svg" alt="image">
-                        </div>
-                        <div class="content">
-                            <div class="count">55</div>
-                            <p>Best Awards</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Score Area End -->
-
-<!-- Blog Section Start -->
-<div class="blog-section pb-100">
-    <div class="container">
-        <div class="main-max-width">
-            <div class="section-title mb-50">
-                <div class="row">
-                    <div class="col-lg-7 col-sm-7">
-                        <div class="content">
-                            <h4 class="sub-title mb-25"># Blogs</h4>
-                            <h2 class="mb-0 fs-35">Latest News & Articles</h2>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 col-sm-5">
-                        <div class="section-btn text-end">
-                            <a href="blog.html" class="btn style-one box-shadow-1">View All <img src="assets/img/icon/long-arrow.svg" alt="Image"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-sm-6">
-                    <div class="single-blog-box">
-                        <div class="image position-relative">
-                            <a href="blog-details.php">
-                                <img src="assets/img/all-img/blog-1.png" alt="image">
-                            </a>
-                            <div class="cr-tag">
-                                <a href="author.html">Design</a>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <ul class="cr-items d-flex list-unstyle">
-                                <li><i class="ri-calendar-2-line"></i><span>31 December 2023</span></li>
-                            </ul>
-                            <h3 class="mb-15 fs-20"><a href="blog-details.php">Business modeless and pricing strategies are essential....</a></h3>
-                            <p>This immersive course is crafted to provide participants.......</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="single-blog-box">
-                        <div class="image position-relative">
-                            <a href="blog-details.php">
-                                <img src="assets/img/all-img/blog-1.png" alt="image">
-                            </a>
-                            <div class="cr-tag">
-                                <a href="author.html">Design</a>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <ul class="cr-items d-flex list-unstyle">
-                                <li><i class="ri-calendar-2-line"></i><span>31 December 2023</span></li>
-                            </ul>
-                            <h3 class="mb-15 fs-20"><a href="blog-details.php">Business modeless and pricing strategies are essential....</a></h3>
-                            <p>This immersive course is crafted to provide participants.......</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="single-blog-box">
-                        <div class="image position-relative">
-                            <a href="blog-details.php">
-                                <img src="assets/img/all-img/blog-1.png" alt="image">
-                            </a>
-                            <div class="cr-tag">
-                                <a href="author.html">Design</a>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <ul class="cr-items d-flex list-unstyle">
-                                <li><i class="ri-calendar-2-line"></i><span>31 December 2023</span></li>
-                            </ul>
-                            <h3 class="mb-15 fs-20"><a href="blog-details.php">Business modeless and pricing strategies are essential....</a></h3>
-                            <p>This immersive course is crafted to provide participants.......</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Blog Section End -->
 
 
 <?php include('./panels/footer-top.php') ?>

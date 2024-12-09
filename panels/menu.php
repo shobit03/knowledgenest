@@ -28,7 +28,7 @@
                         </li>
                         
                         <li class="nav-item d-flex align-items-center gap-2">
-                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">K12 program   </a>
+                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">K12 program</a>
                             <p class="mt-3"><i class="fa-solid fa-angle-down text-black"></i></p>
                             
                             <ul class="dropdown-menu-items list-unstyle">

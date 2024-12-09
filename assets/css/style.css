@@ -7246,3 +7246,54 @@ Back to Top CSS
   position: sticky;
   top: 200px;
 } */
+
+.about-us-cards{
+  background-color: #263f49;
+}
+
+.study-cards{
+
+  height: 265px;
+  background-color: #000000c4;
+}
+
+
+
+.single-popular-card {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+}
+
+.single-popular-card .hover-overlay {
+  position: absolute;
+  bottom: -100%; /* Start from below the card */
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-color: red;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  transition: bottom 0.5s ease; /* Smooth transition */
+  z-index: 1; /* Ensure the overlay is above the content */
+}
+
+.single-popular-card:hover .hover-overlay {
+  bottom: 0; /* Slide up to cover the card */
+}
+
+.single-popular-card h3,
+.single-popular-card p {
+  position: relative;
+  z-index: 2; /* Ensure the text is above the overlay */
+  transition: color 0.5s ease; /* Smooth transition for color */
+}
+
+.single-popular-card:hover h3,
+.single-popular-card:hover p {
+  color: white; /* Change text color to white on hover */
+}
