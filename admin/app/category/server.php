@@ -3,7 +3,7 @@
 include '../../includes/db-config.php';
 session_start();
 ## Fetch records
-$result_record = "SELECT ID, Name, Menu_ID, Status, Created_At FROM category ORDER BY ID DESC";
+$result_record = "SELECT ID, Name, Menu_ID, Photo, Status, Created_At FROM category ORDER BY ID DESC";
 $results = mysqli_query($conn, $result_record);
 $data = array();
 $i = 1;
@@ -18,6 +18,7 @@ $menuArr = mysqli_fetch_assoc($menuQuery);
       "ID"=>$row['ID'],
       "Name" => $row["Name"],
       "Menu"=>$menuArr["Name"],
+      "Photo" => $row["Photo"],
       "Status" => $row["Status"],
       "Created_At" => $row["Created_At"],
     );

@@ -27,9 +27,9 @@ if (isset($_GET['id'])) {
             <option value="">Select Department</option>
             <?php foreach ($menuArr as $menu) { ?>
               <option value="<?= $menu['ID'] ?>" <?php if ($getdata['Menu_ID'] == $menu['ID']) {
-                                                          echo "selected";
-                                                        } else {
-                                                        } ?>><?= $menu['Name'] ?></option>
+                                                    echo "selected";
+                                                  } else {
+                                                  } ?>><?= $menu['Name'] ?></option>
             <?php } ?>
           </select>
         </div>
@@ -46,20 +46,23 @@ if (isset($_GET['id'])) {
           <input type="text" class="form-control" name="Short_Name" value="<?= $getdata['Short_Name'] ?>" placeholder="Enter a Short Name.." required>
         </div>
 
-        <!-- <div class="mb-3 col-md-12">
-          <label class="form-label">Eligibility Criteria <span class="text-danger">*</span></label>
-          <textarea class="ckeditor" id="editor_eligibility" name="eligibility" rows="10"><?= $getdata['Eligibility'] ?></textarea>
-        </div>
+        <div class="mb-3 col-md-12 syllabus_file">
 
-        <div class="mb-3 col-md-6">
-          <label class="form-label"> Duration Year <span class="text-danger">*</span></label>
-          <input type="number" min="0" class="form-control" name="year" value="<?= $getdata['Year'] ?>" placeholder="Enter Year.." required>
-        </div>
+          <label class="form-label">Photo <span class="text-danger">*</span></label>
+          <small class="text-muted">
+            Please upload a valid image file (PNG, JPG, JPEG, SVG, or AVIF) with a size less than or equal to 200KB.
+          </small>
+          <input type="hidden" name="updated_file" value="<?= $getdata['Photo'] ?>">
+          <input type="file" name="photo" id="photo" class="form-control" onchange="fileValidation('photo')" accept="image/png, image/jpg, image/jpeg, image/svg,image/avif">
 
-        <div class="mb-3 col-md-6">
-          <label class="form-label">Duration Semester <span class="text-danger">*</span></label>
-          <input type="number" min="0" class="form-control" name="semester" value="<?= $getdata['Semester'] ?>" placeholder="Enter Semester.." required>
-        </div> -->
+          <?php if (!empty($id) && !empty($getdata['Photo'])) { ?>
+            <img src="/admin<?php echo !empty($id) ? $getdata['Photo'] : ''; ?>" height="50" />
+          <?php } ?>
+        </div>
+        <div class="mb-3 col-md-12 ">
+          <label class="form-label">Content <span class="text-danger">*</span></label>
+          <textarea class="ckeditor" cols="80" id="editor" name="editor" rows="10"><?= $getdata['Content'] ?></textarea>
+        </div>
 
         <div class="mb-3 col-md-12">
           <label class="form-label">Order By <span class="text-danger">*</span></label>
@@ -79,9 +82,10 @@ if (isset($_GET['id'])) {
 
 
 
-<!-- <script>
-  $(function() {
 
+
+<!-- <script>
+  $(document).ready(function() {
     $('#form-add-stream').validate({
       rules: {
         name: {
@@ -90,13 +94,17 @@ if (isset($_GET['id'])) {
         Short_Name: {
           required: true
         },
-        eligibility: {
-          required: true
-        },
         position: {
           required: true,
           number: true,
           min: 0
+        }
+      },
+      messages: {
+        position: {
+          required: "Please enter the position.",
+          number: "Please enter a valid number for the position.",
+          min: "Position must be at least 0."
         }
       },
       highlight: function(element) {
@@ -106,36 +114,18 @@ if (isset($_GET['id'])) {
       unhighlight: function(element) {
         $(element).removeClass('error');
         $(element).closest('.form-control').removeClass('has-error');
-      }
-    });
-  });
-
-  $(document).ready(function() {
-    $('.ckeditor').each(function() {
-      CKEDITOR.replace($(this).attr('id'));
-    });
-
-
-    $("#form-add-stream").on("submit", function(e) {
-      if ($('#form-add-stream').valid()) {
-        $(':input[type="submit"]').prop('disabled', true);
-        var formData = new FormData(this);
-
-
-        var ckeditorFields = ['editor_eligibility'];
-        ckeditorFields.forEach(function(field) {
-          var data = CKEDITOR.instances[field].getData();
-          formData.append(field.replace('editor_', ''), data);
-        });
+      },
+      submitHandler: function(form) {
+        var formData = new FormData(form);
 
         $.ajax({
-          url: this.action,
-          type: 'post',
+          url: form.action,
+          type: 'POST',
           data: formData,
           cache: false,
           contentType: false,
           processData: false,
-          dataType: "json",
+          dataType: 'json',
           success: function(data) {
             if (data.status == 200) {
               $('.modal').modal('hide');
@@ -145,72 +135,93 @@ if (isset($_GET['id'])) {
               $(':input[type="submit"]').prop('disabled', false);
               toastr.error(data.message, 'Error');
             }
+          },
+          error: function(xhr, textStatus, errorThrown) {
+            toastr.error('Error submitting form: ' + errorThrown, 'Error');
           }
         });
-        e.preventDefault();
+        return false;
       }
     });
   });
 </script> -->
 
 <script>
-$(document).ready(function() {
-    $('#form-add-stream').validate({
-        rules: {
-            name: {
-                required: true
-            },
-            Short_Name: {
-                required: true
-            },
-            position: {
-                required: true,
-                number: true,
-                min: 0
-            }
-        },
-        messages: {
-            position: {
-                required: "Please enter the position.",
-                number: "Please enter a valid number for the position.",
-                min: "Position must be at least 0."
-            }
-        },
-        highlight: function(element) {
-            $(element).addClass('error');
-            $(element).closest('.form-control').addClass('has-error');
-        },
-        unhighlight: function(element) {
-            $(element).removeClass('error');
-            $(element).closest('.form-control').removeClass('has-error');
-        },
-        submitHandler: function(form) {
-            var formData = new FormData(form);
-
-            $.ajax({
-                url: form.action,
-                type: 'POST',
-                data: formData,
-                cache: false,
-                contentType: false,
-                processData: false,
-                dataType: 'json',
-                success: function(data) {
-                    if (data.status == 200) {
-                        $('.modal').modal('hide');
-                        toastr.success(data.message, 'Success');
-                        $('#category-table').DataTable().ajax.reload(null, false);
-                    } else {
-                        $(':input[type="submit"]').prop('disabled', false);
-                        toastr.error(data.message, 'Error');
-                    }
-                },
-                error: function(xhr, textStatus, errorThrown) {
-                    toastr.error('Error submitting form: ' + errorThrown, 'Error');
-                }
-            });
-            return false;
-        }
+  $(document).ready(function() {
+    $('.ckeditor').each(function() {
+      CKEDITOR.replace($(this).attr('id'));
     });
-});
+
+    $('#form-add-stream').validate({
+      rules: {
+        name: {
+          required: true
+        },
+        Short_Name: {
+          required: true
+        },
+        editor: {
+          required: true
+        },
+        position: {
+          required: true,
+          number: true,
+          min: 0
+        }
+      },
+      messages: {
+        name: {
+          required: "Please enter the category name."
+        },
+        Short_Name: {
+          required: "Please enter the short name."
+        },
+        editor: {
+          required: "Please enter the content."
+        },
+        position: {
+          required: "Please enter the position.",
+          number: "Please enter a valid number for the position.",
+          min: "Position must be at least 0."
+        }
+      },
+      highlight: function(element) {
+        $(element).addClass('error');
+        $(element).closest('.form-control').addClass('has-error');
+      },
+      unhighlight: function(element) {
+        $(element).removeClass('error');
+        $(element).closest('.form-control').removeClass('has-error');
+      },
+      submitHandler: function(form) {
+        var formData = new FormData(form);
+
+        var content = CKEDITOR.instances['editor'].getData();
+        formData.append('content', content); 
+
+        $.ajax({
+          url: form.action,
+          type: 'POST',
+          data: formData,
+          cache: false,
+          contentType: false,
+          processData: false,
+          dataType: 'json',
+          success: function(data) {
+            if (data.status == 200) {
+              $('.modal').modal('hide');
+              toastr.success(data.message, 'Success');
+              $('#category-table').DataTable().ajax.reload(null, false);
+            } else {
+              toastr.error(data.message, 'Error');
+            }
+          },
+          error: function(xhr, textStatus, errorThrown) {
+            toastr.error('Error submitting form: ' + errorThrown, 'Error');
+          }
+        });
+        return false;
+      }
+    });
+  });
 </script>

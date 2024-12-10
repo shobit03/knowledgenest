@@ -2,7 +2,13 @@
 <title> Home </title>
 <meta name="description" content="Home">
 <?php include('./panels/header-bottom.php') ?>
-<?php include('./panels/menu.php') ?>
+<?php 
+include('./panels/menu.php')
+ ?>
+<?php 
+// include('./panels/static_menu.php')
+ ?>
+
 
 
 <!-- Banner Section Start -->
@@ -13,14 +19,12 @@
                 <div class="col-lg-7">
                     <div class="banner-content position-relative">
                         <div class="title">
-                            <span class="d-inline-block top-title">
-                                <img loading="lazy" src="assets/img/icon/top-title.svg" alt="icon">
-                                The Leader in online learning
-                            </span>
-                            <h1>A Better Learning Journey Future Starts Here.</h1>
-                            <p>In the dynamic landscape of today's professional world, the key to success lies in continuous learning and skill development. As industries evolve and technology.</p>
+
+                            <h1>Arabian Institute of Management studies</h1>
+                            <p>We are a one-stop solution with the aim to make education accessible to every individual
+                                irrespective of any background or discipline.</p>
                         </div>
-                        <div class="banner-btn d-flex align-items-center">
+                        <!-- <div class="banner-btn d-flex align-items-center">
                             <a href="course-details.html" class="btn style-one style-2">
                                 Explore Courses
                                 <i class="ri-arrow-right-line"></i>
@@ -34,7 +38,7 @@
                                     <a class="d-block" href="tel:239555-0108">(239) 555-0108</a>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="global-icon">
                             <img loading="lazy" class="rotate" src="assets/img/icon/global.svg" alt="image">
                         </div>
@@ -85,6 +89,183 @@
     </div>
 </div>
 <!-- Banner Section End -->
+
+
+<section class="mt-4 ">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="mt-5">
+                    <h1 style="font-size:1.8rem;" class="fw-bold">Why to choose Arabian Institute of Management studies?
+                    </h1>
+                </div>
+                <div>
+                    <p class="text-justify">Welcome to our online education website! We provide a large selection of
+                        courses and UG and PG programmes on our website to meet the demands of students worldwide. We
+                        offer comprehensive support to anybody seeking to enhance their knowledge and abilities, whether
+                        educators, professionals, or students.</p>
+                </div>
+                <button class="p-2 w-50 rounded-3 border-0 text-white" style="background-color: rgb(249 11 11);">About
+                    Us <i class="fas fa-greater-than ms-2 fs-6"></i></button>
+            </div>
+            <div class="col-lg-8">
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="p-4 shadow mt-3 study-cards rounded-3">
+                            <div class="text-center"><img src="./assets/img/icon/11647222.png" class="mb-4" height="80"
+                                    alt=""></div>
+                            <h5 class="text-center text-white">Flexible Learning</h5>
+                            <p class="text-center text-white">Assignments and course materials are accessible to
+                                Learners whenever and wherever they choose.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="p-1 shadow mt-3 study-cards rounded-3">
+                            <div class="text-center"> <img src="./assets/img/icon/top-university-removebg-preview.png"
+                                    height="140" alt=""></div>
+                            <h5 class="text-center text-white">Top Universities</h5>
+                            <p class="text-center p-3 text-white">We are tied up with top Universities from all over the
+                                globe.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="p-3 shadow mt-4 study-cards rounded-3">
+                            <div class="text-center">
+                                <img src="./assets/img/icon/Flexible_Payment_Option-removebg-preview.png" height="90"
+                                    alt="">
+                            </div>
+                            <h5 class="text-center text-white">Flexible Payment Option</h5>
+                            <p class="text-center text-white">We offer flexible and multiple payment option for our
+                                students</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="p-3 shadow mt-4 study-cards rounded-3">
+                            <div class="text-center"> <img
+                                    src="./assets/img/icon/Global_Curriculam-removebg-preview.png" height="90" alt="">
+                            </div>
+                            <h5 class="text-center text-white">Global Curriculam</h5>
+                            <p class="text-center text-white">We offer curriculum which is holistic and relevant,
+                                providing the structure, breadth, depth and creativity to meet the needs of any
+                                forward-thinking school.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="mt-5 shadow pt-4">
+    <h3 class="text-center mb-3">Our Servcies</h3>
+    <div class="popular-subject-area pb-75">
+        <div class="container">
+            <div class="main-max-width">
+                <div class="row">
+
+                    <div class="col-lg-4">
+                        <div class="single-popular-card shadow">
+                            <div class="icon position-relative z-1">
+                                <img loading="lazy" src="assets/img/icon/popular-subject-1.svg" alt="icon">
+                                <div class="icon-bg">
+                                    <img loading="lazy" src="assets/img/icon/popular-icon-bg.svg" alt="icon">
+                                </div>
+                            </div>
+                            <h3>Premium Courses</h3>
+                            <p>In demand programmes that are proven to achieve career leverage and specialize in your
+                                domain of work.</p>
+                            <div class="hover-overlay"></div> <!-- New overlay div -->
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="single-popular-card shadow">
+                            <div class="icon position-relative z-1">
+                                <img loading="lazy" src="assets/img/icon/popular-subject-2.svg" alt="icon">
+                                <div class="icon-bg">
+                                    <img loading="lazy" src="assets/img/icon/popular-icon-bg.svg" alt="icon">
+                                </div>
+                            </div>
+                            <h3>
+                                Enhancing Competencies</h3>
+                            <p>We prepare you to be future-ready with the industry's best resources to excel in your
+                                personal and professional life.</p>
+                                <div class="hover-overlay"></div> <!-- New overlay div -->
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="single-popular-card shadow">
+                            <div class="icon position-relative z-1">
+                                <img loading="lazy" src="assets/img/icon/popular-subject-3.svg" alt="icon">
+                                <div class="icon-bg">
+                                    <img loading="lazy" src="assets/img/icon/popular-icon-bg.svg" alt="icon">
+                                </div>
+                            </div>
+                            <h3>
+                                Accentuate Your Career</h3>
+                            <p>This new-age learning environment equips you to upscale your career limitlessly by
+                                learning and networking with internationally acclaimed experts.</p>
+                                <div class="hover-overlay"></div> <!-- New overlay div -->
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="single-popular-card shadow">
+                            <div class="icon position-relative z-1">
+                                <img loading="lazy" src="assets/img/icon/popular-subject-1.svg" alt="icon">
+                                <div class="icon-bg">
+                                    <img loading="lazy" src="assets/img/icon/popular-icon-bg.svg" alt="icon">
+                                </div>
+                            </div>
+                            <h3>
+                                Multi-Intake Curriculum</h3>
+                            <p>Do not wait around until next summer to be enrolled at the University as we have
+                                structured out a curriculum that facilitates multiple admission windows.</p>
+                                <div class="hover-overlay"></div> <!-- New overlay div -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="mt-4 shadow" style="background-color:#d2e4e4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-3">
+                <div class="d-flex mt-3 p-2 ">
+                    <img src="./assets/img/icon/LearningFlexibility-removebg-preview.png" height="80" alt="">
+                    <h5 class="pt-3" style="font-size: 1.2rem;">Learning Flexibility</h5>
+                </div>
+            </div>
+            <div class="col-lg-3">
+            <div class="d-flex mt-3 p-2 gap-2 ">
+                    <img src="./assets/img/icon/images-removebg-preview.png" height="80" alt="">
+                    <h5 class="pt-3" style="font-size: 1.2rem;">Convenient Payment Method</h5>
+                </div>
+                
+            </div>
+            <div class="col-lg-3">
+            <div class="d-flex mt-3 p-2 ">
+                    <img src="./assets/img/icon/247-support-vector-icon-24h-260nw-713696350-removebg-preview.png" height="100" alt="">
+                    <h5 class="pt-4" style="font-size: 1.2rem;">24/7 Student Support</h5>
+                </div>
+            </div>
+            <div class="col-lg-3">
+            <div class="d-flex mt-3 p-2 gap-2">
+                    <img src="./assets/img/icon/ocg_report_logo_2-removebg-preview.png" height="80" alt="">
+                    <h5 class="pt-3" style="font-size: 1.2rem;">Career Counselling</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 
 <!-- Start Partner Area -->
 <div class="partner-area ptb-100">
@@ -217,8 +398,12 @@
                                 About Us
                             </span>
                             <h1>Word Best Creative Online Course.</h1>
-                            <p>Delve into Insecure guided by industry experts and seasoned professionals. Our carefully curated curriculum is designed to impart not just theoretical knowledge but practical insights gained from real-world experience.</p>
-                            <p>Learn by doing. Our course emphasizes hands-on projects, case studies, and interactive sessions to ensure you can apply your newfound knowledge directly to real-world scenarios.</p>
+                            <p>Delve into Insecure guided by industry experts and seasoned professionals. Our carefully
+                                curated curriculum is designed to impart not just theoretical knowledge but practical
+                                insights gained from real-world experience.</p>
+                            <p>Learn by doing. Our course emphasizes hands-on projects, case studies, and interactive
+                                sessions to ensure you can apply your newfound knowledge directly to real-world
+                                scenarios.</p>
                         </div>
                         <a href="course-details.html" class="btn style-one style-2">
                             Explore Courses
@@ -247,108 +432,7 @@
 <!-- About Section End -->
 
 <!-- Start Popular Subject Area -->
-<div class="popular-subject-area pb-75">
-    <div class="container">
-        <div class="main-max-width">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="popular-subject-content">
-                        <span class="d-block top-title">
-                            Popular Subject
-                            <img loading="lazy" src="assets/img/icon/top-title.svg" alt="icon">
-                        </span>
-                        <h2>Provide it & techno Subject For you</h2>
-                        <p>Delve into Insecure guided by industry experts and seasoned professionals. Our carefully curated curriculum is designed.</p>
-                        <a href="instructor.html" class="btn style-one style-2">
-                            Explore More
-                            <i class="ri-arrow-right-line"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="single-popular-card">
-                        <div class="icon position-relative z-1">
-                            <img loading="lazy" src="assets/img/icon/popular-subject-1.svg" alt="icon">
-                            <div class="icon-bg">
-                                <img loading="lazy" src="assets/img/icon/popular-icon-bg.svg" alt="icon">
-                            </div>
-                        </div>
-                        <h3>Business Studies</h3>
-                        <p>Delve into Insecure guided by industry experts and seasoned professionals. Our carefully curated curriculum is designed.</p>
-                        <a href="instructor-sidebar.html" class="btn style-one">
-                            View Subject
-                            <i class="ri-arrow-right-line"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="single-popular-card">
-                        <div class="icon position-relative z-1">
-                            <img loading="lazy" src="assets/img/icon/popular-subject-2.svg" alt="icon">
-                            <div class="icon-bg">
-                                <img loading="lazy" src="assets/img/icon/popular-icon-bg.svg" alt="icon">
-                            </div>
-                        </div>
-                        <h3>Artist & Design</h3>
-                        <p>Delve into Insecure guided by industry experts and seasoned professionals. Our carefully curated curriculum is designed.</p>
-                        <a href="instructor-sidebar.html" class="btn style-one">
-                            View Subject
-                            <i class="ri-arrow-right-line"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="single-popular-card">
-                        <div class="icon position-relative z-1">
-                            <img loading="lazy" src="assets/img/icon/popular-subject-3.svg" alt="icon">
-                            <div class="icon-bg">
-                                <img loading="lazy" src="assets/img/icon/popular-icon-bg.svg" alt="icon">
-                            </div>
-                        </div>
-                        <h3>Machine Learning</h3>
-                        <p>Delve into Insecure guided by industry experts and seasoned professionals. Our carefully curated curriculum is designed.</p>
-                        <a href="instructor-sidebar.html" class="btn style-one">
-                            View Subject
-                            <i class="ri-arrow-right-line"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="single-popular-card">
-                        <div class="icon position-relative z-1">
-                            <img loading="lazy" src="assets/img/icon/popular-subject-1.svg" alt="icon">
-                            <div class="icon-bg">
-                                <img loading="lazy" src="assets/img/icon/popular-icon-bg.svg" alt="icon">
-                            </div>
-                        </div>
-                        <h3>Business Studies</h3>
-                        <p>Delve into Insecure guided by industry experts and seasoned professionals. Our carefully curated curriculum is designed.</p>
-                        <a href="instructor-sidebar.html" class="btn style-one">
-                            View Subject
-                            <i class="ri-arrow-right-line"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="single-popular-card">
-                        <div class="icon position-relative z-1">
-                            <img loading="lazy" src="assets/img/icon/popular-subject-2.svg" alt="icon">
-                            <div class="icon-bg">
-                                <img loading="lazy" src="assets/img/icon/popular-icon-bg.svg" alt="icon">
-                            </div>
-                        </div>
-                        <h3>Artist & Design</h3>
-                        <p>Delve into Insecure guided by industry experts and seasoned professionals. Our carefully curated curriculum is designed.</p>
-                        <a href="instructor-sidebar.html" class="btn style-one">
-                            View Subject
-                            <i class="ri-arrow-right-line"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+
 <!-- End Popular Subject Area -->
 
 
@@ -365,7 +449,8 @@
                             Latest Testimonial
                         </span>
                         <h2>Lets what our student Says.</h2>
-                        <p>Delve into Insecure guided by industry experts and seasoned professionals. Our carefully curated curriculum is designed.</p>
+                        <p>Delve into Insecure guided by industry experts and seasoned professionals. Our carefully
+                            curated curriculum is designed.</p>
                         <a href="blog-list.html" class="btn style-one style-2">
                             See All
                             <i class="ri-arrow-right-line"></i>
@@ -377,14 +462,16 @@
                         <div class="single-testimonial-card">
                             <div class="user d-flex align-items-center">
                                 <div class="image">
-                                    <img loading="lazy" src="assets/img/all-img/single-testimonial-1.jpg" alt="testimonial-image">
+                                    <img loading="lazy" src="assets/img/all-img/single-testimonial-1.jpg"
+                                        alt="testimonial-image">
                                 </div>
                                 <div class="content">
                                     <h3>Esther Howard</h3>
                                     <span>Ui Designer</span>
                                 </div>
                             </div>
-                            <p>Delve into Insecure guided by industry experts and seasoned professionals. Our carefully curated curriculum is designed.</p>
+                            <p>Delve into Insecure guided by industry experts and seasoned professionals. Our carefully
+                                curated curriculum is designed.</p>
                             <ul class="review list-unstyle ps-0 mb-0">
                                 <li class="d-inline-block">
                                     <i class="ri-star-fill"></i>
@@ -399,14 +486,16 @@
                         <div class="single-testimonial-card">
                             <div class="user d-flex align-items-center">
                                 <div class="image">
-                                    <img loading="lazy" src="assets/img/all-img/single-testimonial-2.jpg" alt="testimonial-image">
+                                    <img loading="lazy" src="assets/img/all-img/single-testimonial-2.jpg"
+                                        alt="testimonial-image">
                                 </div>
                                 <div class="content">
                                     <h3>Jenny Wilson</h3>
                                     <span>Ui Designer</span>
                                 </div>
                             </div>
-                            <p>Delve into Insecure guided by industry experts and seasoned professionals. Our carefully curated curriculum is designed.</p>
+                            <p>Delve into Insecure guided by industry experts and seasoned professionals. Our carefully
+                                curated curriculum is designed.</p>
                             <ul class="review list-unstyle ps-0 mb-0">
                                 <li class="d-inline-block">
                                     <i class="ri-star-fill"></i>
@@ -421,14 +510,16 @@
                         <div class="single-testimonial-card">
                             <div class="user d-flex align-items-center">
                                 <div class="image">
-                                    <img loading="lazy" src="assets/img/all-img/single-testimonial-1.jpg" alt="testimonial-image">
+                                    <img loading="lazy" src="assets/img/all-img/single-testimonial-1.jpg"
+                                        alt="testimonial-image">
                                 </div>
                                 <div class="content">
                                     <h3>Esther Howard</h3>
                                     <span>Ui Designer</span>
                                 </div>
                             </div>
-                            <p>Delve into Insecure guided by industry experts and seasoned professionals. Our carefully curated curriculum is designed.</p>
+                            <p>Delve into Insecure guided by industry experts and seasoned professionals. Our carefully
+                                curated curriculum is designed.</p>
                             <ul class="review list-unstyle ps-0 mb-0">
                                 <li class="d-inline-block">
                                     <i class="ri-star-fill"></i>
@@ -443,14 +534,16 @@
                         <div class="single-testimonial-card">
                             <div class="user d-flex align-items-center">
                                 <div class="image">
-                                    <img loading="lazy" src="assets/img/all-img/single-testimonial-2.jpg" alt="testimonial-image">
+                                    <img loading="lazy" src="assets/img/all-img/single-testimonial-2.jpg"
+                                        alt="testimonial-image">
                                 </div>
                                 <div class="content">
                                     <h3>Jenny Wilson</h3>
                                     <span>Ui Designer</span>
                                 </div>
                             </div>
-                            <p>Delve into Insecure guided by industry experts and seasoned professionals. Our carefully curated curriculum is designed.</p>
+                            <p>Delve into Insecure guided by industry experts and seasoned professionals. Our carefully
+                                curated curriculum is designed.</p>
                             <ul class="review list-unstyle ps-0 mb-0">
                                 <li class="d-inline-block">
                                     <i class="ri-star-fill"></i>
@@ -465,14 +558,16 @@
                         <div class="single-testimonial-card">
                             <div class="user d-flex align-items-center">
                                 <div class="image">
-                                    <img loading="lazy" src="assets/img/all-img/single-testimonial-1.jpg" alt="testimonial-image">
+                                    <img loading="lazy" src="assets/img/all-img/single-testimonial-1.jpg"
+                                        alt="testimonial-image">
                                 </div>
                                 <div class="content">
                                     <h3>Esther Howard</h3>
                                     <span>Ui Designer</span>
                                 </div>
                             </div>
-                            <p>Delve into Insecure guided by industry experts and seasoned professionals. Our carefully curated curriculum is designed.</p>
+                            <p>Delve into Insecure guided by industry experts and seasoned professionals. Our carefully
+                                curated curriculum is designed.</p>
                             <ul class="review list-unstyle ps-0 mb-0">
                                 <li class="d-inline-block">
                                     <i class="ri-star-fill"></i>
@@ -487,14 +582,16 @@
                         <div class="single-testimonial-card">
                             <div class="user d-flex align-items-center">
                                 <div class="image">
-                                    <img loading="lazy" src="assets/img/all-img/single-testimonial-2.jpg" alt="testimonial-image">
+                                    <img loading="lazy" src="assets/img/all-img/single-testimonial-2.jpg"
+                                        alt="testimonial-image">
                                 </div>
                                 <div class="content">
                                     <h3>Jenny Wilson</h3>
                                     <span>Ui Designer</span>
                                 </div>
                             </div>
-                            <p>Delve into Insecure guided by industry experts and seasoned professionals. Our carefully curated curriculum is designed.</p>
+                            <p>Delve into Insecure guided by industry experts and seasoned professionals. Our carefully
+                                curated curriculum is designed.</p>
                             <ul class="review list-unstyle ps-0 mb-0">
                                 <li class="d-inline-block">
                                     <i class="ri-star-fill"></i>
@@ -509,14 +606,16 @@
                         <div class="single-testimonial-card">
                             <div class="user d-flex align-items-center">
                                 <div class="image">
-                                    <img loading="lazy" src="assets/img/all-img/single-testimonial-1.jpg" alt="testimonial-image">
+                                    <img loading="lazy" src="assets/img/all-img/single-testimonial-1.jpg"
+                                        alt="testimonial-image">
                                 </div>
                                 <div class="content">
                                     <h3>Esther Howard</h3>
                                     <span>Ui Designer</span>
                                 </div>
                             </div>
-                            <p>Delve into Insecure guided by industry experts and seasoned professionals. Our carefully curated curriculum is designed.</p>
+                            <p>Delve into Insecure guided by industry experts and seasoned professionals. Our carefully
+                                curated curriculum is designed.</p>
                             <ul class="review list-unstyle ps-0 mb-0">
                                 <li class="d-inline-block">
                                     <i class="ri-star-fill"></i>
@@ -531,14 +630,16 @@
                         <div class="single-testimonial-card">
                             <div class="user d-flex align-items-center">
                                 <div class="image">
-                                    <img loading="lazy" src="assets/img/all-img/single-testimonial-2.jpg" alt="testimonial-image">
+                                    <img loading="lazy" src="assets/img/all-img/single-testimonial-2.jpg"
+                                        alt="testimonial-image">
                                 </div>
                                 <div class="content">
                                     <h3>Jenny Wilson</h3>
                                     <span>Ui Designer</span>
                                 </div>
                             </div>
-                            <p>Delve into Insecure guided by industry experts and seasoned professionals. Our carefully curated curriculum is designed.</p>
+                            <p>Delve into Insecure guided by industry experts and seasoned professionals. Our carefully
+                                curated curriculum is designed.</p>
                             <ul class="review list-unstyle ps-0 mb-0">
                                 <li class="d-inline-block">
                                     <i class="ri-star-fill"></i>
@@ -571,7 +672,9 @@
                                 Register Now
                             </span>
                             <h2>Register Your Account Get Free Access To 5000 Online Course.</h2>
-                            <p>Delve into Insecure guided by industry experts and seasoned professionals. Our carefully curated curriculum is designed to impart not just theoretical knowledge but practical insights gained from real-world experience.</p>
+                            <p>Delve into Insecure guided by industry experts and seasoned professionals. Our carefully
+                                curated curriculum is designed to impart not just theoretical knowledge but practical
+                                insights gained from real-world experience.</p>
                         </div>
                         <div class="upcoming-timer">
                             <div class="coundown-container d-flex align-items-center">
@@ -629,7 +732,8 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <textarea class="from-control textarea" cols="30" rows="5" placeholder="Comment"></textarea>
+                                <textarea class="from-control textarea" cols="30" rows="5"
+                                    placeholder="Comment"></textarea>
                             </div>
                             <button type="submit" class="btn style-one style-2">
                                 Sign Up
@@ -656,7 +760,8 @@
                             Latest Blogs
                         </span>
                         <h2>Latest News & Articles.</h2>
-                        <p>Delve into Insecure guided by industry experts and seasoned professionals. Our carefully curated curriculum is designed.</p>
+                        <p>Delve into Insecure guided by industry experts and seasoned professionals. Our carefully
+                            curated curriculum is designed.</p>
                         <a href="blog.html" class="btn style-one style-2">
                             See All
                             <i class="ri-arrow-right-line"></i>

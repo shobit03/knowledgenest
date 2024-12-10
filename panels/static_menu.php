@@ -1,50 +1,3 @@
-<?php
-// Include database connection
-require('admin/includes/db-config.php');
-
-// Fetch menus and their categories
-$query = "
-    SELECT 
-        menus.ID as menu_id, 
-        menus.Name as menu_name, 
-        menus.Slug as menu_slug, -- Fetch menu slug
-        category.id as category_id, 
-        category.name as category_name, 
-        category.Slug as category_slug -- Fetch category slug
-    FROM menus 
-    LEFT JOIN category ON menus.id = category.menu_id 
-    WHERE menus.status = 1 AND (category.status = 1 OR category.status IS NULL) 
-ORDER BY menus.Position ASC, menus.id, category.id";
-
-$result = mysqli_query($conn, $query);
-
-// Organize data into a structured array
-$menus = [];
-while ($row = mysqli_fetch_assoc($result)) {
-    $menuId = $row['menu_id'];
-    if (!isset($menus[$menuId])) {
-        $menus[$menuId] = [
-            'name' => $row['menu_name'],
-            'slug' => $row['menu_slug'],
-            'categories' => []
-        ];
-    }
-    if ($row['category_id']) {
-        $menus[$menuId]['categories'][] = [
-            'name' => $row['category_name'],
-            'slug' => $row['category_slug']
-        ];
-    }
-}
-
-// Debug the $menus array
-// echo "<pre>";
-// print_r($menus);
-// echo "</pre>";
-?>
-
-
-
 
 
 
@@ -54,7 +7,7 @@ while ($row = mysqli_fetch_assoc($result)) {
         <div class="main-max-width">
             <nav class="navbar insocour-nav navbar-expand-lg pt-0 pb-0">
                 <a class="navbar-brand" href="index.php">
-                    <img class="logo-light" src="assets/img/logo/aimsuinv-logo-removebg-preview.png" alt="logo">
+                    <img class="logo-light" src="assets/img/logo/aimsuinv-logo-removebg-preview.png"  alt="logo">
                 </a>
                 <div class="other-options d-flex flex-wrap justify-content-end align-items-center d-lg-none">
                     <div class="option-item d-flex">
@@ -76,27 +29,8 @@ while ($row = mysqli_fetch_assoc($result)) {
                         <li class="nav-item">
                             <a href="about.php" class="nav-link"> AboutUs </a>
                         </li>
-
-
-                        <?php foreach ($menus as $menu): ?>
-                            <li class="nav-item d-flex align-items-center gap-2">
-                                <a href="javascript:void(0)" class="dropdown-toggle nav-link"><?php echo $menu['name']; ?></a>
-                                <?php if (!empty($menu['categories'])): ?>
-                                    <p class="mt-3"><i class="fa-solid fa-angle-down text-black"></i></p>
-                                    <ul class="dropdown-menu-items list-unstyle">
-                                        <?php foreach ($menu['categories'] as $category): ?>
-                                            <li class="nav-item">
-                                                <a href="<?php echo $category['slug']; ?>" class="nav-link-items">
-                                                    <?php echo $category['name']; ?>
-                                                </a>
-                                            </li>
-                                        <?php endforeach; ?>
-                                    </ul>
-                                <?php endif; ?>
-                            </li>
-                        <?php endforeach; ?>
-
-                        <!-- <li class="nav-item d-flex align-items-center gap-2">
+                        
+                        <li class="nav-item d-flex align-items-center gap-2">
                             <a href="javascript:void(0)" class="dropdown-toggle nav-link">K12 program</a>
                             <p class="mt-3"><i class="fa-solid fa-angle-down text-black"></i></p>
                             
@@ -177,7 +111,7 @@ while ($row = mysqli_fetch_assoc($result)) {
                                
                             </ul>
                         </li>
-                         -->
+                        
                         <li class="nav-item">
                             <a href="contact.php" class="nav-link">
                                 Contact Us

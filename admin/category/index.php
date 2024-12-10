@@ -29,6 +29,7 @@ include($_SERVER['DOCUMENT_ROOT'] . '/admin/includes/menu.php');
                                                 <th>ID</th>
                                                 <th>Name</th>
                                                 <th>MenuName</th>
+                                                <th>Photo</th>
                                                 <th>Status </th>
                                                 <th>Action</th>
                                             </tr>
@@ -69,6 +70,14 @@ include($_SERVER['DOCUMENT_ROOT'] . '/admin/includes/menu.php');
             { data: 'No' },
             { data: 'Name' },
             { data: 'Menu' },
+            {
+                    data: 'Photo',
+                    render: function(data, type, row) {
+                        return '<img src="/admin/' + row.Photo + '" width="70">';
+                    },
+                    visible: true
+
+                },
             {
                 data: 'Status',
                 render: function(data, type, row) {

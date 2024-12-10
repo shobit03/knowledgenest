@@ -2,7 +2,7 @@
 <title> Blogs </title>
 <meta name="description" content="Blogs">
 <?php include('./panels/header-bottom.php') ?>
-<?php include('./panels/menu.php') ?>
+<?php include('./panels/static_menu.php') ?>
 
 <?php require('admin/includes/db-config.php'); ?>
 

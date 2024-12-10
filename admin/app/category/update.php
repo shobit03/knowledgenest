@@ -9,6 +9,9 @@ if (isset($_POST['name']) && isset($_POST['id'])) {
   $slug = baseurl($name);
   $short_Name = mysqli_real_escape_string($conn, $_POST['Short_Name']);
   $position = mysqli_real_escape_string($conn, $_POST['position']);
+  $content = mysqli_real_escape_string($conn, $_POST['content']);
+  $updated_file = mysqli_real_escape_string($conn, $_POST['updated_file']);
+
   // $eligibility = mysqli_real_escape_string($conn, $_POST['eligibility']);
   // $year = mysqli_real_escape_string($conn, $_POST['year']);
   // $semester = mysqli_real_escape_string($conn, $_POST['semester']);
@@ -18,6 +21,16 @@ if (isset($_POST['name']) && isset($_POST['id'])) {
   if (empty($name) || empty($short_Name) || empty($position)) {
     echo json_encode(['status' => 403, 'message' => 'All fields are mandatory!']);
     exit();
+  }
+
+  if (isset($_FILES["photo"]["name"]) && $_FILES["photo"]["name"] != '') {
+    $photo = uploadImage($conn, "photo", "blogs");
+
+    if ($photo && file_exists("../../" . ltrim($updated_file, "/"))) {
+      unlink("../../" . ltrim($updated_file, "/"));
+    }
+  } else {
+    $photo = $updated_file;
   }
 
   // $check = $conn->query("SELECT ID FROM programs WHERE (Name = '$name') AND ID <> $id");
@@ -32,7 +45,7 @@ if (isset($_POST['name']) && isset($_POST['id'])) {
   }
 
   // $update = $conn->query("UPDATE `programs` SET `Name` = '$name', `Slug` = '$slug', `Department_ID` = '$department_ID', `Short_Name` = '$short_Name', `Position` = '$position', `Eligibility` = '$eligibility', `Year` = '$year', `Semester` = '$semester' WHERE ID = $id");
-  $update = $conn->query("UPDATE `category` SET `Name` = '$name', `Slug` = '$slug', `Menu_ID` = '$menu_ID', `Short_Name` = '$short_Name', `Position` = '$position' WHERE ID = $id");
+  $update = $conn->query("UPDATE `category` SET `Name` = '$name', `Slug` = '$slug', `Menu_ID` = '$menu_ID', `Short_Name` = '$short_Name', `Position` = '$position',`Content` = '$content',`Photo`='$photo' WHERE ID = $id");
   if ($update) {
     echo json_encode(['status' => 200, 'message' => $name . ' updated successfully!']);
   } else {

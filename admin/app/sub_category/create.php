@@ -39,11 +39,22 @@ require '../../includes/helper.php'; ?>
         </div>
 
 
+        <div class="mb-3 col-md-12 syllabus_file">
+          <label class="form-label">Photo </label>
+          <input type="file" name="photo" id="photo" class="form-control" onchange="fileValidation('photo')" accept="image/png, image/jpg, image/jpeg, image/svg,image/avif">
+          <small class="text-muted">
+            Note: Please upload a valid image file (PNG, JPG, JPEG, SVG, or AVIF) with a size less than or equal to 200KB.
+          </small>
+        </div>
 
-        <!-- <div class="mb-3 col-md-12">
+        <div class="mb-3 col-md-12 ">
           <label class="form-label">Content <span class="text-danger">*</span></label>
-          <textarea class="ckeditor" cols="80" id="editor_content" name="content" rows="10"></textarea>
-        </div> -->
+          <textarea class="ckeditor" cols="80" id="editor" name="editor" rows="10" required></textarea>
+          <span id="content-error" style="color:#b91e1e;font-weight: 500;font-size: 12px;"></span>
+        </div>
+
+
+        
 
 
 
@@ -64,26 +75,25 @@ require '../../includes/helper.php'; ?>
   </div>
 </div>
 
-<!-- <script>
+<script>
   $(document).ready(function() {
-    $('#Department_ID').change(function() {
-      var departmentID = $(this).val();
-      if (departmentID) {
+    // Initialize CKEditor
+    CKEDITOR.replace('editor');
+
+    $('#Menu_ID').change(function() {
+      var menuID = $(this).val();
+      if (menuID) {
         $.ajax({
           type: 'POST',
-          url: '/admin/app/sub_category/get_program',
-          data: 'department_id=' + departmentID,
+          url: '/admin/app/sub_category/get_menu',
+          data: 'menu_id=' + menuID,
           success: function(html) {
-            $('#Program_ID').html(html);
+            $('#Category_ID').html(html);
           }
         });
       } else {
-        $('#Program_ID').html('<option value="">Select Department First</option>');
+        $('#Category_ID').html('<option value="">Select Menu First</option>');
       }
-    });
-
-    $('.ckeditor').each(function() {
-      CKEDITOR.replace($(this).attr('id'));
     });
 
     $('#form-add-sub_category').validate({
@@ -94,7 +104,6 @@ require '../../includes/helper.php'; ?>
         Short_Name: {
           required: true
         },
-
         content: {
           required: true
         },
@@ -116,11 +125,9 @@ require '../../includes/helper.php'; ?>
       submitHandler: function(form) {
         var formData = new FormData(form);
 
-        var ckeditorFields = ['editor_content'];
-        ckeditorFields.forEach(function(field) {
-          var data = CKEDITOR.instances[field].getData();
-          formData.append(field.replace('editor_', ''), data);
-        });
+        // Retrieve data from CKEditor before submission
+        var ckeditorContent = CKEDITOR.instances['editor'].getData();
+        formData.append('content', ckeditorContent);
 
         $.ajax({
           url: form.action,
@@ -148,9 +155,10 @@ require '../../includes/helper.php'; ?>
       }
     });
   });
-</script> -->
+</script>
 
-<script>
+
+<!-- <script>
   $(document).ready(function() {
     $('#Menu_ID').change(function() {
       var menuID = $(this).val();
@@ -223,4 +231,4 @@ require '../../includes/helper.php'; ?>
       }
     });
   });
-</script>
+</script> -->

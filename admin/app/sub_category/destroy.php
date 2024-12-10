@@ -7,15 +7,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'DELETE' && isset($_GET['id'])) {
 
   
 
-  $check = $conn->query("SELECT ID FROM programs WHERE ID = $id");
+  $check = $conn->query("SELECT ID FROM sub_category WHERE ID = $id");
   if ($check->num_rows > 0) {
-    $delete = $conn->query("DELETE FROM programs WHERE ID = $id");
+    $delete = $conn->query("DELETE FROM sub_category WHERE ID = $id");
     if ($delete) {
-      echo json_encode(['status' => 200, 'message' => 'Program deleted successfully!']);
+      echo json_encode(['status' => 200, 'message' => 'Sub_Category deleted successfully!']);
     } else {
       echo json_encode(['status' => 302, 'message' => 'Something went wrong!']);
     }
   } else {
-    echo json_encode(['status' => 302, 'message' => 'Program not exists!']);
+    echo json_encode(['status' => 302, 'message' => 'Sub_Category not exists!']);
   }
 }

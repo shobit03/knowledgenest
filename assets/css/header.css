@@ -2,7 +2,7 @@
   z-index: 10;
   position: absolute;
   width: 100%;
-  background-color: #2b2929;
+  background-image: linear-gradient(to right top, #51d5eb, #79daf5, #9adefb, #b7e3fe, #cfe8ff, #cfe9ff, #d0e9ff, #d0eaff, #b9e6fd, #a0e2f8, #85deee, #6bdae1);
 }
 .navbar-area.style-one.sticky {
   position: fixed !important;
@@ -175,7 +175,7 @@
 }
 .navbar-area .navbar .navbar-nav .nav-item .nav-link {
   position: relative;
-  color: #fff;
+  color: #000;
   font-size: 16px;
   padding-left: 0;
   padding-top: 15px;
@@ -184,7 +184,7 @@
 }
 .navbar-area .navbar .navbar-nav .nav-item .nav-link:hover,
 .navbar-area .navbar .navbar-nav .nav-item .nav-link.active {
-  color: var(--primaryColor);
+  color: #daaf4f;
 }
 .navbar-area .navbar .navbar-nav .nav-item:hover .dropdown-menu {
   opacity: 1;

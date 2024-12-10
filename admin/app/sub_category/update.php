@@ -10,6 +10,8 @@ if (isset($_POST['id']) && isset($_POST['name'])) {
     $short_Name = mysqli_real_escape_string($conn, $_POST['Short_Name']);
     // $content = mysqli_real_escape_string($conn, $_POST['content']);
     $position = intval($_POST['position']);
+    $content = mysqli_real_escape_string($conn, $_POST['content']);
+    $updated_file = mysqli_real_escape_string($conn, $_POST['updated_file']);
 
     $department_ID = isset($_POST['Menu_ID']) ? intval($_POST['Menu_ID']) : null;
     $program_ID = isset($_POST['Category_ID']) ? intval($_POST['Category_ID']) : null;
@@ -19,6 +21,15 @@ if (isset($_POST['id']) && isset($_POST['name'])) {
         exit();
     }
 
+    if (isset($_FILES["photo"]["name"]) && $_FILES["photo"]["name"] != '') {
+        $photo = uploadImage($conn, "photo", "blogs");
+
+        if ($photo && file_exists("../../" . ltrim($updated_file, "/"))) {
+            unlink("../../" . ltrim($updated_file, "/"));
+        }
+    } else {
+        $photo = $updated_file;
+    }
     $check = $conn->query("SELECT ID FROM sub_category WHERE Name = '$name' AND Menu_ID = '$department_ID' AND Category_ID = '$program_ID' AND ID != '$id'");
     if ($check && $check->num_rows > 0) {
         echo json_encode(['status' => 400, 'message' => $name . ' already exists for the selected department&program!']);
@@ -31,7 +42,9 @@ if (isset($_POST['id']) && isset($_POST['name'])) {
                             Menu_ID = '$department_ID', 
                             Category_ID = '$program_ID', 
                             Short_Name = '$short_Name', 
-                            Position = '$position' 
+                            Position = '$position',
+                            Content = '$content',
+                            Photo ='$photo' 
                             WHERE ID = $id");
 
     if ($update) {

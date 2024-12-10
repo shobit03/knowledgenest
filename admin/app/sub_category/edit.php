@@ -57,10 +57,23 @@ if (isset($_GET['id'])) {
           <input type="text" class="form-control" name="Short_Name" value="<?= $getdata['Short_Name'] ?>" placeholder="Enter a Short Name.." required>
         </div>
 
-        <!-- <div class="mb-3 col-md-12">
+        <div class="mb-3 col-md-12 syllabus_file">
+
+          <label class="form-label">Photo <span class="text-danger">*</span></label>
+          <small class="text-muted">
+            Please upload a valid image file (PNG, JPG, JPEG, SVG, or AVIF) with a size less than or equal to 200KB.
+          </small>
+          <input type="hidden" name="updated_file" value="<?= $getdata['Photo'] ?>">
+          <input type="file" name="photo" id="photo" class="form-control" onchange="fileValidation('photo')" accept="image/png, image/jpg, image/jpeg, image/svg,image/avif">
+
+          <?php if (!empty($id) && !empty($getdata['Photo'])) { ?>
+            <img src="/admin<?php echo !empty($id) ? $getdata['Photo'] : ''; ?>" height="50" />
+          <?php } ?>
+        </div>
+        <div class="mb-3 col-md-12 ">
           <label class="form-label">Content <span class="text-danger">*</span></label>
-          <textarea class="ckeditor" cols="80" id="editor_content" name="content" rows="10"><?= $getdata['Content'] ?></textarea>
-        </div> -->
+          <textarea class="ckeditor" cols="80" id="editor" name="editor" rows="10"><?= $getdata['Content'] ?></textarea>
+        </div>
 
         <div class="mb-3 col-md-12">
           <label class="form-label">Order By <span class="text-danger">*</span></label>
@@ -169,6 +182,8 @@ if (isset($_GET['id'])) {
 
 <script>
   $(document).ready(function() {
+    // Initialize CKEditor
+    CKEDITOR.replace('editor');
     $('#Menu_ID').change(function() {
       var menuID = $(this).val();
       if (menuID) {
@@ -214,6 +229,8 @@ if (isset($_GET['id'])) {
       },
       submitHandler: function(form) {
         var formData = new FormData(form);
+        var content = CKEDITOR.instances['editor'].getData();
+        formData.append('content', content); 
 
         $.ajax({
           url: form.action,
