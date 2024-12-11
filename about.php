@@ -36,8 +36,13 @@
         <div class="main-max-width">
             <div class="row">
                 <div class="col-lg-6">
+                    <div class="text-center">
+                        <img src="./assets/img/about-aims.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6">
                     <div class="content">
-                        <h4 class="sub-title mb-25"># About Us</h4>
+                        <h4 class="sub-title mb-25" ># About Us</h4>
                         <p class="text-justify">Welcome to (AIMS)Arabian Institute of Management studies. A dedicated
                             online educational platform for students of every background. Our online platform offers a
                             variety of courses and programmes to help you reach your goals, whether you want to expand
@@ -62,54 +67,92 @@
                             teaching methods and technology.</p>
 
                     </div>
-                    <div class="shadow p-4 mt-3">
-                        <p class="text-justify">Aspiring students have an easy and flexible alternative with the UG
-                            programmes we provide. Students can customise their education according to their unique
-                            interests and professional aspirations by selecting from various programmes. The platform's
-                            special features, like flexible learning, knowledgeable instructors, and collaborative
-                            learning, are designed to provide students with a thorough education that will help them
-                            succeed in their chosen industries.</p>
-                    </div>
+
                 </div>
-                <div class="col-lg-6">
-                    <div class="shadow p-4 about-us-cards rounded-3">
-                        <h4 class="text-center text-white">Online Education</h4>
-                        <p class="text-white">Online education has transformed the way we learn and created new
-                            educational opportunities. The ease, affordability, adaptability, interactive capabilities,
-                            and worldwide connections of online learning have entirely changed how we educate
-                            ourselves.Online education has become increasingly important in education as technology
-                            advances.</p>
-                    </div>
-                    <div class="shadow p-4 about-us-cards rounded-3 mt-3">
-                        <h4 class="text-center text-white">Undergraduate Program</h4>
-                        <p class="text-white">The UG program at leading universities is valued significantly higher than
-                            that of other designated universities.
 
-                            You can enrol in undergraduate programs in any chosen field of study, including psychology,
-                            literature, architecture, the arts, and the humanities.
+            </div>
+            <div class=" col-lg-12 shadow p-4 mt-3">
+                <p class="text-justify">Aspiring students have an easy and flexible alternative with the UG
+                    programmes we provide. Students can customise their education according to their unique
+                    interests and professional aspirations by selecting from various programmes. The platform's
+                    special features, like flexible learning, knowledgeable instructors, and collaborative
+                    learning, are designed to provide students with a thorough education that will help them
+                    succeed in their chosen industries.</p>
+            </div>
 
-                            We offer Academic courses or programs intended for individuals who have finished high school
-                            and aspire to pursue further education, referred to as undergraduate programs</p>
-                    </div>
-                    <div class="shadow p-4 about-us-cards rounded-3 mt-3">
-                        <h4 class="text-center text-white">Undergraduate Program</h4>
-                        <p class="text-white">After graduating from high school or the equivalent, are you worried? Our undergraduate programmes are available online, providing information and various professional options. We have strong partnerships with renowned universities, community colleges, and technical schools worldwide.</p>
-                    </div>
-                    <div class="shadow p-4 about-us-cards rounded-3 mt-3">
-                        <h4 class="text-center text-white">Post Graduate Program</h4>
-                        <p class="text-white">After earning an impressive bachelor's degree, what comes next? The university that works with us has developed online postgraduate programmes for post-secondary students. A postgraduate degree in the field and possessing knowledge and skills will help you obtain employment.</p>
-                    </div>
+
+        </div>
+
+
+    </div>
+</div>
+<!-- About Section End -->
+
+
+<section class="mb-3 shadow">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-6">
+                <div class="shadow p-4 about-us-cards rounded-3 mt-4">
+                    <h4 class="text-center text-white">Online Education</h4>
+                    <p class="text-white">Online education has transformed the way we learn and created new
+                        educational opportunities. The ease, affordability, adaptability, interactive capabilities,
+                        and worldwide connections of online learning have entirely changed how we educate
+                        ourselves.Online education has become increasingly important in education as technology
+                        advances.</p>
+                </div>
+
+            </div>
+            <div class="col-lg-6">
+                <div class="mt-4 ">
+                    <img src="./assets/img/onlineeducation.jpg" alt="">
+                </div>
+            </div>
+
+
+            <div class="col-lg-6">
+                <div class="shadow p-4 about-us-cards rounded-3 mt-4">
+                    <h4 class="text-center text-white">Undergraduate Program</h4>
+                    <p class="text-white">The UG program at leading universities is valued significantly higher than
+                        that of other designated universities.
+
+                        You can enrol in undergraduate programs in any chosen field of study, including psychology,
+                        literature, architecture, the arts, and the humanities.
+
+                        We offer Academic courses or programs intended for individuals who have finished high school and
+                        aspire to pursue further education, referred to as undergraduate programs.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="mt-4">
+                    <img src="./assets/img/undergraduteprogram.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="shadow p-4 about-us-cards rounded-3 mt-4">
+                    <h4 class="text-center text-white">Post Graduate Program</h4>
+                    <p class="text-white">After earning an impressive bachelor's degree, what comes next? The university
+                        that works with us has developed online postgraduate programmes for post-secondary students. A
+                        postgraduate degree in the field and possessing knowledge and skills will help you obtain
+                        employment.</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="mb-4">
+                    <img src="./assets/img/postgradutae.jpg" alt="">
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- About Section End -->
+</section>
 <div class="partner-area pb-3 mt-1">
     <div class="container">
         <div class="main-max-width">
-            <div class="partner-title text-center">
-                <h4>Our University tie-ups</h4>
+            <div class="partner-title text-center mt-4">
+                <h3 style="color:rgb(249, 11, 11)">Our University tie-ups</h3>
             </div>
             <div class="partner-slider text-center owl-carousel owl-nav">
                 <div class="single-partner-card">
@@ -130,7 +173,7 @@
                 <div class="single-partner-card">
                     <img loading="lazy" src="assets/img/partner/6.png" alt="partner-logo">
                 </div>
-               
+
             </div>
         </div>
     </div>

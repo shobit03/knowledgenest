@@ -7253,7 +7253,7 @@ Back to Top CSS
 
 .study-cards{
 
-  height: 265px;
+  height: 297px;
   background-color: #000000c4;
 }
 
@@ -7296,4 +7296,16 @@ Back to Top CSS
 .single-popular-card:hover h3,
 .single-popular-card:hover p {
   color: white; /* Change text color to white on hover */
+}
+
+.about-us-btn{
+  background-color: rgb(249 11 11);
+}
+.about-us-btn:hover{
+  background-color: #7bbad7;
+}
+
+
+.related-course-cards{
+  height: 328px;
 }
