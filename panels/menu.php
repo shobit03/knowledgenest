@@ -33,7 +33,7 @@
                             
                             <ul class="dropdown-menu-items list-unstyle">
                                 <li class="nav-item item-hover">
-                                    <a href="k12program.php" class="nav-link-items">
+                                    <a href="board-detail.php" class="nav-link-items">
                                       10th Standard
                                     </a>
                                 </li>

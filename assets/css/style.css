@@ -7309,3 +7309,24 @@ Back to Top CSS
 .related-course-cards{
   height: 328px;
 }
+.distance-learning-card{
+  height: 117px;
+}
+.advantages-list li{
+  list-style: none;
+}
+.advantages-list{
+  padding-left: 0rem;
+}
+.benefit-list li{
+  list-style: none;
+}
+.benefit-list{
+  padding-left: 0rem;
+}
+.distance-learning-list li{
+  list-style:none;
+}
+.distance-learning-list{
+  padding-left: 0rem;
+}
