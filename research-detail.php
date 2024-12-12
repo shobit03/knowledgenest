@@ -153,7 +153,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <div class="shadow p-3 mb-4 rounded-3">
+                <div class=" p-3 mb-4 rounded-3">
                     <h4>Institutions Offering M.Phil Programs</h4>
                     <p>Recognized universities and institutes in India and abroad provide M.Phil programs in various disciplines, ensuring a high standard of education and research opportunities.
                     </p>
@@ -167,7 +167,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <div class="shadow p-3 mb-4 rounded-3">
+                <div class=" p-3 mb-4 rounded-3">
                     <h4>Conclusion</h4>
                     <p>For students who are enthusiastic about research and academic advancement, the M.Phil program is perfect. It offers a solid basis in a selected subject of study, leading to opportunities for professional, academic, and research achievements.
 
