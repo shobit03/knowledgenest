@@ -70,6 +70,13 @@ if (isset($_GET['id'])) {
             <img src="/admin<?php echo !empty($id) ? $getdata['Photo'] : ''; ?>" height="50" />
           <?php } ?>
         </div>
+
+
+         <!-- Short Description -->
+         <div class="mb-3 col-md-12">
+          <label for="short_description" class="form-label">Short Description <span class="text-danger">*</span></label>
+          <textarea id="short_description" name="short_description" class="form-control" rows="5" placeholder="Enter a short description..." required><?= $getdata['Description'] ?></textarea>
+        </div>
         <div class="mb-3 col-md-12 ">
           <label class="form-label">Content <span class="text-danger">*</span></label>
           <textarea class="ckeditor" cols="80" id="editor" name="editor" rows="10"><?= $getdata['Content'] ?></textarea>

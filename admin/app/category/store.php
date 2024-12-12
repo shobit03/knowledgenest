@@ -15,6 +15,8 @@ if (isset($_POST['name'])) {
   // $semester = mysqli_real_escape_string($conn, $_POST['semester']);
 
   $menu_ID = isset($_POST['Menu_ID']) ? mysqli_real_escape_string($conn, $_POST['Menu_ID']) : '';
+  // Handle the checkbox for 'have_details'
+  $have_details = isset($_POST['have_details']) ? 1 : 0;
 
   if (empty($name) || empty($short_Name) || empty($position)) {
     echo json_encode(['status' => 403, 'message' => 'All fields are mandatory!']);
@@ -38,8 +40,8 @@ if (isset($_POST['name'])) {
   // $add = $conn->query("INSERT INTO programs (Name, Slug, Department_ID, Short_Name, Position, Eligibility, Year, Semester) 
   //                       VALUES ('$name', '$slug', '$department_ID', '$short_Name', '$position', '$eligibility', '$year', '$semester')");
 
-$add = $conn->query("INSERT INTO category (Name, Slug, Menu_ID, Short_Name, Position,Photo,Content) 
-                        VALUES ('$name', '$slug', '$menu_ID', '$short_Name', '$position','$filename','$content')");
+$add = $conn->query("INSERT INTO category (Name, Slug, Menu_ID, Short_Name, Position,Photo,Content,Have_Details) 
+                        VALUES ('$name', '$slug', '$menu_ID', '$short_Name', '$position','$filename','$content','$have_details')");
   if ($add) {
     echo json_encode(['status' => 200, 'message' => $name . ' Added successfully!']);
   } else {

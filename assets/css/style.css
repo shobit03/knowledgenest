@@ -7297,3 +7297,7 @@ Back to Top CSS
 .single-popular-card:hover p {
   color: white; /* Change text color to white on hover */
 }
+
+.related-course-cards{
+  height: 328px;
+}

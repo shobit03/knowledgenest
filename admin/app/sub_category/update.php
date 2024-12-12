@@ -11,6 +11,7 @@ if (isset($_POST['id']) && isset($_POST['name'])) {
     // $content = mysqli_real_escape_string($conn, $_POST['content']);
     $position = intval($_POST['position']);
     $content = mysqli_real_escape_string($conn, $_POST['content']);
+    $short_description = mysqli_real_escape_string($conn, $_POST['short_description']);
     $updated_file = mysqli_real_escape_string($conn, $_POST['updated_file']);
 
     $department_ID = isset($_POST['Menu_ID']) ? intval($_POST['Menu_ID']) : null;
@@ -44,7 +45,8 @@ if (isset($_POST['id']) && isset($_POST['name'])) {
                             Short_Name = '$short_Name', 
                             Position = '$position',
                             Content = '$content',
-                            Photo ='$photo' 
+                            Photo ='$photo',
+                            Description = '$short_description' 
                             WHERE ID = $id");
 
     if ($update) {

@@ -190,7 +190,7 @@
    }
  </script>
 
-<script>
+<!-- <script>
   function fileValidation(id) {
     var fi = document.getElementById(id);
     if (fi.files.length > 0) {
@@ -198,11 +198,11 @@
         var fsize = fi.files.item(i).size;
         var file = Math.round((fsize / 1024));
         // The size of the file.
-        if (file >= 200) {
+        if (file >= 500) {
           $('#' + id).val('');
-          toastr.error("File too Big, each file should be less than or equal to 200KB");
+          toastr.error("File too Big, each file should be less than or equal to 500KB");
         }
       }
     }
   }
-</script>
+</script> -->

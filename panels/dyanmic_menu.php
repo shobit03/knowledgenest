@@ -1,20 +1,19 @@
 <?php
 require('admin/includes/db-config.php');
 
-// Fetch menus and their categories, including 'have_details' column logic
+// Fetch menus and their categories
 $query = "
     SELECT 
         menus.ID as menu_id, 
         menus.Name as menu_name, 
         menus.Slug as menu_slug,
-        category.Have_Details as have_details,
         category.ID as category_id, 
         category.Name as category_name, 
         category.Slug as category_slug 
-    FROM menus 
-    LEFT JOIN category ON menus.ID = category.menu_id 
-    WHERE menus.Status = 1 AND (category.Status = 1) 
-    ORDER BY menus.Position ASC, menus.ID, category.ID";
+        FROM menus 
+        LEFT JOIN category ON menus.ID = category.menu_id 
+        WHERE menus.Status = 1 AND (category.Status = 1) 
+        ORDER BY menus.Position ASC, menus.ID, category.ID";
 
 $result = mysqli_query($conn, $query);
 
@@ -31,9 +30,7 @@ while ($row = mysqli_fetch_assoc($result)) {
     if ($row['category_id']) {
         $menus[$menuId]['categories'][] = [
             'name' => $row['category_name'],
-            'slug' => $row['category_slug'],
-            'have_details' => $row['have_details']
-
+            'slug' => $row['category_slug']
         ];
     }
 }
@@ -43,7 +40,6 @@ while ($row = mysqli_fetch_assoc($result)) {
 // print_r($menus);
 // echo "</pre>";
 ?>
-
 
 
 
@@ -82,32 +78,104 @@ while ($row = mysqli_fetch_assoc($result)) {
 
                         <?php foreach ($menus as $menu): ?>
                             <li class="nav-item d-flex align-items-center gap-2">
-                                <a href="javascript:void(0)" class="dropdown-toggle nav-link">
-                                    <?php echo $menu['name']; ?>
-                                </a>
-                                <ul class="dropdown-menu-items list-unstyle">
-                                    <?php foreach ($menu['categories'] as $category): ?>
-                                        <li class="nav-item">
-                                            <?php if ($category['have_details'] == 1): ?>
-                                                <!-- Link to board_details.php if have_details is 1 -->
-                                                <a href="board-details?url=<?php echo $category['slug']; ?>" class="nav-link-items">
-                                                    <?php echo $category['name']; ?> - Details
-                                                </a>
-                                            <?php else: ?>
-                                                <!-- Normal link to courses.php -->
-                                                <a href="courses.php?url=<?php echo $category['slug']; ?>" class="nav-link-items">
+                                <a href="javascript:void(0)" class="dropdown-toggle nav-link"><?php echo $menu['name']; ?></a>
+                                <?php if (!empty($menu['categories'])): ?>
+                                    <p class="mt-3"><i class="fa-solid fa-angle-down text-black"></i></p>
+                                    <ul class="dropdown-menu-items list-unstyle">
+                                        <?php foreach ($menu['categories'] as $category): ?>
+                                            <li class="nav-item">
+                                                <a href="courses?url=<?php echo $category['slug']; ?>" class="nav-link-items">
                                                     <?php echo $category['name']; ?>
                                                 </a>
-                                            <?php endif; ?>
-                                        </li>
-                                    <?php endforeach; ?>
-                                </ul>
+                                            </li>
+                                        <?php endforeach; ?>
+                                    </ul>
+                                <?php endif; ?>
                             </li>
                         <?php endforeach; ?>
 
+                        <!-- <li class="nav-item d-flex align-items-center gap-2">
+                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">K12 program</a>
+                            <p class="mt-3"><i class="fa-solid fa-angle-down text-black"></i></p>
+                            
+                            <ul class="dropdown-menu-items list-unstyle">
+                                <li class="nav-item item-hover">
+                                    <a href="shop.html" class="nav-link-items">
+                                      10th Standard
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="shop-filtter.html" class="nav-link-items">
+                                       12th Standard
+                                    </a>
+                                </li>
+                               
+                               
+                            </ul>
+                        </li>
 
 
 
+
+                        <li class="nav-item d-flex align-items-center gap-2">
+                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                              Program
+                            </a>
+                            <p class="mt-3"><i class="fa-solid fa-angle-down text-black"></i></p>
+                            <ul class="dropdown-menu-items list-unstyle">
+                                <li class="nav-item">
+                                    <a href="ug.php" class="nav-link-items">
+                                       UG
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pg.php" class="nav-link-items">
+                                        PG
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="diploma.php" class="nav-link-items">
+                                        Diploma
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="skillprogram.php" class="nav-link-items">
+                                        Skill Program
+                                    </a>
+                                </li>
+                               
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="department.php" class="dropdown-toggle nav-link">
+                              Department
+                            </a>
+                           
+                        </li>
+
+
+                        <li class="nav-item d-flex align-items-center gap-2">
+                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                              Research
+                            </a>
+                            <p class="mt-3"><i class="fa-solid fa-angle-down text-black"></i></p>
+                            <ul class="dropdown-menu-items list-unstyle">
+                                <li class="nav-item">
+                                    <a href="shop.html" class="nav-link-items">
+                                       M Phil
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="shop-filtter.html" class="nav-link-items">
+                                       PHD
+                                    </a>
+                                </li>
+                               
+                               
+                            </ul>
+                        </li>
+                         -->
                         <li class="nav-item">
                             <a href="contact.php" class="nav-link">
                                 Contact Us

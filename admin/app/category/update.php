@@ -17,6 +17,8 @@ if (isset($_POST['name']) && isset($_POST['id'])) {
   // $semester = mysqli_real_escape_string($conn, $_POST['semester']);
 
   $menu_ID = isset($_POST['Menu_ID']) ? mysqli_real_escape_string($conn, $_POST['Menu_ID']) : '';
+   // Handle the checkbox for 'have_details'
+   $have_details = isset($_POST['have_details']) ? 1 : 0;
 
   if (empty($name) || empty($short_Name) || empty($position)) {
     echo json_encode(['status' => 403, 'message' => 'All fields are mandatory!']);
@@ -45,7 +47,7 @@ if (isset($_POST['name']) && isset($_POST['id'])) {
   }
 
   // $update = $conn->query("UPDATE `programs` SET `Name` = '$name', `Slug` = '$slug', `Department_ID` = '$department_ID', `Short_Name` = '$short_Name', `Position` = '$position', `Eligibility` = '$eligibility', `Year` = '$year', `Semester` = '$semester' WHERE ID = $id");
-  $update = $conn->query("UPDATE `category` SET `Name` = '$name', `Slug` = '$slug', `Menu_ID` = '$menu_ID', `Short_Name` = '$short_Name', `Position` = '$position',`Content` = '$content',`Photo`='$photo' WHERE ID = $id");
+  $update = $conn->query("UPDATE `category` SET `Name` = '$name', `Slug` = '$slug', `Menu_ID` = '$menu_ID', `Short_Name` = '$short_Name', `Position` = '$position',`Content` = '$content',`Photo`='$photo',`Have_Details`='$have_details' WHERE ID = $id");
   if ($update) {
     echo json_encode(['status' => 200, 'message' => $name . ' updated successfully!']);
   } else {

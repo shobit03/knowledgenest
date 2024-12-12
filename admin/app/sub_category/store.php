@@ -9,6 +9,8 @@ if (isset($_POST['name'])) {
   $short_Name = mysqli_real_escape_string($conn, $_POST['Short_Name']);
   $content = mysqli_real_escape_string($conn, $_POST['content']);
   $position = mysqli_real_escape_string($conn, $_POST['position']);
+  $short_description = mysqli_real_escape_string($conn, $_POST['short_description']);
+
 
   $department_ID = isset($_POST['Menu_ID']) ? mysqli_real_escape_string($conn, $_POST['Menu_ID']) : '';
   $program_ID = isset($_POST['Category_ID']) ? mysqli_real_escape_string($conn, $_POST['Category_ID']) : '';
@@ -39,8 +41,8 @@ if (isset($_POST['name'])) {
   //    exit();
   //  }
 
-  $add = $conn->query("INSERT INTO sub_category (Name, Slug, Menu_ID, Category_ID, Short_Name, Position, Photo, Content) 
-                        VALUES ('$name', '$slug', '$department_ID','$program_ID', '$short_Name', '$position', '$filename', '$content')");
+  $add = $conn->query("INSERT INTO sub_category (Name, Slug, Menu_ID, Category_ID, Short_Name, Position, Photo, Content, Description) 
+                        VALUES ('$name', '$slug', '$department_ID','$program_ID', '$short_Name', '$position', '$filename', '$content', '$short_description')");
   if ($add) {
     echo json_encode(['status' => 200, 'message' => $name . ' Added successfully!']);
   } else {

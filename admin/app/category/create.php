@@ -30,6 +30,15 @@ require '../../includes/helper.php'; ?>
           <label class="form-label">Short Name <span class="text-danger">*</span></label>
           <input type="text" class="form-control" name="Short_Name" placeholder="Enter a Short Name.." required>
         </div>
+
+        <div class="mb-3 col-md-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="have_details" id="have_details" value="1">
+            <label class="form-check-label" for="have_details">
+              Have Details
+            </label>
+          </div>
+        </div>
         <div class="mb-3 col-md-12 syllabus_file">
           <label class="form-label">Photo </label>
           <input type="file" name="photo" id="photo" class="form-control" onchange="fileValidation('photo')" accept="image/png, image/jpg, image/jpeg, image/svg,image/avif">
@@ -44,7 +53,7 @@ require '../../includes/helper.php'; ?>
           <span id="content-error" style="color:#b91e1e;font-weight: 500;font-size: 12px;"></span>
         </div>
 
-       
+
         <div class="mb-3 col-md-12">
           <label class="form-label">Order By <span class="text-danger">*</span></label>
           <input type="number" min="0" class="form-control" name="position" placeholder="Enter a Position.." required>
@@ -181,7 +190,7 @@ require '../../includes/helper.php'; ?>
         var formData = new FormData(form);
 
         var content = CKEDITOR.instances['editor'].getData();
-        formData.append('content', content); 
+        formData.append('content', content);
 
         $.ajax({
           url: form.action,

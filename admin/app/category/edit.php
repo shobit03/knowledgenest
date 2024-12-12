@@ -46,6 +46,17 @@ if (isset($_GET['id'])) {
           <input type="text" class="form-control" name="Short_Name" value="<?= $getdata['Short_Name'] ?>" placeholder="Enter a Short Name.." required>
         </div>
 
+
+        <div class="mb-3 col-md-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="have_details" id="have_details" value="1"
+              <?php if (isset($getdata['Have_Details']) && $getdata['Have_Details'] == 1) echo 'checked'; ?>>
+            <label class="form-check-label" for="have_details">
+              Have Details
+            </label>
+          </div>
+        </div>
+
         <div class="mb-3 col-md-12 syllabus_file">
 
           <label class="form-label">Photo <span class="text-danger">*</span></label>
@@ -197,7 +208,7 @@ if (isset($_GET['id'])) {
         var formData = new FormData(form);
 
         var content = CKEDITOR.instances['editor'].getData();
-        formData.append('content', content); 
+        formData.append('content', content);
 
         $.ajax({
           url: form.action,

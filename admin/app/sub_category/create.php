@@ -47,6 +47,13 @@ require '../../includes/helper.php'; ?>
           </small>
         </div>
 
+        <!-- Short Description -->
+        <div class="mb-3 col-md-12">
+          <label for="short_description" class="form-label">Short Description <span class="text-danger">*</span></label>
+          <textarea id="short_description" name="short_description" class="form-control" rows="5" placeholder="Enter a short description..." required></textarea>
+        </div>
+
+
         <div class="mb-3 col-md-12 ">
           <label class="form-label">Content <span class="text-danger">*</span></label>
           <textarea class="ckeditor" cols="80" id="editor" name="editor" rows="10" required></textarea>
@@ -54,7 +61,7 @@ require '../../includes/helper.php'; ?>
         </div>
 
 
-        
+
 
 
 

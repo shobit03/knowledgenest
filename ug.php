@@ -59,6 +59,8 @@
                                                 <a href="blog-details.php">
                                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
                                                     quis alias, aperiam facere....
+                                                
+                                        
                                                 </a>
                                             </p>
                                         </div>
