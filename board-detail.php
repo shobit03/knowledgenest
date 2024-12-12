@@ -57,7 +57,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="p-4">
-                    <h3 style="color:rgb(249, 11, 11);">Important Aspects of Distance Learning in Grade 10th</h3>
+                    <h4 style="color:rgb(249, 11, 11);">Important Aspects of Distance Learning in Grade 10th</h4>
                     <ul class="distance-learning-list">
                         <li> <i class="fas fa-chevron-circle-right me-2"></i> Flexible learning allows you to set your own hours and pace, which is perfect for students with special needs or those who work.</licst>
                         <li> <i class="fas fa-chevron-circle-right me-2"></i> Recognized Curriculum: Adheres to the standard curriculum set forth </li>
@@ -78,8 +78,8 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="p-4">
-                    <h3 style="color:rgb(249, 11, 11);">Who Can Benefit from 10th Distance Education?
-                    </h3>
+                    <h4 style="color:rgb(249, 11, 11);">Who Can Benefit from 10th Distance Education?
+                    </h4>
                     <ul class="benefit-list">
                         <li> <i class="fas fa-chevron-circle-right me-2"></i> Working professionals looking to complete their secondary education.</licst>
                         <li> <i class="fas fa-chevron-circle-right me-2"></i> Dropout students aim to continue their studies.
@@ -102,7 +102,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="p-4">
-                    <h3 style="color:rgb(249, 11, 11);">Advantages</h3>
+                    <h4 style="color:rgb(249, 11, 11);">Advantages</h4>
                     <ul class="advantages-list ">
                         <li> <i class="fas fa-chevron-circle-right me-2"></i> Tailored learning environment to meet individual needs.</licst>
                         <li> <i class="fas fa-chevron-circle-right me-2"></i> Opportunity to learn alongside work or personal commitments. </li>

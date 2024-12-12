@@ -474,7 +474,7 @@ select {
   background-color: rgb(249, 11, 11);
 }
 .btn.style-one.style-2::before {
-  background-color: var(--primaryColor);
+  background-color: #296E85;
 }
 .btn.style-one:before {
   background-color: var(--secondaryColor);
@@ -7330,3 +7330,4 @@ Back to Top CSS
 .distance-learning-list{
   padding-left: 0rem;
 }
+

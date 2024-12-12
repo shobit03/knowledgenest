@@ -95,7 +95,7 @@
                             <p class="mt-3"><i class="fa-solid fa-angle-down text-black"></i></p>
                             <ul class="dropdown-menu-items list-unstyle">
                                 <li class="nav-item">
-                                    <a href="shop.html" class="nav-link-items">
+                                    <a href="research-detail.php" class="nav-link-items">
                                        M Phil
                                     </a>
                                 </li>
