@@ -8,6 +8,8 @@ if (isset($_POST['name'])) {
   $slug = baseurl($name);
   $short_Name = mysqli_real_escape_string($conn, $_POST['Short_Name']);
   $position = mysqli_real_escape_string($conn, $_POST['position']);
+  $heading =mysqli_real_escape_string($conn, $_POST['heading']);
+  $short_description =mysqli_real_escape_string($conn, $_POST['short_description']);
   $content =mysqli_real_escape_string($conn, $_POST['content']);
 
   // $eligibility = mysqli_real_escape_string($conn, $_POST['eligibility']);
@@ -40,8 +42,8 @@ if (isset($_POST['name'])) {
   // $add = $conn->query("INSERT INTO programs (Name, Slug, Department_ID, Short_Name, Position, Eligibility, Year, Semester) 
   //                       VALUES ('$name', '$slug', '$department_ID', '$short_Name', '$position', '$eligibility', '$year', '$semester')");
 
-$add = $conn->query("INSERT INTO category (Name, Slug, Menu_ID, Short_Name, Position,Photo,Content,Have_Details) 
-                        VALUES ('$name', '$slug', '$menu_ID', '$short_Name', '$position','$filename','$content','$have_details')");
+$add = $conn->query("INSERT INTO category (Name, Slug, Menu_ID, Short_Name, Position,Photo,Content,Have_Details,Description,Heading) 
+                        VALUES ('$name', '$slug', '$menu_ID', '$short_Name', '$position','$filename','$content','$have_details','$short_description','$heading')");
   if ($add) {
     echo json_encode(['status' => 200, 'message' => $name . ' Added successfully!']);
   } else {

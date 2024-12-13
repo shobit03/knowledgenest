@@ -91,11 +91,11 @@ while ($row = mysqli_fetch_assoc($result)) {
                                             <?php if ($category['have_details'] == 1): ?>
                                                 <!-- Link to board_details.php if have_details is 1 -->
                                                 <a href="board-details?url=<?php echo $category['slug']; ?>" class="nav-link-items">
-                                                    <?php echo $category['name']; ?> - Details
+                                                    <?php echo $category['name']; ?>
                                                 </a>
                                             <?php else: ?>
                                                 <!-- Normal link to courses.php -->
-                                                <a href="courses.php?url=<?php echo $category['slug']; ?>" class="nav-link-items">
+                                                <a href="courses?url=<?php echo $category['slug']; ?>" class="nav-link-items">
                                                     <?php echo $category['name']; ?>
                                                 </a>
                                             <?php endif; ?>

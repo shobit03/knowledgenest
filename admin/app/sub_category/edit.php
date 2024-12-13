@@ -1,23 +1,23 @@
 <?php
 if (isset($_GET['id'])) {
-    require '../../includes/db-config.php';
-    require '../../includes/helper.php';
-    $id = intval($_GET['id']);
-    $getdataQuery = $conn->query("SELECT * FROM sub_category WHERE ID = $id");
-    $getdata = $getdataQuery->fetch_assoc();
-    
-    $programArr = [];
-    if ($getdata['Menu_ID']) {
-        $programQuery = $conn->query("SELECT * FROM category WHERE Menu_ID = " . $getdata['Menu_ID']);
-        while ($program = $programQuery->fetch_assoc()) {
-            $programArr[] = $program;
-        }
+  require '../../includes/db-config.php';
+  require '../../includes/helper.php';
+  $id = intval($_GET['id']);
+  $getdataQuery = $conn->query("SELECT * FROM sub_category WHERE ID = $id");
+  $getdata = $getdataQuery->fetch_assoc();
+
+  $programArr = [];
+  if ($getdata['Menu_ID']) {
+    $programQuery = $conn->query("SELECT * FROM category WHERE Menu_ID = " . $getdata['Menu_ID']);
+    while ($program = $programQuery->fetch_assoc()) {
+      $programArr[] = $program;
     }
+  }
 }
 ?>
 
 <div class="modal-header">
-  <h5 class="modal-title">Edit  Sub Category</h5>
+  <h5 class="modal-title">Edit Sub Category</h5>
   <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
 </div>
 <div class="card-body">
@@ -72,8 +72,8 @@ if (isset($_GET['id'])) {
         </div>
 
 
-         <!-- Short Description -->
-         <div class="mb-3 col-md-12">
+        <!-- Short Description -->
+        <div class="mb-3 col-md-12">
           <label for="short_description" class="form-label">Short Description <span class="text-danger">*</span></label>
           <textarea id="short_description" name="short_description" class="form-control" rows="5" placeholder="Enter a short description..." required><?= $getdata['Description'] ?></textarea>
         </div>
@@ -237,7 +237,7 @@ if (isset($_GET['id'])) {
       submitHandler: function(form) {
         var formData = new FormData(form);
         var content = CKEDITOR.instances['editor'].getData();
-        formData.append('content', content); 
+        formData.append('content', content);
 
         $.ajax({
           url: form.action,

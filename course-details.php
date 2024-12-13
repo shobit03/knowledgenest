@@ -19,6 +19,8 @@ $subcategory = $conn->query($getdata);
 $subcategory_details = $subcategory->fetch_assoc();
 
 $current_course_id = $subcategory_details['ID'];
+$current_category_id = $subcategory_details['Category_ID'];
+
 
 $get_recent_courses = "
     SELECT sub_category.Name AS related_course_name, 
@@ -27,6 +29,7 @@ $get_recent_courses = "
     FROM sub_category
     WHERE sub_category.Status = 1
     AND sub_category.ID != $current_course_id
+    AND sub_category.Category_ID = $current_category_id
     ORDER BY sub_category.Created_At DESC
     LIMIT 3";
 
@@ -98,7 +101,7 @@ $recent_courses = $conn->query($get_recent_courses);
                         <div class="col-lg-4 col-sm-6">
                             <div class="p-3 mb-25 shadow related-course-cards">
                                 <div class="image mb-20 position-relative">
-                                    <a href="course-details.php?url=<?php echo $related_course['related_course_slug']; ?>" class="d-block">
+                                    <a href="course-details?url=<?php echo $related_course['related_course_slug']; ?>" class="d-block">
                                         <img src="/admin/<?php echo $related_course['related_course_photo']; ?>" alt="image">
                                     </a>
                                 </div>

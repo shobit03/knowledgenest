@@ -94,7 +94,7 @@ include('./panels/menu.php')
 <section class="mt-4 ">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-5">
                 <div class="mt-5">
                     <h1 style="font-size:1.8rem;" class="fw-bold">Why to choose Arabian Institute of Management studies?
                     </h1>
@@ -105,10 +105,10 @@ include('./panels/menu.php')
                         offer comprehensive support to anybody seeking to enhance their knowledge and abilities, whether
                         educators, professionals, or students.</p>
                 </div>
-                <button class="p-2 w-50 rounded-3 border-0 text-white" style="background-color: rgb(249 11 11);">About
+                <button class="p-2 w-50 rounded-3 border-0 text-white about-us-btn" >About
                     Us <i class="fas fa-greater-than ms-2 fs-6"></i></button>
             </div>
-            <div class="col-lg-8">
+            <div class="col-lg-7">
 
                 <div class="row">
                     <div class="col-lg-6">
@@ -192,7 +192,7 @@ include('./panels/menu.php')
                                 Enhancing Competencies</h3>
                             <p>We prepare you to be future-ready with the industry's best resources to excel in your
                                 personal and professional life.</p>
-                                <div class="hover-overlay"></div> <!-- New overlay div -->
+                            <div class="hover-overlay"></div> <!-- New overlay div -->
                         </div>
                     </div>
                     <div class="col-lg-4">
@@ -207,7 +207,7 @@ include('./panels/menu.php')
                                 Accentuate Your Career</h3>
                             <p>This new-age learning environment equips you to upscale your career limitlessly by
                                 learning and networking with internationally acclaimed experts.</p>
-                                <div class="hover-overlay"></div> <!-- New overlay div -->
+                            <div class="hover-overlay"></div> <!-- New overlay div -->
                         </div>
                     </div>
                     <div class="col-lg-4">
@@ -222,7 +222,7 @@ include('./panels/menu.php')
                                 Multi-Intake Curriculum</h3>
                             <p>Do not wait around until next summer to be enrolled at the University as we have
                                 structured out a curriculum that facilitates multiple admission windows.</p>
-                                <div class="hover-overlay"></div> <!-- New overlay div -->
+                            <div class="hover-overlay"></div> <!-- New overlay div -->
                         </div>
                     </div>
 
@@ -233,92 +233,115 @@ include('./panels/menu.php')
 </section>
 
 
-<section class="mt-4 shadow" style="background-color:#d2e4e4">
+<section class="shadow" style="background-image: url(./assets/img/istockphoto-1407063872-612x612.jpg);">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-3">
                 <div class="d-flex mt-3 p-2 ">
                     <img src="./assets/img/icon/LearningFlexibility-removebg-preview.png" height="80" alt="">
-                    <h5 class="pt-3" style="font-size: 1.2rem;">Learning Flexibility</h5>
+                    <h5 class="pt-3 text-white" style="font-size: 1.2rem;">Learning Flexibility</h5>
                 </div>
             </div>
             <div class="col-lg-3">
-            <div class="d-flex mt-3 p-2 gap-2 ">
+                <div class="d-flex mt-3 p-2 gap-2 ">
                     <img src="./assets/img/icon/images-removebg-preview.png" height="80" alt="">
-                    <h5 class="pt-3" style="font-size: 1.2rem;">Convenient Payment Method</h5>
+                    <h5 class="pt-3 text-white" style="font-size: 1.2rem;">Convenient Payment Method</h5>
                 </div>
-                
+
             </div>
             <div class="col-lg-3">
-            <div class="d-flex mt-3 p-2 ">
-                    <img src="./assets/img/icon/247-support-vector-icon-24h-260nw-713696350-removebg-preview.png" height="100" alt="">
-                    <h5 class="pt-4" style="font-size: 1.2rem;">24/7 Student Support</h5>
+                <div class="d-flex mt-3 p-2 ">
+                    <img src="./assets/img/icon/247-support-vector-icon-24h-260nw-713696350-removebg-preview.png"
+                        height="100" alt="">
+                    <h5 class="pt-4 text-white" style="font-size: 1.2rem;">24/7 Student Support</h5>
                 </div>
             </div>
             <div class="col-lg-3">
-            <div class="d-flex mt-3 p-2 gap-2">
-                    <img src="./assets/img/icon/ocg_report_logo_2-removebg-preview.png" height="80" alt="">
-                    <h5 class="pt-3" style="font-size: 1.2rem;">Career Counselling</h5>
+                <div class="d-flex mt-3 p-2 gap-2">
+                    <img src="./assets/img/icon/interview_8160345.png" height="60" alt="">
+                    <h5 class="pt-2 text-white" style="font-size: 1.2rem;">Career Counselling</h5>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-
-
-<!-- Start Partner Area -->
-<div class="partner-area ptb-100">
+<section style="background-image:url(./assets/img/white-abstract-wallpaper_23-2148830026.avif)">
     <div class="container">
-        <div class="main-max-width">
-            <div class="partner-title text-center">
-                <h4>Trusted by the world’s best</h4>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="p-4">
+                    <img src="./assets/img/degree.png" alt="">
+                </div>
             </div>
-            <div class="partner-slider text-center owl-carousel owl-nav">
-                <div class="single-partner-card">
-                    <img loading="lazy" src="assets/img/partner/partner-logo-1.png" alt="partner-logo">
-                </div>
-                <div class="single-partner-card">
-                    <img loading="lazy" src="assets/img/partner/partner-logo-2.png" alt="partner-logo">
-                </div>
-                <div class="single-partner-card">
-                    <img loading="lazy" src="assets/img/partner/partner-logo-3.png" alt="partner-logo">
-                </div>
-                <div class="single-partner-card">
-                    <img loading="lazy" src="assets/img/partner/partner-logo-4.png" alt="partner-logo">
-                </div>
-                <div class="single-partner-card">
-                    <img loading="lazy" src="assets/img/partner/partner-logo-5.png" alt="partner-logo">
-                </div>
-                <div class="single-partner-card">
-                    <img loading="lazy" src="assets/img/partner/partner-logo-5.png" alt="partner-logo">
-                </div>
-                <div class="single-partner-card">
-                    <img loading="lazy" src="assets/img/partner/partner-logo-1.png" alt="partner-logo">
-                </div>
-                <div class="single-partner-card">
-                    <img loading="lazy" src="assets/img/partner/partner-logo-2.png" alt="partner-logo">
-                </div>
-                <div class="single-partner-card">
-                    <img loading="lazy" src="assets/img/partner/partner-logo-3.png" alt="partner-logo">
-                </div>
-                <div class="single-partner-card">
-                    <img loading="lazy" src="assets/img/partner/partner-logo-4.png" alt="partner-logo">
-                </div>
-                <div class="single-partner-card">
-                    <img loading="lazy" src="assets/img/partner/partner-logo-5.png" alt="partner-logo">
-                </div>
-                <div class="single-partner-card">
-                    <img loading="lazy" src="assets/img/partner/partner-logo-5.png" alt="partner-logo">
+            <div class="col-lg-6">
+
+                <div class="p-4">
+                    <h2 class="fw-bold">Aspire and Explore:
+                        With Enlightening Education abroad</h2>
+                        <br>
+                    <p>Our websites for online education offer flexibility in learning. Assignments and course materials
+                        are accessible to Learners whenever and wherever they choose.</p>
+                    <br>
+                    <p>It is a leading online platform committed to offering professionals the skills and qualifications
+                        required to get promoted. The website serves people in various industries and provides many
+                        courses in multiple domains.</p>
+                    <br>
+                    <p>Professionals and industry experts conduct the courses, ensuring current information and valuable
+                        insights. We offer flexibility, which is especially beneficial for professionals who must
+                        balance their current jobs or have busy schedules.</p>
+                    <br>
+                    <p>We provide courses including a wide range of professional knowledge and abilities, such as
+                        problem-solving strategies, project management, negotiating skills, and time management.
+                        Professionals may perform better, prove they add value to their companies, and position
+                        themselves for career advancement by gaining these skills.
+
+                    </p>
+                    <br>
+                    <p>Flexibility, affordability, accessibility, self-paced learning, networking possibilities, worldwide reach, and professional progression are a few advantages that our website provides. Because of these benefits, our platform is a good choice for professionals and students who want to increase their knowledge and abilities in a flexible and affordable approach.</p>
+                    <br>
+                    <a href="" style="color:red">Read More!</a>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- End Partner Area -->
+</section>
 
+<section>
+<div class="partner-area pb-3 mt-1">
+    <div class="container">
+        <div class="main-max-width">
+            <div class="partner-title text-center mt-5">
+                <h2 class="fw-bold">Our University tie-ups</h2>
+            </div>
+            <div class="partner-slider text-center owl-carousel owl-nav">
+                <div class="single-partner-card">
+                    <img loading="lazy" src="assets/img/partner/1.png" alt="partner-logo">
+                </div>
+                <div class="single-partner-card">
+                    <img loading="lazy" src="assets/img/partner/8.png" alt="partner-logo">
+                </div>
+                <div class="single-partner-card">
+                    <img loading="lazy" src="assets/img/partner/3.png" alt="partner-logo">
+                </div>
+                <div class="single-partner-card">
+                    <img loading="lazy" src="assets/img/partner/4.png" alt="partner-logo">
+                </div>
+                <div class="single-partner-card">
+                    <img loading="lazy" src="assets/img/partner/5.png" alt="partner-logo">
+                </div>
+                <div class="single-partner-card">
+                    <img loading="lazy" src="assets/img/partner/6.png" alt="partner-logo">
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
 <!-- Category Section Start -->
-<div class="category-section pb-75">
+<!-- <div class="category-section pb-75">
     <div class="container">
         <div class="main-max-width">
             <div class="section-title text-center mb-50">
@@ -382,11 +405,11 @@ include('./panels/menu.php')
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <!-- Category Section End -->
 
 <!-- About Section Start -->
-<div class="about-section pb-100">
+<!-- <div class="about-section pb-100">
     <div class="container">
         <div class="main-max-width">
             <div class="row align-items-center">
@@ -428,7 +451,7 @@ include('./panels/menu.php')
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <!-- About Section End -->
 
 <!-- Start Popular Subject Area -->
@@ -437,8 +460,8 @@ include('./panels/menu.php')
 
 
 
-<!-- Start Testimonial Area -->
-<div class="testimonial-area pb-75">
+
+<!-- <div class="testimonial-area pb-75">
     <div class="container">
         <div class="main-max-width">
             <div class="row">
@@ -657,9 +680,7 @@ include('./panels/menu.php')
         </div>
     </div>
 </div>
-<!-- End Testimonial Area -->
 
-<!-- Start Register Area -->
 <div class="register-area pt-100 position-relative z-1">
     <div class="container">
         <div class="main-max-width">
@@ -746,9 +767,7 @@ include('./panels/menu.php')
         </div>
     </div>
 </div>
-<!-- End Register Area -->
 
-<!-- Start Blog Area -->
 <div class="blog-area ptb-100">
     <div class="container">
         <div class="main-max-width">
@@ -809,8 +828,8 @@ include('./panels/menu.php')
             </div>
         </div>
     </div>
-</div>
-<!-- End Blog Area -->
+</div> -->
+
 
 
 <?php include('./panels/footer-top.php') ?>

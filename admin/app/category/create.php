@@ -47,9 +47,20 @@ require '../../includes/helper.php'; ?>
           </small>
         </div>
 
+        <div class="mb-3 col-md-12">
+          <label class="form-label">Heading Name <span class="text-danger">*</span></label>
+          <input type="text" class="form-control" name="heading" placeholder="Enter a Heading Name..">
+        </div>
+
+        <!-- Short Description -->
+        <div class="mb-3 col-md-12">
+          <label for="short_description" class="form-label">Short Description <span class="text-danger">*</span></label>
+          <textarea id="short_description" name="short_description" class="form-control" rows="5" placeholder="Enter a short description..."></textarea>
+        </div>
+
         <div class="mb-3 col-md-12 ">
           <label class="form-label">Content <span class="text-danger">*</span></label>
-          <textarea class="ckeditor" cols="80" id="editor" name="editor" rows="10" required></textarea>
+          <textarea class="ckeditor" cols="80" id="editor" name="editor" rows="10"></textarea>
           <span id="content-error" style="color:#b91e1e;font-weight: 500;font-size: 12px;"></span>
         </div>
 
@@ -141,9 +152,9 @@ require '../../includes/helper.php'; ?>
 
 <script>
   $(document).ready(function() {
-    $('.ckeditor').each(function() {
-      CKEDITOR.replace($(this).attr('id'));
-    });
+    // $('.ckeditor').each(function() {
+    //   CKEDITOR.replace($(this).attr('id'));
+    // });
 
     $('#form-add-stream').validate({
       rules: {
@@ -217,4 +228,8 @@ require '../../includes/helper.php'; ?>
       }
     });
   });
+</script>
+
+<script>
+  CKEDITOR.replace('editor');
 </script>

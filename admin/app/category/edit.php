@@ -70,6 +70,18 @@ if (isset($_GET['id'])) {
             <img src="/admin<?php echo !empty($id) ? $getdata['Photo'] : ''; ?>" height="50" />
           <?php } ?>
         </div>
+
+        <div class="mb-3 col-md-12">
+          <label class="form-label">Heading Name <span class="text-danger">*</span></label>
+          <input type="text" class="form-control" name="heading" value="<?= $getdata['Heading'] ?>" placeholder="Enter a Heading Name.." >
+        </div>
+
+
+        <!-- Short Description -->
+         <div class="mb-3 col-md-12">
+          <label for="short_description" class="form-label">Short Description <span class="text-danger">*</span></label>
+          <textarea id="short_description" name="short_description" class="form-control" rows="5" placeholder="Enter a short description..." ><?= $getdata['Description'] ?></textarea>
+        </div>
         <div class="mb-3 col-md-12 ">
           <label class="form-label">Content <span class="text-danger">*</span></label>
           <textarea class="ckeditor" cols="80" id="editor" name="editor" rows="10"><?= $getdata['Content'] ?></textarea>
@@ -159,9 +171,9 @@ if (isset($_GET['id'])) {
 
 <script>
   $(document).ready(function() {
-    $('.ckeditor').each(function() {
-      CKEDITOR.replace($(this).attr('id'));
-    });
+    // $('.ckeditor').each(function() {
+    //   CKEDITOR.replace($(this).attr('id'));
+    // });
 
     $('#form-add-stream').validate({
       rules: {
@@ -235,4 +247,8 @@ if (isset($_GET['id'])) {
       }
     });
   });
+</script>
+
+<script>
+  CKEDITOR.replace('editor');
 </script>

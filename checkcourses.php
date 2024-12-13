@@ -77,13 +77,13 @@ while ($row = mysqli_fetch_assoc($coursesResult)) {
                         <div class="col-lg-4 col-sm-4">
                             <div class="single-courses-box mb-25 shadow">
                                 <div class="image mb-20 position-relative">
-                                    <a href="<?php echo $hasSpecialization ? "specialization?url={$course['SubCategorySlug']}" : "course-details?url={$course['SubCategorySlug']}"; ?>" class="d-block">
+                                    <a href="<?php echo $hasSpecialization ? "specializationinbtech?url={$course['SubCategorySlug']}" : "course-details?url={$course['SubCategorySlug']}"; ?>" class="d-block">
                                         <img src="/admin/<?php echo $course['Photo']; ?>" alt="<?php echo $course['SubCategoryName']; ?>">
                                     </a>
                                 </div>
                                 <div class="content">
                                     <h3 class="mb-15 fs-20 text-center">
-                                        <a href="<?php echo $hasSpecialization ? "specialization?url={$course['SubCategorySlug']}" : "course-details?url={$course['SubCategorySlug']}"; ?>">
+                                        <a href="<?php echo $hasSpecialization ? "specializationinbtech?url={$course['SubCategorySlug']}" : "course-details?url={$course['SubCategorySlug']}"; ?>">
                                             <?php echo $course['SubCategoryName']; ?>
                                         </a>
                                     </h3>
@@ -93,7 +93,7 @@ while ($row = mysqli_fetch_assoc($coursesResult)) {
                                 </div>
                                 <ul class="cr-items list-unstyle ps-0 mb-0 ms-3">
                                     <li class="d-inline-block">
-                                        <a href="<?php echo $hasSpecialization ? "specialization?url={$course['SubCategorySlug']}" : "course-details?url={$course['SubCategorySlug']}"; ?>" class="btn style-one">
+                                        <a href="<?php echo $hasSpecialization ? "specializationinbtech?url={$course['SubCategorySlug']}" : "course-details?url={$course['SubCategorySlug']}"; ?>" class="btn style-one">
                                             Know Details
                                             <i class="ri-arrow-right-line"></i>
                                         </a>

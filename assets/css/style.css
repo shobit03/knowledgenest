@@ -474,7 +474,7 @@ select {
   background-color: rgb(249, 11, 11);
 }
 .btn.style-one.style-2::before {
-  background-color: var(--primaryColor);
+  background-color: #296E85;
 }
 .btn.style-one:before {
   background-color: var(--secondaryColor);
@@ -7253,7 +7253,7 @@ Back to Top CSS
 
 .study-cards{
 
-  height: 265px;
+  height: 297px;
   background-color: #000000c4;
 }
 
@@ -7298,6 +7298,37 @@ Back to Top CSS
   color: white; /* Change text color to white on hover */
 }
 
+
+.about-us-btn{
+  background-color: rgb(249 11 11);
+}
+.about-us-btn:hover{
+  background-color: #7bbad7;
+}
+
+
 .related-course-cards{
   height: 328px;
 }
+.distance-learning-card{
+  height: 117px;
+}
+.advantages-list li{
+  list-style: none;
+}
+.advantages-list{
+  padding-left: 0rem;
+}
+.benefit-list li{
+  list-style: none;
+}
+.benefit-list{
+  padding-left: 0rem;
+}
+.distance-learning-list li{
+  list-style:none;
+}
+.distance-learning-list{
+  padding-left: 0rem;
+}
+

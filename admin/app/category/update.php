@@ -10,6 +10,8 @@ if (isset($_POST['name']) && isset($_POST['id'])) {
   $short_Name = mysqli_real_escape_string($conn, $_POST['Short_Name']);
   $position = mysqli_real_escape_string($conn, $_POST['position']);
   $content = mysqli_real_escape_string($conn, $_POST['content']);
+  $short_description =mysqli_real_escape_string($conn, $_POST['short_description']);
+  $heading =mysqli_real_escape_string($conn, $_POST['heading']);
   $updated_file = mysqli_real_escape_string($conn, $_POST['updated_file']);
 
   // $eligibility = mysqli_real_escape_string($conn, $_POST['eligibility']);
@@ -47,7 +49,7 @@ if (isset($_POST['name']) && isset($_POST['id'])) {
   }
 
   // $update = $conn->query("UPDATE `programs` SET `Name` = '$name', `Slug` = '$slug', `Department_ID` = '$department_ID', `Short_Name` = '$short_Name', `Position` = '$position', `Eligibility` = '$eligibility', `Year` = '$year', `Semester` = '$semester' WHERE ID = $id");
-  $update = $conn->query("UPDATE `category` SET `Name` = '$name', `Slug` = '$slug', `Menu_ID` = '$menu_ID', `Short_Name` = '$short_Name', `Position` = '$position',`Content` = '$content',`Photo`='$photo',`Have_Details`='$have_details' WHERE ID = $id");
+  $update = $conn->query("UPDATE `category` SET `Name` = '$name', `Slug` = '$slug', `Menu_ID` = '$menu_ID', `Short_Name` = '$short_Name', `Position` = '$position',`Content` = '$content',`Photo`='$photo',`Have_Details`='$have_details',`Description`='$short_description',`Heading`='$heading' WHERE ID = $id");
   if ($update) {
     echo json_encode(['status' => 200, 'message' => $name . ' updated successfully!']);
   } else {
