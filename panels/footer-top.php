@@ -45,27 +45,43 @@
                     </div>
                     <div class="col-lg-2 col-sm-6 col-md-6">
                         <div class="footer-widget">
-                            <h4 class="text-white">Quick Links</h4>
+                            <h4 class="text-white mb-3">K12 Program</h4>
                             <ul>
-                                <li><a href="blog-details.html">Make Appointment</a></li>
-                                <li><a href="shop.html">Customers Services</a></li>
-                                <li><a href="about.html">About Company</a></li>
-                                <li><a href="courses-grid.html">Our Case Studies</a></li>
-                                <li><a href="instructor-sidebar.html">Free Consulting</a></li>
-                                <li><a href="instructor-details.html">Meet Your Experts</a></li>
+                                <li><a href="blog-details.html">10th Standard</a></li>
+                                <li><a href="shop.html">12th Standard</a></li>
+                               
+                            </ul>
+                        </div>
+                        <div class="footer-widget mt-4">
+                            <h4 class="text-white mb-3">Programs</h4>
+                            <ul>
+                                <li><a href="blog-details.html">UG(Under graduate)</a></li>
+                                <li><a href="shop.html">PG(Post Graduate)</a></li>
+                                <li><a href="shop.html">Diploma</a></li>
+                                <li><a href="shop.html">Skill Program</a></li>
+                               
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-6 col-md-6">
                         <div class="footer-widget ml-70">
-                            <h4 class="text-white">Categories</h4>
+                            <h4 class="text-white">Department</h4>
                             <ul>
-                                <li><a href="courses.php">Web Development</a></li>
-                                <li><a href="course-details.html">UI&UX Designer</a></li>
-                                <li><a href="courses-grid.html">Management</a></li>
-                                <li><a href="courses-list.html">Digital Marketing</a></li>
-                                <li><a href="blogs.php">Blogs</a></li>
-                                <li><a href="blog-list.html">Finance & Accounting</a></li>
+                                <li><a href="courses.php">School of Education</a></li>
+                                <li><a href="course-details.html">School of Law</a></li>
+                                <li><a href="courses-grid.html">School Of Pharmacy</a></li>
+                                <li><a href="courses-list.html">School Of Agriculture</a></li>
+                                <li><a href="blogs.php">School Of Engineering</a></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="footer-widget ml-70">
+                            <h4 class="text-white mt-3">Research</h4>
+                            <ul>
+                                <li><a href="courses.php">PHD</a></li>
+                                <li><a href="course-details.html">M.Phil Program</a></li>
+                                
+                                
                             </ul>
                         </div>
                     </div>
