@@ -1,3 +1,5 @@
+
+
 <!-- Subscribe Section Start -->
 <!-- <div class="subscribe-area position-relative z-1">
     <div class="container">
@@ -43,9 +45,7 @@
                             <a href="sign-up.html" class="btn style-one">Sign Up <img src="assets/img/icon/long-arrow.svg" alt="Image"></a>
                         </div>
                     </div>
-
-
-                    <!-- <div class="col-lg-2 col-sm-6 col-md-6">
+                    <div class="col-lg-2 col-sm-6 col-md-6">
                         <div class="footer-widget">
                             <h4 class="text-white mb-3">K12 Program</h4>
                             <ul>
@@ -86,37 +86,7 @@
                                 
                             </ul>
                         </div>
-                    </div> -->
-                    <?php foreach ($menus as $menu): ?>
-                        <?php
-                                $sectionName = strtolower($menu['name']);
-                                $maxItems = 2;
-                        ?>
-                        <div class="col-lg-<?php echo $sectionName === '' ? 2 : 3; ?> col-sm-6 col-md-6">
-                            <div class="footer-widget">
-                                <h4 class="text-white"><?php echo ucwords(htmlspecialchars($menu['name'])); ?></h4>
-                                <ul>
-                                    <?php if (!empty($menu['categories'])): ?>
-                                        <?php foreach ($menu['categories'] as $index => $category): ?>
-                                            <?php if ($index >= $maxItems) break; ?>
-                                            <li>
-                                                <a href="<?php echo htmlspecialchars($category['have_details'] ? 'board-details?url=' . $category['slug'] : 'courses?url=' . $category['slug']); ?>">
-                                                    <?php echo htmlspecialchars($category['name']); ?>
-                                                </a>
-                                            </li>
-                                        <?php endforeach; ?>
-                                    <?php else: ?>
-                                        <li><a href="#">No items available</a></li>
-                                    <?php endif; ?>
-                                </ul>
-                            </div>
-                        </div>
-                    <?php endforeach; ?>
-
-
-                    
-
-
+                    </div>
                     <div class="col-lg-3 col-sm-6 col-md-6">
                         <div class="footer-widget">
                             <h4 class="text-white">Get In Touch</h4>

@@ -11,10 +11,10 @@ $query = "
         category.ID as category_id, 
         category.Name as category_name, 
         category.Slug as category_slug 
-    FROM menus 
-    LEFT JOIN category ON menus.ID = category.menu_id 
-    WHERE menus.Status = 1 AND (category.Status = 1) 
-    ORDER BY menus.Position ASC, menus.ID, category.ID";
+       FROM menus 
+       LEFT JOIN category ON menus.ID = category.menu_id 
+       WHERE menus.Status = 1 AND (category.Status = 1) 
+       ORDER BY menus.Position ASC, menus.ID, category.ID";
 
 $result = mysqli_query($conn, $query);
 
