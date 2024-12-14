@@ -31,7 +31,7 @@
 <!--  Page Title Area End-->
 
 <!-- About Section Start -->
-<div class="about-section ptb-100">
+<div class="about-section ptb-100" style="background-image:url(./assets/img/White-simple-textured-design-background-scaled.jpg)">
     <div class="container">
         <div class="main-max-width">
             <div class="row">

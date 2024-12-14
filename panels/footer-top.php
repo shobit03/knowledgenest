@@ -33,12 +33,10 @@
                         <div class="footer-widget info-web">
                             <div class="image">
                                 <a class="text-decoration-none" href="index.php">
-                                    <img src="assets/img/logo/white-logo.svg" alt="image">
+                                    <img src="../assets/img/logo/aimsuinv-logo-removebg-preview.png" height="180" alt="image">
                                 </a>
                             </div>
-                            <p class="pra-light mb-30">Consulting is a dynamic and multifaceted field
-                                that involves providing expert advice and
-                                guidance to individuals,</p>
+                            <p class="pra-light mb-30 text-justify">Welcome to (AIMS)Arabian Institute of Management studies. A dedicated online educational platform for students of every background. Our online platform offers a variety of courses and programmes to help you reach your goals, whether you want to expand your knowledge, discover a new passion, or progress in your profession.</p>
 
                             <a href="sign-up.html" class="btn style-one">Sign Up <img src="assets/img/icon/long-arrow.svg" alt="Image"></a>
                         </div>
