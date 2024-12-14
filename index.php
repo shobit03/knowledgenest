@@ -96,7 +96,7 @@ include('./panels/menu.php')
         <div class="row">
             <div class="col-lg-5">
                 <div class="mt-5">
-                    <h1 style="font-size:1.8rem;" class="fw-bold">Why to choose Arabian Institute of Management studies?
+                    <h1 style="font-size:1.8rem; line-height:2.8rem;" class="fw-bold">Why to choose Arabian Institute of Management studies?
                     </h1>
                 </div>
                 <div>
@@ -300,7 +300,7 @@ include('./panels/menu.php')
                     <br>
                     <p>Flexibility, affordability, accessibility, self-paced learning, networking possibilities, worldwide reach, and professional progression are a few advantages that our website provides. Because of these benefits, our platform is a good choice for professionals and students who want to increase their knowledge and abilities in a flexible and affordable approach.</p>
                     <br>
-                    <a href="" style="color:red">Read More!</a>
+                    <a href="about.php" style="color:red">Read More!</a>
                 </div>
             </div>
         </div>

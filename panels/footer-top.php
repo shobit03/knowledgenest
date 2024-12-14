@@ -33,12 +33,10 @@
                         <div class="footer-widget info-web">
                             <div class="image">
                                 <a class="text-decoration-none" href="index.php">
-                                    <img src="assets/img/logo/white-logo.svg" alt="image">
+                                    <img src="../assets/img/logo/aimsuinv-logo-removebg-preview.png" height="180" alt="image">
                                 </a>
                             </div>
-                            <p class="pra-light mb-30">Consulting is a dynamic and multifaceted field
-                                that involves providing expert advice and
-                                guidance to individuals,</p>
+                            <p class="pra-light mb-30 text-justify">Welcome to (AIMS)Arabian Institute of Management studies. A dedicated online educational platform for students of every background. Our online platform offers a variety of courses and programmes to help you reach your goals, whether you want to expand your knowledge, discover a new passion, or progress in your profession.</p>
 
                             <a href="sign-up.html" class="btn style-one">Sign Up <img src="assets/img/icon/long-arrow.svg" alt="Image"></a>
                         </div>
@@ -87,34 +85,54 @@
                             </ul>
                         </div>
                     </div> -->
-                    <?php foreach ($menus as $menu): ?>
-                        <?php
-                                $sectionName = strtolower($menu['name']);
-                                $maxItems = 2;
-                        ?>
-                        <div class="col-lg-<?php echo $sectionName === '' ? 2 : 3; ?> col-sm-6 col-md-6">
-                            <div class="footer-widget">
-                                <h4 class="text-white"><?php echo ucwords(htmlspecialchars($menu['name'])); ?></h4>
-                                <ul>
-                                    <?php if (!empty($menu['categories'])): ?>
-                                        <?php foreach ($menu['categories'] as $index => $category): ?>
-                                            <?php if ($index >= $maxItems) break; ?>
-                                            <li>
-                                                <a href="<?php echo htmlspecialchars($category['have_details'] ? 'board-details?url=' . $category['slug'] : 'courses?url=' . $category['slug']); ?>">
-                                                    <?php echo htmlspecialchars($category['name']); ?>
-                                                </a>
-                                            </li>
-                                        <?php endforeach; ?>
-                                    <?php else: ?>
-                                        <li><a href="#">No items available</a></li>
-                                    <?php endif; ?>
-                                </ul>
-                            </div>
-                        </div>
-                    <?php endforeach; ?>
+                    <div class="col-lg-2 col-sm-6 col-md-6">
+                        <?php if (isset($menus) && !empty($menus)): ?>
+                            <?php foreach ($menus as $menu): ?>
+                                <?php if ($menu['name'] === 'K12 Program' || $menu['name'] === 'Program'): ?>
+                                    <div class="footer-widget <?= $menu['name'] === 'Program' ? 'mt-4' : ''; ?>">
+                                        <h4 class="text-white mb-3"><?=$menu['name']; ?></h4>
+                                        <ul>
+                                            <?php foreach ($menu['categories'] as $index => $category): ?>
+                                                <?php if ($index >= 4) break; ?>
+                                                <li>
+                                                    <a href="<?= $category['have_details'] ? 'board-details?url=' . ($category['slug']) : 'courses?url=' . ($category['slug']); ?>">
+                                                        <?=($category['name']); ?>
+                                                    </a>
+                                                </li>
+                                            <?php endforeach; ?>
+                                        </ul>
+                                    </div>
+                                <?php endif; ?>
+                            <?php endforeach; ?>
+                        <?php endif; ?>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 col-md-6">
+                        <?php if (isset($menus) && !empty($menus)): ?>
+                            <?php foreach ($menus as $menu): ?>
+                                <?php if ($menu['name'] === 'Department' || $menu['name'] === 'Research'): ?>
+                                    <div class="footer-widget ml-70 <?= $menu['name'] === 'Research' ? 'mt-4' : ''; ?>">
+                                        <h4 class="text-white"><?=$menu['name']; ?></h4>
+                                        <ul>
+                                            <?php foreach ($menu['categories'] as $index => $category): ?>
+                                                <?php if ($index >= 4) break; ?>
+                                                <li>
+                                                    <a href="<?= $category['have_details'] ? 'board-details?url=' . ($category['slug']) : 'courses?url=' . ($category['slug']); ?>">
+                                                        <?=($category['name']); ?>
+                                                    </a>
+                                                </li>
+                                            <?php endforeach; ?>
+                                        </ul>
+                                    </div>
+                                <?php endif; ?>
+                            <?php endforeach; ?>
+                        <?php endif; ?>
+                    </div>
 
 
-                    
+
+
+
 
 
                     <div class="col-lg-3 col-sm-6 col-md-6">
