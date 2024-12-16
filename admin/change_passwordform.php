@@ -8,14 +8,14 @@
     <meta name="author" content="">
     <meta name="robots" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="IEC">
-    <meta property="og:title" content="IEC">
-    <meta property="og:description" content="IEC">
+    <meta name="description" content="AIMS">
+    <meta property="og:title" content="AIMS">
+    <meta property="og:description" content="AIMS">
     <meta property="og:image" content="page-error-404.html">
     <meta name="format-detection" content="telephone=no">
 
     <!-- PAGE TITLE HERE -->
-    <title>IEC</title>
+    <title>AIMS</title>
 
     <!-- FAVICONS ICON -->
     <link rel="shortcut icon" type="image/png" href="/admin/admin-assets/images/hims-favicon.png">
@@ -47,10 +47,10 @@
                     <div class="col-xl-4 col-lg-5 col-md-6 col-sm-12 vh-100 bg-white d-flex align-items-center">
                         <div class="login-form style-2">
                             <div class="card-body">
-                                <div class="logo-header">
+                                <!-- <div class="logo-header">
                                     <a href="#" class="logo"><img src="/admin/admin-assets/images/logoIEC.png" alt="" style="width: 56%;" class="width-100 light-logo"></a>
                                     <a href="#" class="logo"><img src="/admin/admin-assets/images/logoIEC.png" alt="" style="width: 56%;" class="width-100 dark-logo"></a>
-                                </div>
+                                </div> -->
 
                                 <?php
                                 // Start PHP session and error handling
@@ -126,7 +126,7 @@
                             <div class="card-footer">
                                 <div class="bottom-footer clearfix m-t10 m-b20 row text-center">
                                     <div class="col-lg-12 text-center">
-                                        <span> © Copyright IEC University. <span class="heart"></span>
+                                        <span> © Copyright AIMS University. <span class="heart"></span>
                                             <a href="javascript:void(0);"> </a> All rights reserved.</span>
                                     </div>
                                 </div>

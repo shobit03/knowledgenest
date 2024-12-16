@@ -18,7 +18,7 @@ if (isset($_GET['token'])) {
         <head>
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
-            <title>Reset Password</title>
+            <title>Reset Password|AIMS</title>
             <link rel="shortcut icon" type="image/png" href="/admin/admin-assets/images/hims-favicon.png">
             <link href="/admin/admin-assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
             <link href="/admin/admin-assets/css/style.css" rel="stylesheet">
@@ -34,8 +34,8 @@ if (isset($_GET['token'])) {
                                 <div class="login-form style-2">
                                     <div class="card-body">
                                         <div class="logo-header">
-                                            <a href="#" class="logo"><img src="/admin/admin-assets/images/logoIEC.png" alt="" style="width: 56%;" class="width-100 light-logo"></a>
-                                            <a href="#" class="logo"><img src="/admin/admin-assets/images/logoIEC.png" alt="" style="width: 56%;" class="width-100 dark-logo"></a>
+                                            <!-- <a href="#" class="logo"><img src="/admin/admin-assets/images/logoIEC.png" alt="" style="width: 56%;" class="width-100 light-logo"></a>
+                                            <a href="#" class="logo"><img src="/admin/admin-assets/images/logoIEC.png" alt="" style="width: 56%;" class="width-100 dark-logo"></a> -->
                                         </div>
                                         <form id="form-reset-password" action="app/login/reset-password" method="post">
                                             <h3 class="form-title m-t0">Reset Password</h3>
@@ -55,7 +55,7 @@ if (isset($_GET['token'])) {
                                     <div class="card-footer">
                                         <div class="bottom-footer clearfix m-t10 m-b20 row text-center">
                                             <div class="col-lg-12 text-center">
-                                                <span>© Copyright IEC University. <span class="heart"></span>
+                                                <span>© Copyright AIMS University. <span class="heart"></span>
                                                     <a href="javascript:void(0);"></a> All rights reserved.</span>
                                             </div>
                                         </div>

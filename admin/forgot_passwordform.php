@@ -8,9 +8,9 @@
     <meta name="author" content="">
     <meta name="robots" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Knowledge ">
-    <meta property="og:title" content="Knowledge ">
-    <meta property="og:description" content="Knowledge ">
+    <meta name="description" content="AIMS ">
+    <meta property="og:title" content="AIMS ">
+    <meta property="og:description" content="AIMS ">
     <meta property="og:image" content="page-error-404.html">
     <meta name="format-detection" content="telephone=no">
 
@@ -73,7 +73,7 @@
                             <div class="card-footer">
                                 <div class="bottom-footer clearfix m-t10 m-b20 row text-center">
                                     <div class="col-lg-12 text-center">
-                                        <span>© Copyright Knowledge Nest.<span class="heart"></span>
+                                        <span>© Copyright AIMS .<span class="heart"></span>
                                             <a href="javascript:void(0);"> </a> All rights reserved.</span>
                                     </div>
                                 </div>

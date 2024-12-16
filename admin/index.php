@@ -21,7 +21,7 @@ include($_SERVER['DOCUMENT_ROOT'] . '/admin/includes/menu.php');
             <div class="card-body text-center">
                 <h1 class="font-weight-bold mb-4" style="font-size: 3em;">Welcome</h1>
                 <p id="welcome-message" class="font-weight-bold" style="font-size: 2.5em; transition: color 0.3s, transform 0.3s;">
-                    <?= isset($_SESSION['selectedUniversity']) ? "Welcome to " . ($_SESSION['selectedUniversity']) : 'Welcome to Knowledge Nest CMS platform!' ?>
+                    <?= isset($_SESSION['selectedUniversity']) ? "Welcome to " . ($_SESSION['selectedUniversity']) : 'Welcome to AIMS CMS platform!' ?>
                 </p>
                 <!-- <button class="btn btn-light btn-lg rounded-pill mt-4 px-5 py-3" style="font-weight: bold; box-shadow: 0 4px 12px rgba(0,0,0,0.3); transition: transform 0.3s;"
                     onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">

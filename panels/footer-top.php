@@ -93,7 +93,7 @@
                                         <h4 class="text-white mb-3"><?=$menu['name']; ?></h4>
                                         <ul>
                                             <?php foreach ($menu['categories'] as $index => $category): ?>
-                                                <?php if ($index >= 4) break; ?>
+                                                <?php if ($index >= 2) break; ?>
                                                 <li>
                                                     <a href="<?= $category['have_details'] ? 'board-details?url=' . ($category['slug']) : 'courses?url=' . ($category['slug']); ?>">
                                                         <?=($category['name']); ?>
@@ -102,10 +102,20 @@
                                             <?php endforeach; ?>
                                         </ul>
                                     </div>
+
                                 <?php endif; ?>
                             <?php endforeach; ?>
                         <?php endif; ?>
+                        <div class="footer-widget mt-4">
+                            <h4 class="text-white mb-3">Others</h4>
+                            <ul>
+                                <li><a href="blogs.php">Blogs</a></li>
+                                
+                               
+                            </ul>
+                        </div>
                     </div>
+                    
 
                     <div class="col-lg-3 col-sm-6 col-md-6">
                         <?php if (isset($menus) && !empty($menus)): ?>
@@ -115,7 +125,7 @@
                                         <h4 class="text-white"><?=$menu['name']; ?></h4>
                                         <ul>
                                             <?php foreach ($menu['categories'] as $index => $category): ?>
-                                                <?php if ($index >= 4) break; ?>
+                                                <?php if ($index >= 2) break; ?>
                                                 <li>
                                                     <a href="<?= $category['have_details'] ? 'board-details?url=' . ($category['slug']) : 'courses?url=' . ($category['slug']); ?>">
                                                         <?=($category['name']); ?>
