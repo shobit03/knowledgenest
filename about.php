@@ -31,7 +31,8 @@
 <!--  Page Title Area End-->
 
 <!-- About Section Start -->
-<div class="about-section ptb-100" style="background-image:url(./assets/img/White-simple-textured-design-background-scaled.jpg)">
+<div class="about-section ptb-100"
+    style="background-image:url(./assets/img/whitebackground.webp); background-size:cover; background-repeat:no-repeat;" >
     <div class="container">
         <div class="main-max-width">
             <div class="row">
@@ -42,7 +43,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="content">
-                        <h4 class="sub-title mb-25" ># About Us</h4>
+                        <h4 class="sub-title mb-25"># About Us</h4>
                         <p class="text-justify">Welcome to (AIMS)Arabian Institute of Management studies. A dedicated
                             online educational platform for students of every background. Our online platform offers a
                             variety of courses and programmes to help you reach your goals, whether you want to expand
