@@ -40,7 +40,7 @@
 
  <div class="footer">
    <div class="copyright">
-     <p>Copyright &copy;2024 Knowledge Nest. All Rights Reserved</p>
+     <p>Copyright &copy;2024 AIMS. All Rights Reserved</p>
    </div>
  </div>
  </div>
