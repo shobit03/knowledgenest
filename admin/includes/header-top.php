@@ -39,7 +39,7 @@ include($_SERVER['DOCUMENT_ROOT'] . '/admin/includes/db-config.php');
 	<!-- end admin path -->
 
 	<!-- PAGE TITLE HERE -->
-	<title>Admin | Knowledge Nest</title>
+	<title>Admin | AIMS</title>
 	<!-- FAVICONS ICON -->
 	<link rel="shortcut icon" type="image/png" href="/admin/admin-assets/images/gku-fav.jpeg">
 	<link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
