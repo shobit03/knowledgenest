@@ -158,14 +158,14 @@ include('./panels/menu.php')
 </section>
 
 
-<section class="mt-5 shadow pt-4">
+<section class="mt-5 shadow pt-4" style="background-image: url(./assets/img/skyblue.jpg); background-size:cover; background-repeat: no-repeat;">
     <h3 class="text-center mb-3">Our Servcies</h3>
     <div class="popular-subject-area pb-75">
         <div class="container">
             <div class="main-max-width">
                 <div class="row">
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-3">
                         <div class="single-popular-card shadow">
                             <div class="icon position-relative z-1">
                                 <img loading="lazy" src="assets/img/icon/popular-subject-1.svg" alt="icon">
@@ -180,7 +180,7 @@ include('./panels/menu.php')
                         </div>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-3">
                         <div class="single-popular-card shadow">
                             <div class="icon position-relative z-1">
                                 <img loading="lazy" src="assets/img/icon/popular-subject-2.svg" alt="icon">
@@ -195,7 +195,7 @@ include('./panels/menu.php')
                             <div class="hover-overlay"></div> <!-- New overlay div -->
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-3">
                         <div class="single-popular-card shadow">
                             <div class="icon position-relative z-1">
                                 <img loading="lazy" src="assets/img/icon/popular-subject-3.svg" alt="icon">
@@ -210,7 +210,7 @@ include('./panels/menu.php')
                             <div class="hover-overlay"></div> <!-- New overlay div -->
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-3">
                         <div class="single-popular-card shadow">
                             <div class="icon position-relative z-1">
                                 <img loading="lazy" src="assets/img/icon/popular-subject-1.svg" alt="icon">
@@ -266,7 +266,7 @@ include('./panels/menu.php')
     </div>
 </section>
 
-<section style="background-image:url(./assets/img/white-abstract-wallpaper_23-2148830026.avif)">
+<section style="background-image:url(./assets/img/whitebackground.webp); background-repeat:no-repeat; background-size:cover;">
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
@@ -280,27 +280,39 @@ include('./panels/menu.php')
                     <h2 class="fw-bold">Aspire and Explore:
                         With Enlightening Education abroad</h2>
                         <br>
-                    <p>Our websites for online education offer flexibility in learning. Assignments and course materials
+                    <p class="text-black">Our websites for online education offer flexibility in learning. Assignments and course materials
                         are accessible to Learners whenever and wherever they choose.</p>
                     <br>
-                    <p>It is a leading online platform committed to offering professionals the skills and qualifications
+                    <p class="text-black">It is a leading online platform committed to offering professionals the skills and qualifications
                         required to get promoted. The website serves people in various industries and provides many
                         courses in multiple domains.</p>
                     <br>
-                    <p>Professionals and industry experts conduct the courses, ensuring current information and valuable
+                    <p class="text-black">Professionals and industry experts conduct the courses, ensuring current information and valuable
                         insights. We offer flexibility, which is especially beneficial for professionals who must
                         balance their current jobs or have busy schedules.</p>
+                    
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="ms-3">
+                
                     <br>
-                    <p>We provide courses including a wide range of professional knowledge and abilities, such as
+                    <p class="text-black">We provide courses including a wide range of professional knowledge and abilities, such as
                         problem-solving strategies, project management, negotiating skills, and time management.
                         Professionals may perform better, prove they add value to their companies, and position
                         themselves for career advancement by gaining these skills.
 
                     </p>
                     <br>
-                    <p>Flexibility, affordability, accessibility, self-paced learning, networking possibilities, worldwide reach, and professional progression are a few advantages that our website provides. Because of these benefits, our platform is a good choice for professionals and students who want to increase their knowledge and abilities in a flexible and affordable approach.</p>
+                    <p class="text-black">Flexibility, affordability, accessibility, self-paced learning, networking possibilities, worldwide reach, and professional progression are a few advantages that our website provides. Because of these benefits, our platform is a good choice for professionals and students who want to increase their knowledge and abilities in a flexible and affordable approach.</p>
                     <br>
                     <a href="about.php" style="color:red">Read More!</a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="text-center mb-3">
+                    <img src="./assets/img/Professionals and industry experts .jpg" alt="">
                 </div>
             </div>
         </div>
@@ -311,8 +323,8 @@ include('./panels/menu.php')
 <div class="partner-area pb-3 mt-1">
     <div class="container">
         <div class="main-max-width">
-            <div class="partner-title text-center mt-5">
-                <h2 class="fw-bold">Our University tie-ups</h2>
+            <div class="text-center mt-3 mb-3">
+                <h3 class="fw-bold" style="color:#296E85;">Our University tie-ups</h3>
             </div>
             <div class="partner-slider text-center owl-carousel owl-nav">
                 <div class="single-partner-card">

@@ -53,7 +53,8 @@ if ($result && $result->num_rows > 0) {
 
             <!-- Board Details -->
             <div class="col-lg-6">
-                <div class="shadow p-4 mt-4 mb-4" style="background-image: url(./assets/img/light-red-blurred-background-vector.jpg); background-repeat:no-repeat; background-size:cover;">
+                <div class="shadow p-4 mt-4 mb-4"
+                    style="background-image: url(./assets/img/light-red-blurred-background-vector.jpg); background-repeat:no-repeat; background-size:cover;">
                     <h3 class="text-center fw-bold" style="line-height: 2.5rem;"><?= $board['Heading']; ?></h3>
                     <p class="text-justify"><?= $board['Description']; ?></p>
                 </div>
@@ -61,16 +62,78 @@ if ($result && $result->num_rows > 0) {
         </div>
 
         <!-- Additional Content -->
-        <section class="shadow">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="content-area p-4">
-                        <?php echo $board['Content']; ?>
+        <section class="shadow mb-4 mt-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content-area p-4 mb-3">
+                            <?php echo $board['Content']; ?>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+
+        <section>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-12">
+                        <div class="text-center mb-3">
+                            <h3>Specialization in M.phil Research</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div>
+                            <div>
+                                <img src="./assets/img/Bachelor of Science.jpg" alt="">
+                            </div>
+                            <div class="shadow p-1 d-flex align-items-center" style="height: 50px;">
+                                <p class="text-center w-100 m-0">Management</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div>
+                            <div>
+                                <img src="./assets/img/Bachelor of Science.jpg" alt="">
+                            </div>
+                            <div class="shadow p-1 d-flex align-items-center" style="height: 50px;">
+                                <p class="text-center w-100 m-0">Education</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div>
+                            <div> <img src="./assets/img/Bachelor of Science.jpg" alt=""></div>
+                            <div class="shadow p-1 d-flex align-items-center" style="height: 50px;">
+                                <p class="text-center w-100 m-0">Engineering</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="mt-4">
+                            <div> <img src="./assets/img/Bachelor of Science.jpg" alt=""></div>
+                            <div class="shadow p-1 d-flex align-items-center" style="height: 50px;">
+                                <p class="text-center w-100 m-0">
+
+                                    Information Technology</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="mt-4 mb-4">
+                            <div> <img src="./assets/img/Bachelor of Science.jpg" alt=""></div>
+                            <div class="shadow p-1 d-flex align-items-center" style="height: 50px;">
+                                <p class="text-center w-100 m-0">
+
+                                    Computer Science</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
 </section>

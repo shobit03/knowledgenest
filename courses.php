@@ -87,7 +87,7 @@ while ($row = mysqli_fetch_assoc($coursesResult)) {
                                             <?php echo $course['SubCategoryName']; ?>
                                         </a>
                                     </h3>
-                                    <p class="mb-15 pb-3">
+                                    <p class="mb-15 pb-3 text-justify">
                                         <?php echo substr($course['SubCategoryDescription'], 0, 100); ?>...
                                     </p>
                                 </div>

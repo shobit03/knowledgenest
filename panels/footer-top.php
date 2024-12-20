@@ -25,20 +25,22 @@
 
 <!-- Footer Section Start -->
 <div class="footer-area ft-bg">
-    <div class="footer-widget-info ptb-100">
+    <div class="footer-widget-info pt-5">
         <div class="container">
             <div class="main-max-width">
                 <div class="row">
                     <div class="col-lg-4 col-sm-6 col-md-6">
                         <div class="footer-widget info-web">
-                            <div class="image">
+                            <div class="image text-center">
                                 <a class="text-decoration-none" href="index.php">
-                                    <img src="../assets/img/logo/aimsuinv-logo-removebg-preview.png" height="180" alt="image">
+                                    <img src="../assets/img/logo/aimsuinv-logo-removebg-preview.png" height="160" alt="image">
                                 </a>
                             </div>
-                            <p class="pra-light mb-30 text-justify">Welcome to (AIMS)Arabian Institute of Management studies. A dedicated online educational platform for students of every background. Our online platform offers a variety of courses and programmes to help you reach your goals, whether you want to expand your knowledge, discover a new passion, or progress in your profession.</p>
+                            <p class="pra-light mb-30 text-justify">Welcome to (AIMS)Arabian Institute of Management studies. A dedicated online educational platform for students of every background.</p>
 
-                            <a href="sign-up.html" class="btn style-one">Sign Up <img src="assets/img/icon/long-arrow.svg" alt="Image"></a>
+                           <div class="d-flex justify-content-center">
+                           <a href="sign-up.html" class="btn style-one">Sign Up <img src="assets/img/icon/long-arrow.svg" alt="Image"></a>
+                           </div>
                         </div>
                     </div>
 
@@ -89,7 +91,7 @@
                         <?php if (isset($menus) && !empty($menus)): ?>
                             <?php foreach ($menus as $menu): ?>
                                 <?php if ($menu['name'] === 'K12 Program' || $menu['name'] === 'Program'): ?>
-                                    <div class="footer-widget <?= $menu['name'] === 'Program' ? 'mt-4' : ''; ?>">
+                                    <div class="footer-widget <?= $menu['name'] === 'Program' ? 'mt-3' : ''; ?>">
                                         <h4 class="text-white mb-3"><?=$menu['name']; ?></h4>
                                         <ul>
                                             <?php foreach ($menu['categories'] as $index => $category): ?>
@@ -106,7 +108,7 @@
                                 <?php endif; ?>
                             <?php endforeach; ?>
                         <?php endif; ?>
-                        <div class="footer-widget mt-4">
+                        <div class="footer-widget mt-4 mb-4">
                             <h4 class="text-white mb-3">Others</h4>
                             <ul>
                                 <li><a href="blogs.php">Blogs</a></li>
@@ -121,7 +123,7 @@
                         <?php if (isset($menus) && !empty($menus)): ?>
                             <?php foreach ($menus as $menu): ?>
                                 <?php if ($menu['name'] === 'Department' || $menu['name'] === 'Research'): ?>
-                                    <div class="footer-widget ml-70 <?= $menu['name'] === 'Research' ? 'mt-4' : ''; ?>">
+                                    <div class="footer-widget ml-70 <?= $menu['name'] === 'Research' ? 'mt-3' : ''; ?>">
                                         <h4 class="text-white"><?=$menu['name']; ?></h4>
                                         <ul>
                                             <?php foreach ($menu['categories'] as $index => $category): ?>
@@ -138,12 +140,6 @@
                             <?php endforeach; ?>
                         <?php endif; ?>
                     </div>
-
-
-
-
-
-
 
                     <div class="col-lg-3 col-sm-6 col-md-6">
                         <div class="footer-widget">

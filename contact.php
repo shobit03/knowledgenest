@@ -38,7 +38,8 @@
                 <div class="col-lg-6">
                     <div class="content">
                         <h2 class="fs-35 mb-30 gradient-style">Get In Touch</h2>
-                        <p>Whether you have questions about our services, want to explore potential collaboration opportunities,</p>
+                        <p>Whether you have questions about our services, want to explore potential collaboration
+                            opportunities,</p>
 
                         <div class="contact-form">
                             <!-- <form action="#"> -->
@@ -48,24 +49,29 @@
                                     <div class="col-6">
                                         <div class="form-group mb-15">
                                             <label class="label-style">Name</label>
-                                            <input type="text" name="con_name" placeholder="Name" class="bg-white input-style border-style w-100 h-60">
+                                            <input type="text" name="con_name" placeholder="Name"
+                                                class="bg-white input-style border-style w-100 h-60">
                                         </div>
                                     </div>
                                     <div class="col-6">
                                         <div class="form-group mb-15">
                                             <label class="label-style">Phone *</label>
-                                            <input type="text" name="phone" placeholder="Phone" class="bg-white input-style border-style w-100 h-60">
+                                            <input type="text" name="phone" placeholder="Phone"
+                                                class="bg-white input-style border-style w-100 h-60">
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="form-group mb-15">
                                     <label class="label-style">Your email</label>
-                                    <input type="email" name="con_email" placeholder="Your email" class="bg-white input-style border-style w-100 h-60">
+                                    <input type="email" name="con_email" placeholder="Your email"
+                                        class="bg-white input-style border-style w-100 h-60">
                                 </div>
                                 <div class="form-group mb-15">
                                     <label class="label-style">Message</label>
-                                    <textarea name="con_message" id="msg" cols="30" rows="5" class="bg-white input-style border-style w-100" placeholder="Your comments here"></textarea>
+                                    <textarea name="con_message" id="msg" cols="30" rows="5"
+                                        class="bg-white input-style border-style w-100"
+                                        placeholder="Your comments here"></textarea>
                                 </div>
                                 <button type="submit" class="btn style-one box-shadow-1">Send Message</button>
                             </form>
@@ -75,44 +81,80 @@
                 <div class="col-lg-6">
                     <div class="contact-info">
                         <h4 class="fs-20 text-title">Contact Us</h4>
-
+                        
+                               
                         <div class="content mb-40">
-                            <div class="info-item d-flex align-items-center">
+                            <div class="info-item">
+                               <div class="row">
+                                <div class="col-lg-3">
                                 <div class="icon">
                                     <img src="assets/img/icon/location-icon-cont.svg" alt="icon">
                                 </div>
+                                </div>
+
+                                <div class="col-lg-9">
                                 <div class="text">
                                     <h5 class="fs-16">Address</h5>
-                                    <p class="mb-0">2972 Westheimer Rd. Santa Ana, Illinois 85486 </p>
+                                    <p class="mb-0">30th floor ,Suit No: 3004-C
+                                        Aspin Commercial Tower
+                                        Next to Shangri La Hotel
+                                        Sheik Zayed Road
+                                        Dubai
+                                        United Arab Emirates - 500001</p>
                                 </div>
+                                </div>
+                               </div>
                             </div>
-                            <div class="info-item d-flex align-items-center">
+                            <div class="info-item">
+
+                            <div class="row">
+                                <div class="col-lg-3">
                                 <div class="icon">
                                     <img src="assets/img/icon/mail-icon-cont.svg" alt="icon">
                                 </div>
+                                </div>
+
+                                <div class="col-lg-9">
                                 <div class="text">
                                     <h5 class="fs-16">Email</h5>
-                                    <a href="mailto:Info123456@gmail.com">Info123456@gmail.com</a>
+                                    <a href="mailto:Info123456@gmail.com">info@aimsuniv.com</a>
+                                </div>
                                 </div>
                             </div>
-                            <div class="info-item d-flex align-items-center">
-                                <div class="icon">
+                               
+                               
+                            </div>
+                            <div class="info-item">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                    <div class="icon">
                                     <img src="assets/img/icon/phone-icon-cont.svg" alt="icon">
                                 </div>
-                                <div class="text">
+                                    </div>
+
+                                    <div class="col-lg-9">
+                                    <div class="text">
                                     <h5 class="fs-16">Phone</h5>
-                                    <a href="tel:123456789">+123 456 789</a>
+                                    <a href="tel:123456789">+971 54 731 1135</a>
                                 </div>
+                                    </div>
+                                </div>
+                                
+                               
                             </div>
                         </div>
 
                         <div class="social-profile d-flex align-items-center">
                             <span class="fs-16">Follow Us:</span>
                             <ul class="list-unstyle d-flex">
-                                <li><a href="https://www.fb.com/" target="_blank"><i class="ri-facebook-fill"></i></a></li>
-                                <li><a href="https://www.twitter.com/" target="_blank"><i class="ri-twitter-x-fill"></i></a></li>
-                                <li><a href="https://www.instagram.com/" target="_blank"><i class="ri-instagram-line"></i></a></li>
-                                <li><a href="https://www.linkedin.com/" target="_blank"><i class="ri-linkedin-fill"></i></a></li>
+                                <li><a href="https://www.fb.com/" target="_blank"><i class="ri-facebook-fill"></i></a>
+                                </li>
+                                <li><a href="https://www.twitter.com/" target="_blank"><i
+                                            class="ri-twitter-x-fill"></i></a></li>
+                                <li><a href="https://www.instagram.com/" target="_blank"><i
+                                            class="ri-instagram-line"></i></a></li>
+                                <li><a href="https://www.linkedin.com/" target="_blank"><i
+                                            class="ri-linkedin-fill"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -143,8 +185,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
 <script>
-    $(document).ready(function() {
-        $('#contact-form').on('submit', function(e) {
+    $(document).ready(function () {
+        $('#contact-form').on('submit', function (e) {
             e.preventDefault();
             var formData = new FormData(this);
             $.ajax({
@@ -154,7 +196,7 @@
                 cache: false,
                 contentType: false,
                 processData: false,
-                success: function(data) {
+                success: function (data) {
                     var response = JSON.parse(data);
                     if (response.status === 200) {
                         toastr.success(response.message);
@@ -163,7 +205,7 @@
                         toastr.error(response.message);
                     }
                 },
-                error: function(xhr, status, error) {
+                error: function (xhr, status, error) {
                     toastr.error('An error occurred while submitting the form.');
                 }
             });
