@@ -133,7 +133,6 @@ include($_SERVER['DOCUMENT_ROOT'] . '/admin/includes/menu.php');
                         var videoContent = '';
 
                         if (data) {
-                            // Assuming data is a YouTube or Vimeo link
                             videoContent = `<iframe src="${data}?autoplay=1" frameborder="0" allow="autoplay; fullscreen" allowfullscreen style="width: 200px; height: 150px;"></iframe>`;
                         } else if (row.Upload_Video) {
                             var uploadVideo = row.Upload_Video;
@@ -146,7 +145,6 @@ include($_SERVER['DOCUMENT_ROOT'] . '/admin/includes/menu.php');
                                 videoContent = `<img src="/admin/${uploadVideo}" width="200" alt="Gallery Video Thumbnail">`;
                             }
                         } else {
-                            // Fallback if no video or upload video is available
                             videoContent = `<img src="/admin-assets/img/default-program.jpg" width="200" alt="No Video/Image Available">`;
                         }
 
