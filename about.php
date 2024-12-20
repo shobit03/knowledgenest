@@ -72,8 +72,8 @@
                 </div>
 
             </div>
-            <div class=" col-lg-12 shadow p-4 mt-3">
-                <p class="text-justify">Aspiring students have an easy and flexible alternative with the UG
+            <div class=" col-lg-12 shadow p-4 mt-3" style="background-color:#263f49;">
+                <p class="text-justify text-white">Aspiring students have an easy and flexible alternative with the UG
                     programmes we provide. Students can customise their education according to their unique
                     interests and professional aspirations by selecting from various programmes. The platform's
                     special features, like flexible learning, knowledgeable instructors, and collaborative

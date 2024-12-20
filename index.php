@@ -311,7 +311,7 @@ include('./panels/menu.php')
                 </div>
             </div>
             <div class="col-lg-6">
-                <div class="text-center">
+                <div class="text-center mb-3">
                     <img src="./assets/img/Professionals and industry experts .jpg" alt="">
                 </div>
             </div>
