@@ -3,11 +3,12 @@
 <?php
 $url = $_GET['url'] ?? '';
 
-$getdata = "SELECT Name, Photo, Description, Content, Heading FROM category WHERE Slug = '$url' AND Status = 1";
+$getdata = "SELECT Name,ID, Photo, Description, Content, Heading FROM category WHERE Slug = '$url' AND Status = 1";
 $result = $conn->query($getdata);
 
 if ($result && $result->num_rows > 0) {
     $board = $result->fetch_assoc();
+    $categoryID = $board['ID'];
 }
 ?>
 <title><?= $board['Name']; ?> -Details</title>
@@ -40,7 +41,11 @@ if ($result && $result->num_rows > 0) {
     </div>
 </section>
 <!-- Page Title Area End -->
-
+<?php
+// echo "<pre>";
+// echo "Category ID: $categoryID"; 
+// echo "</pre>";
+?>
 <section>
     <div class="container">
         <div class="row">
@@ -75,7 +80,56 @@ if ($result && $result->num_rows > 0) {
         </section>
 
 
-        <section>
+        <?php
+        $subCategoryQuery = "
+             SELECT Name, Photo,Slug 
+            FROM sub_category 
+            WHERE Category_ID = '$categoryID' AND Status = 1";
+        $subCategoryResult = $conn->query($subCategoryQuery);
+        ?>
+
+        <?php if (isset($subCategoryResult) && $subCategoryResult->num_rows > 0): ?>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="text-center mb-3">
+                                <h3>Specialization in <?= $board['Name']; ?></h3>
+                            </div>
+                        </div>
+
+                        <?php while ($subcategory = $subCategoryResult->fetch_assoc()): ?>
+                            <?php
+                            // echo "<pre>";
+                            // print_r($subcategory); 
+                            // echo "</pre>";
+                            ?>
+
+                            <div class="col-lg-4 mt-4 mb-4">
+                                <div>
+                                    <a href="course-details?url=<?= $subcategory['Slug']; ?>" class="d-block text-center">
+
+                                        <div>
+                                            <img src="/admin/<?= $subcategory['Photo']; ?>" alt="<?= $subcategory['Name']; ?>">
+                                        </div>
+                                        <div class="shadow p-1 d-flex align-items-center" style="height: 50px;">
+                                            <p class="text-center w-100 m-0"><?= $subcategory['Name']; ?></p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        <?php endwhile; ?>
+                    </div>
+                </div>
+            </section>
+        <?php endif; ?>
+
+
+
+
+
+
+        <!-- <section>
             <div class="container">
                 <div class="row">
 
@@ -134,7 +188,8 @@ if ($result && $result->num_rows > 0) {
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
+
     </div>
 </section>
 
