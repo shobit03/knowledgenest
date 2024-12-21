@@ -3,7 +3,7 @@
 <?php
 $url = $_GET['url'] ?? '';
 
-$getdata = "SELECT Name,ID, Photo, Description, Content, Heading FROM category WHERE Slug = '$url' AND Status = 1";
+$getdata = "SELECT Name,ID, Photo, Description, Content, Heading FROM category WHERE Slug = '$url' AND    Status = 1";
 $result = $conn->query($getdata);
 
 if ($result && $result->num_rows > 0) {
@@ -82,7 +82,7 @@ if ($result && $result->num_rows > 0) {
 
         <?php
         $subCategoryQuery = "
-             SELECT Name, Photo,Slug 
+            SELECT Name, Photo,Slug 
             FROM sub_category 
             WHERE Category_ID = '$categoryID' AND Status = 1";
         $subCategoryResult = $conn->query($subCategoryQuery);
@@ -123,13 +123,6 @@ if ($result && $result->num_rows > 0) {
                 </div>
             </section>
         <?php endif; ?>
-
-
-
-
-
-
-        
 
     </div>
 </section>
