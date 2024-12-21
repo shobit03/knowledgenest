@@ -633,3 +633,18 @@ jQuery(document).ready(function($) {
 		  $navPills.animate({ scrollLeft: scrollAmount }, 300);
 		});
 	  });
+
+
+
+
+	  $(document).ready(function(){
+		// Trigger carousel previous
+		$(".carousel-control-prev").click(function(){
+		  $("#carouselExampleControls").carousel('prev');
+		});
+	
+		// Trigger carousel next
+		$(".carousel-control-next").click(function(){
+		  $("#carouselExampleControls").carousel('next');
+		});
+	  });

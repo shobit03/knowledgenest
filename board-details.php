@@ -14,9 +14,6 @@ if ($result && $result->num_rows > 0) {
 <title><?= $board['Name']; ?> -Details</title>
 <meta name="description" content="<?= $board['Description']; ?>">
 <?php include('./panels/header-bottom.php'); ?>
-
-
-
 <!-- Page Title Area Start -->
 <section class="page-title-area position-relative">
     <div class="container">
@@ -123,13 +120,6 @@ if ($result && $result->num_rows > 0) {
                 </div>
             </section>
         <?php endif; ?>
-
-
-
-
-
-
-        
 
     </div>
 </section>
