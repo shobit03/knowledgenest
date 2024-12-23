@@ -32,7 +32,7 @@
 
 <!-- About Section Start -->
 <div class="about-section ptb-100"
-    style="background-image:url(./assets/img/whitebackground.webp); background-size:cover; background-repeat:no-repeat;" >
+    style="background-image:url(./assets/img/whitebackground.webp); background-size:cover; background-repeat:no-repeat;">
     <div class="container">
         <div class="main-max-width">
             <div class="row">
@@ -151,82 +151,139 @@
 </section>
 
 
-<section class="shadow">
-    <!-- Carousel wrapper -->
+
+
+<!-- <section class="shadow">
 
     <div class="text-center p-3">
         <h3>TESTIMONIALS</h3>
     </div>
-<div id="carouselExampleControls" data-mdb-carousel-init class="carousel slide text-center carousel-dark" data-mdb-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="rounded-circle shadow-1-strong mb-4"
-        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp" alt="avatar"
-        style="width: 150px;" />
-      <div class="row d-flex justify-content-center">
-        <div class="col-lg-8">
-          <h5 class="mb-3">Maria Kate</h5>
-          <p>Photographer</p>
-          <p class="text-muted">
-            <i class="fas fa-quote-left pe-2"></i>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti
-            nesciunt sint eligendi reprehenderit reiciendis, quibusdam illo, beatae quia
-            fugit consequatur laudantium velit magnam error. Consectetur distinctio fugit
-            doloremque.
-          </p>
+    <div id="carouselExampleControls" data-mdb-carousel-init class="carousel slide text-center carousel-dark" data-mdb-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="rounded-circle shadow-1-strong mb-4"
+                    src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp" alt="avatar"
+                    style="width: 150px;" />
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-8">
+                        <h5 class="mb-3">Maria Kate</h5>
+                        <p>Photographer</p>
+                        <p class="text-muted">
+                            <i class="fas fa-quote-left pe-2"></i>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti
+                            nesciunt sint eligendi reprehenderit reiciendis, quibusdam illo, beatae quia
+                            fugit consequatur laudantium velit magnam error. Consectetur distinctio fugit
+                            doloremque.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="carousel-item">
+                <img class="rounded-circle shadow-1-strong mb-4"
+                    src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp" alt="avatar"
+                    style="width: 150px;" />
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-8">
+                        <h5 class="mb-3">John Doe</h5>
+                        <p>Web Developer</p>
+                        <p class="text-muted">
+                            <i class="fas fa-quote-left pe-2"></i>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti
+                            nesciunt sint eligendi reprehenderit reiciendis.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="carousel-item">
+                <img class="rounded-circle shadow-1-strong mb-4"
+                    src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" alt="avatar" style="width: 150px;" />
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-8">
+                        <h5 class="mb-3">Anna Deynah</h5>
+                        <p>UX Designer</p>
+                        <p class="text-muted">
+                            <i class="fas fa-quote-left pe-2"></i>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti
+                            nesciunt sint eligendi reprehenderit reiciendis, quibusdam illo, beatae quia
+                            fugit consequatur laudantium velit magnam error. Consectetur distinctio fugit
+                            doloremque.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
         </div>
-      </div>
-      
+        <button data-mdb-button-init class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleControls"
+            data-mdb-slide="prev">
+            <span class="carousel-control-prev-icon text-body" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button data-mdb-button-init class="carousel-control-next" type="button" data-mdb-target="#carouselExampleControls"
+            data-mdb-slide="next">
+            <span class="carousel-control-next-icon text-body" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
-    <div class="carousel-item">
-      <img class="rounded-circle shadow-1-strong mb-4"
-        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp" alt="avatar"
-        style="width: 150px;" />
-      <div class="row d-flex justify-content-center">
-        <div class="col-lg-8">
-          <h5 class="mb-3">John Doe</h5>
-          <p>Web Developer</p>
-          <p class="text-muted">
-            <i class="fas fa-quote-left pe-2"></i>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti
-            nesciunt sint eligendi reprehenderit reiciendis.
-          </p>
+</section> -->
+
+<?php
+// Fetch the testimonials from the database
+$testimonialsData = [];
+$result = $conn->query("SELECT * FROM testimonials WHERE Status = 1 ORDER BY id DESC");
+while ($testimonial = $result->fetch_assoc()) {
+    $testimonialsData[] = $testimonial;
+}
+?>
+
+<section class="shadow">
+    <!-- Carousel wrapper -->
+    <div class="text-center p-3">
+        <h3>TESTIMONIALS</h3>
+    </div>
+    <div id="carouselExampleControls" class="carousel slide text-center carousel-dark" data-mdb-ride="carousel">
+        <div class="carousel-inner">
+            <?php if (!empty($testimonialsData)): ?>
+                <?php foreach ($testimonialsData as $index => $testimonial): ?>
+                    <div class="carousel-item <?php echo $index === 0 ? 'active' : ''; ?>">
+                        <img class="rounded-circle shadow-1-strong mb-4"
+                            src="/admin/<?=$testimonial['Image']; ?>" alt="avatar"
+                            style="width: 150px;" />
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-lg-8">
+                                <h5 class="mb-3"><?=$testimonial['Name']; ?></h5>
+                                <p><?=$testimonial['Profile'] ?? ''; ?></p>
+                                <p class="text-muted">
+                                    <i class="fas fa-quote-left pe-2"></i>
+                                    <?=$testimonial['Testimonial']; ?>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            <?php else: ?>
+                <div class="carousel-item active">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-lg-8">
+                            <h5 class="mb-3">No Testimonials Available</h5>
+                        </div>
+                    </div>
+                </div>
+            <?php endif; ?>
         </div>
-      </div>
-      
+        <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleControls" data-mdb-slide="prev">
+            <span class="carousel-control-prev-icon text-body" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleControls" data-mdb-slide="next">
+            <span class="carousel-control-next-icon text-body" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
-    <div class="carousel-item">
-      <img class="rounded-circle shadow-1-strong mb-4"
-        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" alt="avatar" style="width: 150px;" />
-      <div class="row d-flex justify-content-center">
-        <div class="col-lg-8">
-          <h5 class="mb-3">Anna Deynah</h5>
-          <p>UX Designer</p>
-          <p class="text-muted">
-            <i class="fas fa-quote-left pe-2"></i>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti
-            nesciunt sint eligendi reprehenderit reiciendis, quibusdam illo, beatae quia
-            fugit consequatur laudantium velit magnam error. Consectetur distinctio fugit
-            doloremque.
-          </p>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-  <button data-mdb-button-init class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleControls"
-    data-mdb-slide="prev">
-    <span class="carousel-control-prev-icon text-body" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button data-mdb-button-init class="carousel-control-next" type="button" data-mdb-target="#carouselExampleControls"
-    data-mdb-slide="next">
-    <span class="carousel-control-next-icon text-body" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-<!-- Carousel wrapper -->
+    <!-- Carousel wrapper -->
 </section>
+
 
 <div class="partner-area pb-3 mt-1">
     <div class="container">
